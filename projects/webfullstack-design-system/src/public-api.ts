@@ -8,3 +8,4 @@ export * from './lib/webfullstack-design-system.module';
 
 export * from './lib/card/card.component';
 export * from './lib/chart/chart.component';
+export * from './lib/chart/chart.interface';
