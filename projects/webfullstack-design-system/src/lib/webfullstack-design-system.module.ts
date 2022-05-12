@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
-import { WebfullstackDesignSystemComponent} from "./webfullstack-design-system.component";
-import { CardComponent } from "./card/card.component";
+import { WebfullstackDesignSystemComponent } from './webfullstack-design-system.component';
+import { CardComponent } from './card/card.component';
 import { ChartComponent } from './chart/chart.component';
+import { DividerComponent } from './divider/divider.component';
+import { FlexDivComponent } from './flex-div/flex-div.component';
 
-const COMPONENTS = [WebfullstackDesignSystemComponent, CardComponent, ChartComponent];
+const COMPONENTS = [
+  WebfullstackDesignSystemComponent,
+  CardComponent,
+  ChartComponent,
+  FlexDivComponent,
+  DividerComponent,
+];
 
 @NgModule({
-  declarations: [
-    ...COMPONENTS,
-  ],
-  imports: [
-  ],
-  exports: [
-    ...COMPONENTS
-  ]
+  declarations: [...COMPONENTS],
+  imports: [],
+  exports: [...COMPONENTS],
 })
-export class WebfullstackDesignSystemModule { }
+export class WebfullstackDesignSystemModule {}
