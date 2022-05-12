@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "webfullstack-design-system": {
+      "projectType": "library",
+      "root": "projects/webfullstack-design-system",
+      "sourceRoot": "projects/webfullstack-design-system/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/webfullstack-design-system/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/webfullstack-design-system/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/webfullstack-design-system/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/webfullstack-design-system/src/test.ts",
+            "tsConfig": "projects/webfullstack-design-system/tsconfig.spec.json",
+            "karmaConfig": "projects/webfullstack-design-system/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "webfullstack-design-system"
 }

@@ -19,7 +19,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "webfullstack-design-system": [
+        "dist/webfullstack-design-system/webfullstack-design-system",
+        "dist/webfullstack-design-system"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
