@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
-import { WebfullstackDesignSystemComponent } from './webfullstack-design-system.component';
+import { WebfullstackDesignSystemComponent} from "./webfullstack-design-system.component";
+import { CardComponent } from "./card/card.component";
 
-
+const COMPONENTS = [WebfullstackDesignSystemComponent, CardComponent];
 
 @NgModule({
   declarations: [
-    WebfullstackDesignSystemComponent
+    ...COMPONENTS,
   ],
   imports: [
   ],
   exports: [
-    WebfullstackDesignSystemComponent
+    ...COMPONENTS
   ]
 })
 export class WebfullstackDesignSystemModule { }
