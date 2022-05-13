@@ -1,0 +1,19 @@
+@import '../scss/main.scss';
+
+.input{
+  width: 100%;
+  padding: 7px;
+  margin: 0;
+  border: none;
+  background: gray;
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
