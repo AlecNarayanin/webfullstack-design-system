@@ -20,7 +20,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   @Input() canvasHeigth : number = 450;
   @Input() canvasWidth : number = 550;
 
-  private context: CanvasRenderingContext2D;
+  private context!: CanvasRenderingContext2D;
 
   scaleX = 0;
   scaleY = 0;
@@ -28,6 +28,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   x= 0;
   y = 0;
   height = 0;
+  axisColor = "#A9A9A9";
 
   onChanges = new Subject<SimpleChanges>();
 
@@ -58,8 +59,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     // constants
     const padding = 10;
     const tickSize = 10;
-    const axisColor = "#555";
-    const font = "13pt Helvetica ";
+    const font = "13pt Robotto";
 
     const fontHeight = 12;
 
@@ -78,8 +78,8 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     this.scaleY = this.height / rangeY;
 
     // draw x y axis and tick marks
-    this.drawXAxis( {   axisColor , width , numXTicks , tickSize, font , maxX , padding});
-    this.drawYAxis( { axisColor , numYTicks ,tickSize, font , maxY , padding});
+    this.drawXAxis( {    width , numXTicks , tickSize, font , maxX , padding});
+    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});
 }
 
   private getLongestValueWidth( data :any) {
@@ -98,21 +98,21 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.beginPath();
       this.context.moveTo(this.x, this.y + height);
       this.context.lineTo(this.x + data.width, this.y + height);
-      this.context.strokeStyle = data.axisColor;
+      this.context.strokeStyle = this.axisColor;
       this.context.lineWidth = 2;
       this.context.stroke();
 
       // draw tick marks
-      for (let n = 0; n < data.numXTicks; n++) {
+      /*for (let n = 0; n < data.numXTicks; n++) {
         this.context.beginPath();
         this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);
         this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y + height - data.tickSize);
         this.context.stroke();
-      }
+      }*/
 
       // draw labels
       this.context.font = data.font;
-      this.context.fillStyle = "black";
+      this.context.fillStyle = this.axisColor;
       this.context.textAlign = "center";
       this.context.textBaseline = "middle";
 
@@ -133,22 +133,22 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.beginPath();
       this.context.moveTo(this.x, this.y);
       this.context.lineTo(this.x, this.y + height);
-      this.context.strokeStyle = data.axisColor;
+      this.context.strokeStyle = this.axisColor;
       this.context.lineWidth = 2;
       this.context.stroke();
       this.context.restore();
 
       // draw tick marks
-      for (let n = 0; n < data.numYTicks; n++) {
+      /*for (let n = 0; n < data.numYTicks; n++) {
           this.context.beginPath();
           this.context.moveTo(this.x, n * height / data.numYTicks + this.y);
           this.context.lineTo(this.x + data.tickSize, n * height / data.numYTicks + this.y);
           this.context.stroke();
-      }
+      }*/
 
       // draw values
       this.context.font = data.font;
-      this.context.fillStyle = "black";
+      this.context.fillStyle = this.axisColor;
       this.context.textAlign = "right";
       this.context.textBaseline = "middle";
 
@@ -162,10 +162,10 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.restore();
   };
 
-  private drawLine(data : any , color : string , width : number) {
+  private drawLine(data : any , color : string ) {
       this.context.save();
       this.transformContext();
-      this.context.lineWidth = width;
+      this.context.lineWidth = 1;
       this.context.strokeStyle = color;
       this.context.fillStyle = color;
       this.context.beginPath();
@@ -206,7 +206,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       unitsPerTickY: this.unitsPerTickY
    });
    for(let i = 0; i < this.data.length; i++){
-    this.drawLine(this.data[i].data, this.data[i].color, 3);
+    this.drawLine(this.data[i].data, this.data[i].color);
    }
   }
   clear() {
