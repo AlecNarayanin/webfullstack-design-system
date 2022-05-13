@@ -12,60 +12,34 @@ p, span, .text {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  transition: 400ms;
-}
-.btn:hover {
-  cursor: pointer;
-  transform: scale(1.2);
 }
 .btn-primary {
   color: #f5f5f5;
   background-color: #422422;
 }
-.btn-primary:hover {
-  background-color: #854945;
-}
 .btn-secondary {
   color: #f5f5f5;
   background-color: #ff0000;
-}
-.btn-secondary:hover {
-  background: #ff6666;
 }
 .btn-tertiary {
   color: #000000;
   background-color: #f5f5f5;
 }
-.btn-tertiary:hover {
-  background-color: white;
-}
 .btn-success {
   color: #f5f5f5;
   background-color: #006600;
-}
-.btn-success:hover {
-  background-color: #00cc00;
 }
 .btn-info {
   color: #f5f5f5;
   background-color: #586069;
 }
-.btn-info:hover {
-  background-color: #8a939d;
-}
 .btn-danger {
   color: #f5f5f5;
   background-color: #cc0000;
 }
-.btn-danger:hover {
-  background-color: #ff3333;
-}
 .btn-warning {
   color: #000000;
   background-color: #ffcc00;
-}
-.btn-warning:hover {
-  background-color: #ffe066;
 }
 
 /*# sourceMappingURL=button.component.css.map */
