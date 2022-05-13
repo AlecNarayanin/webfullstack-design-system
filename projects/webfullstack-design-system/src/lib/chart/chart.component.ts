@@ -20,7 +20,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   @Input() canvasHeigth : number = 450;
   @Input() canvasWidth : number = 550;
 
-  private context: CanvasRenderingContext2D;
+  private context!: CanvasRenderingContext2D;
 
   scaleX = 0;
   scaleY = 0;
