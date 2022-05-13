@@ -15,12 +15,18 @@
     background-color: $secondary-color;
   }
 
+  &-tertiary{
+    color: $dark-color;
+    background-color: $tertiary-color;
+  }
+
   &-success{
     color: $light-color;
     background-color: $success-color;
   }
 
   &-info{
+    color: $light-color;
     background-color: $info-color;
   }
 
@@ -30,6 +36,7 @@
   }
 
   &-warning{
+    color: $dark-color;
     background-color: $warning-color;
   }
 

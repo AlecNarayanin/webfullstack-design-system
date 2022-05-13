@@ -17,3 +17,4 @@ export * from './lib/chart/chart.interface';
 
 export * from './lib/button/button.component';
 
+export * from './lib/datatable/datatable.component';

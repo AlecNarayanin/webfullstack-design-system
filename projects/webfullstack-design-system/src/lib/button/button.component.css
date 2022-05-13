@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300&display=swap");
 h1, h2, h3, .title {
   font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+p, span, .text {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .btn {
@@ -15,24 +15,30 @@ h1, h2, h3, .title {
 }
 .btn-primary {
   color: #f5f5f5;
-  background-color: #0070f3;
+  background-color: #422422;
 }
 .btn-secondary {
   color: #f5f5f5;
-  background-color: #ff4081;
+  background-color: #ff0000;
+}
+.btn-tertiary {
+  color: #000000;
+  background-color: #f5f5f5;
 }
 .btn-success {
   color: #f5f5f5;
   background-color: #006600;
 }
 .btn-info {
-  background-color: #0066cc;
+  color: #f5f5f5;
+  background-color: #586069;
 }
 .btn-danger {
   color: #f5f5f5;
   background-color: #cc0000;
 }
 .btn-warning {
+  color: #000000;
   background-color: #ffcc00;
 }
 
