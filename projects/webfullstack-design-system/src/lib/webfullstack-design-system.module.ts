@@ -4,6 +4,7 @@ import { CardComponent } from './card/card.component';
 import { ChartComponent } from './chart/chart.component';
 import { DividerComponent } from './divider/divider.component';
 import { FlexDivComponent } from './flex-div/flex-div.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 const COMPONENTS = [
   WebfullstackDesignSystemComponent,
@@ -11,6 +12,7 @@ const COMPONENTS = [
   ChartComponent,
   FlexDivComponent,
   DividerComponent,
+  SnackbarComponent,
 ];
 
 @NgModule({

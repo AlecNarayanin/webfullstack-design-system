@@ -1,0 +1,14 @@
+.snackbar {
+  width: 288px;
+  padding: 12px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-icon {
+  cursor: pointer;
+}
