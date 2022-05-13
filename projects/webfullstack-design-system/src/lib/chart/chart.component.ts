@@ -100,7 +100,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.moveTo(this.x, this.y + height);
       this.context.lineTo(this.x + data.width, this.y + height);
       this.context.strokeStyle = this.axisColor;
-      this.context.lineWidth = 2;
       this.context.stroke();
 
 
@@ -127,7 +126,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.moveTo(this.x, this.y);
       this.context.lineTo(this.x, this.y + height);
       this.context.strokeStyle = this.axisColor;
-      this.context.lineWidth = 2;
       this.context.stroke();
       this.context.restore();
 
@@ -155,7 +153,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.moveTo(this.x, n * height / data.numYTicks + this.y);
       this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);
       this.context.strokeStyle = this.axisColor;
-      this.context.lineWidth = 2;
       this.context.stroke();
     }
 
@@ -164,7 +161,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);
       this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );
       this.context.strokeStyle = this.axisColor;
-      this.context.lineWidth = 2;
       this.context.stroke();
     }
   }
@@ -183,7 +179,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
 
           // draw segment
           this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);
-          console.log({x : point.x * this.scaleX, y : point.y * this.scaleY})
           this.context.stroke();
           this.context.closePath();
           this.context.beginPath();
