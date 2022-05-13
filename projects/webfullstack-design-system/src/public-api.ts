@@ -11,3 +11,6 @@ export * from './lib/divider/divider.component';
 export * from './lib/card/card.component';
 export * from './lib/chart/chart.component';
 export * from './lib/chart/chart.interface';
+
+export * from './lib/datatable/datatable.component';
+export * from './lib/datatable/datatable.interface';
