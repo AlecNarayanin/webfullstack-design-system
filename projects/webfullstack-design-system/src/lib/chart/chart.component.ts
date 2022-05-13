@@ -58,7 +58,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     // constants
     const padding = 10;
     const tickSize = 10;
-    const font = "13pt Robotto";
+    const font = "bold 11pt Arial";
 
     const fontHeight = 12;
 
