@@ -46,6 +46,8 @@ export class DatatableComponent implements OnInit {
     this._data = value;
   }
 
+  @Input() color :string = "base";
+
   @Output() clickLineEvent = new EventEmitter<any>();
 
   constructor() { }
