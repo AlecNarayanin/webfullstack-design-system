@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300&display=swap");
+h1, h2, h3, .title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+p, span, .text {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-primary {
+  color: #f5f5f5;
+  background-color: #422422;
+}
+.btn-secondary {
+  color: #f5f5f5;
+  background-color: #ff0000;
+}
+.btn-tertiary {
+  color: #000000;
+  background-color: #f5f5f5;
+}
+.btn-success {
+  color: #f5f5f5;
+  background-color: #006600;
+}
+.btn-info {
+  color: #f5f5f5;
+  background-color: #586069;
+}
+.btn-danger {
+  color: #f5f5f5;
+  background-color: #cc0000;
+}
+.btn-warning {
+  color: #000000;
+  background-color: #ffcc00;
+}
+
+/*# sourceMappingURL=button.component.css.map */
