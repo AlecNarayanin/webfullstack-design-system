@@ -6,6 +6,7 @@ import { ChartComponent } from './chart/chart.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { DividerComponent } from './divider/divider.component';
 import { FlexDivComponent } from './flex-div/flex-div.component';
+import {InputComponent} from "./input/input.component";
 
 
 const COMPONENTS = [
@@ -14,7 +15,8 @@ const COMPONENTS = [
   ChartComponent,
   FlexDivComponent,
   DividerComponent,
-  DatatableComponent
+  DatatableComponent,
+  InputComponent
 ];
 
 @NgModule({
