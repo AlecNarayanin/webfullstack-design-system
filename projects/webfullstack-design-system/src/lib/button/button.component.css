@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Source+Sans+Pro:wght@200;400;600;700&display=swap");
+h1, h2, h3, .title {
+  font-family: "Playfair Display", serif;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-primary {
+  color: #f5f5f5;
+  background-color: #0070f3;
+}
+.btn-secondary {
+  color: #f5f5f5;
+  background-color: #ff4081;
+}
+.btn-success {
+  color: #f5f5f5;
+  background-color: #006600;
+}
+.btn-info {
+  background-color: #0066cc;
+}
+.btn-danger {
+  color: #f5f5f5;
+  background-color: #cc0000;
+}
+.btn-warning {
+  background-color: #ffcc00;
+}
+
+/*# sourceMappingURL=button.component.css.map */

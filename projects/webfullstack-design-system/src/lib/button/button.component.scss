@@ -1,0 +1,36 @@
+@import "../scss/main";
+
+.btn{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+
+  &-primary{
+    color: $light-color;
+    background-color : $primary-color;
+  }
+
+  &-secondary{
+    color: $light-color;
+    background-color: $secondary-color;
+  }
+
+  &-success{
+    color: $light-color;
+    background-color: $success-color;
+  }
+
+  &-info{
+    background-color: $info-color;
+  }
+
+  &-danger{
+    color: $light-color;
+    background-color: $danger-color;
+  }
+
+  &-warning{
+    background-color: $warning-color;
+  }
+
+}
