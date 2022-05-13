@@ -29,7 +29,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   y = 0;
   height = 0;
   axisColor = "#A9A9A9";
-
   onChanges = new Subject<SimpleChanges>();
 
   constructor() { }
@@ -80,6 +79,8 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     // draw x y axis and tick marks
     this.drawXAxis( {    width , numXTicks , tickSize, font , maxX , padding});
     this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});
+    this.drawInterLine({numYTicks , numXTicks , width });
+
 }
 
   private getLongestValueWidth( data :any) {
@@ -102,13 +103,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.lineWidth = 2;
       this.context.stroke();
 
-      // draw tick marks
-      /*for (let n = 0; n < data.numXTicks; n++) {
-        this.context.beginPath();
-        this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);
-        this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y + height - data.tickSize);
-        this.context.stroke();
-      }*/
 
       // draw labels
       this.context.font = data.font;
@@ -129,7 +123,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   private drawYAxis ( data :any ) {
       const height = this.height ? this.height : 0;
       this.context.save();
-      this.context.save();
       this.context.beginPath();
       this.context.moveTo(this.x, this.y);
       this.context.lineTo(this.x, this.y + height);
@@ -138,13 +131,6 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.stroke();
       this.context.restore();
 
-      // draw tick marks
-      /*for (let n = 0; n < data.numYTicks; n++) {
-          this.context.beginPath();
-          this.context.moveTo(this.x, n * height / data.numYTicks + this.y);
-          this.context.lineTo(this.x + data.tickSize, n * height / data.numYTicks + this.y);
-          this.context.stroke();
-      }*/
 
       // draw values
       this.context.font = data.font;
@@ -162,6 +148,27 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.restore();
   };
 
+  private drawInterLine( data :any ) {
+    const height = this.height ? this.height : 0;
+    for (let n = 0; n < data.numYTicks; n++) {
+      this.context.beginPath();
+      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);
+      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);
+      this.context.strokeStyle = this.axisColor;
+      this.context.lineWidth = 2;
+      this.context.stroke();
+    }
+
+    for (let n = 0; n < data.numXTicks; n++) {
+      this.context.beginPath();
+      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);
+      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );
+      this.context.strokeStyle = this.axisColor;
+      this.context.lineWidth = 2;
+      this.context.stroke();
+    }
+  }
+
   private drawLine(data : any , color : string ) {
       this.context.save();
       this.transformContext();
@@ -176,6 +183,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
 
           // draw segment
           this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);
+          console.log({x : point.x * this.scaleX, y : point.y * this.scaleY})
           this.context.stroke();
           this.context.closePath();
           this.context.beginPath();
@@ -189,6 +197,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       }
       this.context.restore();
   };
+
 
   transformContext() {
     const height = this.height ? this.height : 0;
