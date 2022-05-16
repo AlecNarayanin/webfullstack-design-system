@@ -1,42 +1,33 @@
-// also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/angular/types-6-0';
-import Button from './button.component';
+import { ButtonComponent } from "projects/webfullstack-design-system/src/lib/button/button.component";
 
-// More on default export: https://storybook.js.org/docs/angular/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
-  component: Button,
-  // More on argTypes: https://storybook.js.org/docs/angular/api/argtypes
+  title: 'UI/Button',
+  component: ButtonComponent,
   argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    size: {
+      control: {
+        type: 'select',
+        options: ['sm', 'md', 'lg']
+      }
+    },
+    type: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'tertiary', 'success', 'warning', 'danger', 'info']
+      }
+    },
+  }
 } as Meta;
 
-// More on component templates: https://storybook.js.org/docs/angular/writing-stories/introduction#using-args
-const Template: Story<Button> = (args: Button) => ({
+const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
+  component: ButtonComponent,
   props: args,
+  template:
+  `<lib-button [size]="size" [type]="type">
+        Label
+    </lib-button>`
 });
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/angular/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+export const Default = Template.bind({});
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
-};
