@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { WebfullstackDesignSystemComponent } from './webfullstack-design-system.component';
 import { CardComponent } from './card/card.component';
 import { ChartComponent } from './chart/chart.component';
 import { DividerComponent } from './divider/divider.component';
@@ -9,7 +8,6 @@ import { DatatableComponent } from "./datatable/datatable.component";
 import {BrowserModule} from "@angular/platform-browser";
 
 const COMPONENTS = [
-  WebfullstackDesignSystemComponent,
   CardComponent,
   ChartComponent,
   FlexDivComponent,
