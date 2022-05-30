@@ -27,7 +27,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
   pointRadius :number = 5;
   x :number = 0;
   y :number = 0;
-  height = 0;
+  height :number = 0;
   axisColor :string= "#A9A9A9";
   onChanges = new Subject<SimpleChanges>();
 
