@@ -3,5 +3,9 @@
   "dest": "../../dist/webfullstack-design-system",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    "./src/lib/scss/main.scss",
+    "./src/lib/scss/variables.scss"
+  ]
 }

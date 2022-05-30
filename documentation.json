@@ -1,0 +1,1645 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "DataChart",
+            "id": "interface-DataChart-20bc84571d5e8cca7efd5629e5ac54e550947905204b9fa32ff143ff4b4b486539e09dfb7d28303cf225eec480873558c0bf0d1e554ea754fd28f8be38f2d24f",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DataChartCoordonate[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataChartCoordonate",
+            "id": "interface-DataChartCoordonate-20bc84571d5e8cca7efd5629e5ac54e550947905204b9fa32ff143ff4b4b486539e09dfb7d28303cf225eec480873558c0bf0d1e554ea754fd28f8be38f2d24f",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "x",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "y",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DatatableHeader",
+            "id": "interface-DatatableHeader-b6c7f4479e6e086f871a7bba670542f1410073223e939ebad7cc90b264cd0980fdc6368b384c40b86ab4533d9a99ec9e96bc3b075ed378dd3008c6231d5da7f5",
+            "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface DatatableHeader {\r\n  label :string,\r\n  name :string,\r\n  order : number\r\n}\r\n\r\nexport interface DatatableRowProperty {\r\n  headerName :string,\r\n  value : string,\r\n  headerLabel? :string,\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DatatableRowProperty",
+            "id": "interface-DatatableRowProperty-b6c7f4479e6e086f871a7bba670542f1410073223e939ebad7cc90b264cd0980fdc6368b384c40b86ab4533d9a99ec9e96bc3b075ed378dd3008c6231d5da7f5",
+            "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface DatatableHeader {\r\n  label :string,\r\n  name :string,\r\n  order : number\r\n}\r\n\r\nexport interface DatatableRowProperty {\r\n  headerName :string,\r\n  value : string,\r\n  headerLabel? :string,\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "headerLabel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "headerName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
+            "file": "stories/User.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {}\n",
+            "properties": [],
+            "indexSignatures": [],
+            "methods": []
+        }
+    ],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-1624fdb7950c95958cfa193e349bbf742d57a2ec681aa35012cd47f5ab5801ffaecdd3c7e21e751dc9becf8b29d42d89b4ae4085f6f1a3ae08a638f4e6336410",
+            "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-button",
+            "styleUrls": [
+                "./button.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'sm'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "handleClick",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 25,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "getCssClasses",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "{ btn: boolean; 'btn-primary': boolean; 'btn-secondary': boolean; 'btn-tertiary': boolean; 'btn-success': boolean; 'btn-danger': boolean; 'btn-warning': boolean; 'btn-info': boolean; 'btn-sm': boolean; 'btn-md': boolean; 'btn-lg': boolean; }",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nFonction permettant de définir les caractéristiques du bouton\n",
+                    "description": "<p>Fonction permettant de définir les caractéristiques du bouton</p>\n"
+                },
+                {
+                    "name": "handleClickEvent",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nFonction permettant de déclencher l'événement click\n",
+                    "description": "<p>Fonction permettant de déclencher l&#39;événement click</p>\n"
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
+            "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
+            "type": "component",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type = 'primary';\r\n\r\n  @Input() size = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import \"../scss/main\";\r\n\r\n.btn{\r\n  padding: 10px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  transition: 400ms;\r\n  :hover:enabled{\r\n    cursor: pointer;\r\n  }\r\n  :hover:disabled{\r\n    cursor: not-allowed;\r\n    background-color: $disabled-color;\r\n  }\r\n  &-primary{\r\n    color: $light-color;\r\n    background-color : $primary-color;\r\n    &:hover{\r\n      background-color: lighten($primary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-secondary{\r\n    color: $light-color;\r\n    background-color: $secondary-color;\r\n    &:hover{\r\n      background: lighten($secondary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-tertiary{\r\n    color: $dark-color;\r\n    background-color: $tertiary-color;\r\n    &:hover{\r\n      background-color: lighten($tertiary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-success{\r\n    color: $light-color;\r\n    background-color: $success-color;\r\n    &:hover{\r\n      background-color: lighten($success-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-info{\r\n    color: $light-color;\r\n    background-color: $info-color;\r\n    &:hover{\r\n      background-color: lighten($info-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-danger{\r\n    color: $light-color;\r\n    background-color: $danger-color;\r\n    &:hover{\r\n      background-color: lighten($danger-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-warning{\r\n    color: $dark-color;\r\n    background-color: $warning-color;\r\n    &:hover{\r\n      background-color: lighten($warning-color, 20%);\r\n    }\r\n\r\n  }\r\n\r\n  &-sm{\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n  }\r\n\r\n  &-md{\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n  }\r\n\r\n  &-lg{\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@mixin lighten($color, $amount){\r\nmixin-name($color, $amount){\r\n  color: lighten($color, $amount);\r\n}\r\n}\r\n",
+                    "styleUrl": "./button.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 25
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<button class=\"btn\" [class]=\"getCssClasses()\" [disabled]=\"disabled\" (click)=\"handleClickEvent()\"><ng-content></ng-content></button>\r\n"
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-1c0a89c92f24adb6e85d3fe31b64a41a24887c8cbb9eacef971ad93b78eee4382ea8fecbdb630098389658b55751373657005ae8cddf23495578cd79b8b65db4",
+            "file": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-card",
+            "styleUrls": [
+                "./card.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./card.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>card works!</p>\n"
+        },
+        {
+            "name": "ChartComponent",
+            "id": "component-ChartComponent-4e01faf3f1ca37523ffb46015b3674e8aec26ca7f14e4f511c6e23699358ea1ae612ded8792030651a28e2b672b238e72f683184d5bee4d378c15a7728b37ca1",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-chart",
+            "styleUrls": [
+                "./chart.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./chart.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "canvasHeigth",
+                    "defaultValue": "450",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "canvasWidth",
+                    "defaultValue": "550",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "data",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "DataChart[]",
+                    "decorators": []
+                },
+                {
+                    "name": "maxX",
+                    "defaultValue": "140",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "maxY",
+                    "defaultValue": "100",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "minX",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "minY",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "unitsPerTickX",
+                    "defaultValue": "10",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "unitsPerTickY",
+                    "defaultValue": "10",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "axisColor",
+                    "defaultValue": "\"#A9A9A9\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "canvas",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'myCanvas', {static: false}"
+                        }
+                    ]
+                },
+                {
+                    "name": "context",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "CanvasRenderingContext2D",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "height",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "onChanges",
+                    "defaultValue": "new Subject<SimpleChanges>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "pointRadius",
+                    "defaultValue": "5",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "scaleX",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "scaleY",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "x",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "y",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "clear",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 216,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "create",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 203,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "drawInterLine",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 149,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "drawLine",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "color",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 168,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "color",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "drawXAxis",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 96,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "drawYAxis",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 122,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getLongestValueWidth",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 86,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LineChart",
+                    "args": [
+                        {
+                            "name": "con",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "con",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "transformContext",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 197,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "update",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 220,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';\r\nimport { Subject } from 'rxjs/internal/Subject';\r\nimport DataChart from './chart.interface';\r\n\r\n@Component({\r\n  selector: 'lib-chart',\r\n  templateUrl: './chart.component.html',\r\n  styleUrls: ['./chart.component.css']\r\n})\r\nexport class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {\r\n\r\n  @ViewChild('myCanvas', {static: false}) canvas: ElementRef | undefined;\r\n  @Input() minX: number = 0;\r\n  @Input() minY: number = 0;\r\n  @Input() maxX: number = 140;\r\n  @Input() maxY: number = 100;\r\n  @Input() unitsPerTickX: number = 10;\r\n  @Input() unitsPerTickY: number =10;\r\n  @Input() data : DataChart[] =[];\r\n  @Input() canvasHeigth : number = 450;\r\n  @Input() canvasWidth : number = 550;\r\n\r\n  private context!: CanvasRenderingContext2D;\r\n\r\n  scaleX = 0;\r\n  scaleY = 0;\r\n  pointRadius = 5;\r\n  x= 0;\r\n  y = 0;\r\n  height = 0;\r\n  axisColor = \"#A9A9A9\";\r\n  onChanges = new Subject<SimpleChanges>();\r\n\r\n  constructor() { }\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    this.onChanges.next(changes);\r\n  }\r\n\r\n  ngAfterViewInit(): void {\r\n    this.create();\r\n    this.onChanges.subscribe((data:SimpleChanges)=>{\r\n        this.update();\r\n    });\r\n  }\r\n  ngOnDestroy(){\r\n    this.onChanges.complete();\r\n  }\r\n\r\n  private LineChart(con :any) {\r\n    // user defined properties\r\n    const minX = con.minX;\r\n    const minY = con.minY;\r\n    const maxX = con.maxX;\r\n    const maxY = con.maxY;\r\n    const unitsPerTickX = con.unitsPerTickX;\r\n    const unitsPerTickY = con.unitsPerTickY;\r\n\r\n    // constants\r\n    const padding = 10;\r\n    const tickSize = 10;\r\n    const font = \"bold 11pt Arial\";\r\n\r\n    const fontHeight = 12;\r\n\r\n    // relationships\r\n    this.context = this.canvas?.nativeElement.getContext(\"2d\");\r\n    const canvas = this.canvas as ElementRef;\r\n    const rangeX = maxX - minY;\r\n    const rangeY = maxY - minY;\r\n    const numXTicks = Math.round(rangeX / unitsPerTickX);\r\n    const numYTicks = Math.round(rangeY / unitsPerTickY);\r\n    this.x = this.getLongestValueWidth({numYTicks, unitsPerTickY , maxY , font}) + padding * 2;\r\n    this.y = padding * 2;\r\n    const width = canvas.nativeElement.width - this.x - padding * 2;\r\n    this.height = canvas.nativeElement.height - this.y - padding - fontHeight;\r\n    this.scaleX = width / rangeX;\r\n    this.scaleY = this.height / rangeY;\r\n\r\n    // draw x y axis and tick marks\r\n    this.drawXAxis( {    width , numXTicks , tickSize, font , maxX , padding});\r\n    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});\r\n    this.drawInterLine({numYTicks , numXTicks , width });\r\n\r\n}\r\n\r\n  private getLongestValueWidth( data :any) {\r\n    this.context.font = data.font;\r\n      let longestValueWidth = 0;\r\n      for (let n = 0; n <= data.numYTicks; n++) {\r\n          const value = data.maxY - (n * data.unitsPerTickY);\r\n          longestValueWidth = Math.max(longestValueWidth, this.context.measureText(value.toString()).width);\r\n      }\r\n      return longestValueWidth;\r\n  };\r\n\r\n  private drawXAxis( data :any ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y + height);\r\n      this.context.lineTo(this.x + data.width, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n\r\n\r\n      // draw labels\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"center\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numXTicks; n++) {\r\n          const label = Math.round((n + 1) * data.maxX / data.numXTicks);\r\n          this.context.save();\r\n          this.context.translate((n + 1) * data.width / data.numXTicks + this.x, this.y + height + data.padding);\r\n          this.context.fillText(label.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawYAxis ( data :any ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y);\r\n      this.context.lineTo(this.x, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n      this.context.restore();\r\n\r\n\r\n      // draw values\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"right\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numYTicks; n++) {\r\n          const value = Math.round(data.maxY - n * data.maxY / data.numYTicks);\r\n          this.context.save();\r\n          this.context.translate(this.x - data.padding, n * height / data.numYTicks + this.y);\r\n          this.context.fillText(value.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawInterLine( data :any ) {\r\n    const height = this.height ? this.height : 0;\r\n    for (let n = 0; n < data.numYTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);\r\n      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n\r\n    for (let n = 0; n < data.numXTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);\r\n      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n  }\r\n\r\n  private drawLine(data : any , color : string ) {\r\n      this.context.save();\r\n      this.transformContext();\r\n      this.context.lineWidth = 1;\r\n      this.context.strokeStyle = color;\r\n      this.context.fillStyle = color;\r\n      this.context.beginPath();\r\n      this.context.moveTo(data[0].x * this.scaleX, data[0].y * this.scaleY);\r\n\r\n      for (let n = 0; n < data.length; n++) {\r\n          const point = data[n];\r\n\r\n          // draw segment\r\n          this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);\r\n          this.context.stroke();\r\n          this.context.closePath();\r\n          this.context.beginPath();\r\n          this.context.arc(point.x * this.scaleX, point.y * this.scaleY, this.pointRadius, 0, 2 * Math.PI, false);\r\n          this.context.fill();\r\n          this.context.closePath();\r\n\r\n          // position for next segment\r\n          this.context.beginPath();\r\n          this.context.moveTo(point.x * this.scaleX, point.y * this.scaleY);\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n\r\n  transformContext() {\r\n    const height = this.height ? this.height : 0;\r\n    this.context.translate(this.x, this.y + height);\r\n    this.context.scale(1, -1);\r\n  };\r\n\r\n  create(){\r\n    this.LineChart({\r\n      minX: this.minX,\r\n      minY: this.minY,\r\n      maxX: this.maxX,\r\n      maxY: this.maxY,\r\n      unitsPerTickX: this.unitsPerTickX,\r\n      unitsPerTickY: this.unitsPerTickY\r\n   });\r\n   for(let i = 0; i < this.data.length; i++){\r\n    this.drawLine(this.data[i].data, this.data[i].color);\r\n   }\r\n  }\r\n  clear() {\r\n    this.context.clearRect(0, 0, this.canvas?.nativeElement.width, this.canvas?.nativeElement.height);\r\n  }\r\n\r\n  update(){\r\n    this.clear();\r\n    this.create();\r\n  }\r\n\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./chart.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 32
+            },
+            "implements": [
+                "AfterViewInit",
+                "OnChanges",
+                "OnDestroy"
+            ],
+            "templateData": "<canvas #myCanvas [width]=\"canvasWidth\" [height]=\"canvasHeigth\"></canvas>\r\n"
+        },
+        {
+            "name": "DatatableComponent",
+            "id": "component-DatatableComponent-f4b1a30543a04eb43f2d3e23ee0029ed2359b104448363ab7e7d5a2269232effb1022cb84f6b4e7d641eeca25f3fe70bd86a3b3be28f6b146c25b5b4438522e1",
+            "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-datatable",
+            "styleUrls": [
+                "./datatable.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./datatable.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "\"primary\"",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 49,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "any[]",
+                    "decorators": []
+                },
+                {
+                    "name": "headers",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "any[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clickLineEvent",
+                    "defaultValue": "new EventEmitter<any>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 51,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "_data",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DatatableRowProperty[][]",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "_headers",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "DatatableHeader[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 55,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onClickLine",
+                    "args": [
+                        {
+                            "name": "line",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "line",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Output, EventEmitter } from '@angular/core';\r\nimport { DatatableHeader, DatatableRowProperty } from './datatable.interface';\r\n\r\n@Component({\r\n  selector: 'lib-datatable',\r\n  templateUrl: './datatable.component.html',\r\n  styleUrls: ['./datatable.component.scss']\r\n})\r\nexport class DatatableComponent implements OnInit {\r\n\r\n  _headers: DatatableHeader[] = []\r\n\r\n  _data: DatatableRowProperty[][] = [];\r\n\r\n  get headers():  any[] {\r\n    return this._headers.sort( (x,y)=>{\r\n      if(x.order > y.order) return 1;\r\n      else if(x.order < y.order) return -1;\r\n      else return 0;\r\n    });\r\n  }\r\n  @Input() set headers(value:  any[]) {\r\n      this._headers = value;\r\n  }\r\n\r\n  get data():  any[] {\r\n    const data :any[]= [];\r\n    this._data.forEach((row)=>{\r\n      const rowData :DatatableRowProperty[]= []\r\n      this.headers.forEach((header)=>{\r\n        const currentRow = row.filter((x :any ) => x.headerName == header.name);\r\n        if(currentRow.length > 0){\r\n          currentRow[0].headerLabel = header.label;\r\n          rowData.push(currentRow[0]);\r\n        }else{\r\n          rowData.push({headerName: header.name, value: \"\", headerLabel: header.label});\r\n        }\r\n      });\r\n      data.push(rowData);\r\n    });\r\n    return data;\r\n  }\r\n\r\n  @Input() set data(value:  any[]) {\r\n    this._data = value;\r\n  }\r\n\r\n  @Input() color :string = \"primary\";\r\n\r\n  @Output() clickLineEvent = new EventEmitter<any>();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  onClickLine(line:any){\r\n    this.clickLineEvent.emit(line);\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import '../scss/variables.scss';\r\n@import '../scss/main.scss';\r\n\r\n.container {\r\n  max-width: 1000px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  padding-left: 10px;\r\n  padding-right: 10px;\r\n}\r\n\r\n.primary {\r\n  background-color: $primary-color;\r\n  color : white;\r\n}\r\n.secondary{\r\n  background-color: $secondary-color;\r\n  color : white;\r\n\r\n}\r\n.tertiary{\r\n  background-color: $tertiary-color;\r\n  color : black;\r\n}\r\n\r\n\r\n.responsive-table {\r\n  li {\r\n    border-radius: 3px;\r\n    padding: 25px 30px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    margin-bottom: 25px;\r\n  }\r\n  .table-header {\r\n    border-radius: 10px;\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    text-transform: uppercase;\r\n    letter-spacing: 0.03em;\r\n  }\r\n  .table-row {\r\n    background-color: #ffffff;\r\n    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);\r\n    transition: all .2s ease-in-out;\r\n  }\r\n  .table-row:hover {\r\n    transform: scale(1.05);\r\n    cursor: pointer;\r\n  }\r\n  .col {\r\n    flex-basis: 25%;\r\n    text-align: center;\r\n  }\r\n\r\n\r\n  @media all and (max-width: 767px) {\r\n    .table-header {\r\n      display: none;\r\n    }\r\n    li {\r\n      display: block;\r\n    }\r\n    .col {\r\n      flex-basis: 100%;\r\n\r\n    }\r\n    .col {\r\n      display: flex;\r\n      padding: 10px 0;\r\n      &:before {\r\n        color: #6C7A89;\r\n        padding-right: 10px;\r\n        content: attr(data-label);\r\n        flex-basis: 50%;\r\n        text-align: right;\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+                    "styleUrl": "./datatable.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 51
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "accessors": {
+                "headers": {
+                    "name": "headers",
+                    "setSignature": {
+                        "name": "headers",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "any[]",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 23,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "any[]",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "headers",
+                        "type": "[]",
+                        "returnType": "any[]",
+                        "line": 16
+                    }
+                },
+                "data": {
+                    "name": "data",
+                    "setSignature": {
+                        "name": "data",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "value",
+                                "type": "any[]",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 45,
+                        "jsdoctags": [
+                            {
+                                "name": "value",
+                                "type": "any[]",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "data",
+                        "type": "[]",
+                        "returnType": "any[]",
+                        "line": 27
+                    }
+                }
+            },
+            "templateData": "<div class=\"container\">\r\n  <ul class=\"responsive-table\" *ngIf=\"headers.length >0\">\r\n    <li class=\"table-header\" [ngClass]=\"color\">\r\n      <div class=\"col title\" *ngFor=\"let header of headers\">{{header.label}}</div>\r\n    </li>\r\n    <li *ngFor=\"let row of data\"  class=\"table-row\" (click)=\"onClickLine(row)\">\r\n      <div class=\"col text\" *ngFor=\"let currentInfo of row\" [attr.data-label]=\"currentInfo.headerLabel\">{{currentInfo.value}}</div>\r\n    </li>\r\n  </ul>\r\n</div>\r\n"
+        },
+        {
+            "name": "DividerComponent",
+            "id": "component-DividerComponent-2f6908fa24c23776fb071c549d0d496250b9c79ac3229af31db6fdfc7f1f94ece9317bbf205394608d0437156230f13e9f6c2f46032670f3560c03f975c02637",
+            "file": "projects/webfullstack-design-system/src/lib/divider/divider.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "divider",
+            "styleUrls": [
+                "./divider.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./divider.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'#696969'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "height",
+                    "defaultValue": "'1px'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "width",
+                    "defaultValue": "'256px'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'divider',\r\n  templateUrl: './divider.component.html',\r\n  styleUrls: ['./divider.component.scss'],\r\n})\r\nexport class DividerComponent implements OnInit {\r\n  @Input() height: string = '1px';\r\n  @Input() width: string = '256px';\r\n  @Input() color: string = '#696969';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./divider.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 11
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\r\n  [style.width]=\"width\"\r\n  [style.height]=\"height\"\r\n  [style.background-color]=\"color\"\r\n></div>\r\n"
+        },
+        {
+            "name": "FlexDivComponent",
+            "id": "component-FlexDivComponent-c1ee395dcf3ecce71b3c4ec6ab94837639db9e99ab5b7e6b773b0e663efecf1eb4c2042907d460b03ce1dc1a5a576d738c38b3b52d1acf623f609c5ba83a2b98",
+            "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "flex-div",
+            "styleUrls": [
+                "./flex-div.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./flex-div.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "alignItems",
+                    "defaultValue": "'start'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "direction",
+                    "defaultValue": "'row'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "justifyContent",
+                    "defaultValue": "'start'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "wrap",
+                    "defaultValue": "'nowrap'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'flex-div',\r\n  templateUrl: './flex-div.component.html',\r\n  styleUrls: ['./flex-div.component.scss'],\r\n})\r\nexport class FlexDivComponent implements OnInit {\r\n  @Input() justifyContent: string = 'start';\r\n  @Input() direction: string = 'row';\r\n  @Input() alignItems: string = 'start';\r\n  @Input() wrap: string = 'nowrap';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".flex-div {\r\n  display: flex;\r\n}\r\n",
+                    "styleUrl": "./flex-div.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 12
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div\r\n  class=\"flex-div\"\r\n  [style.justify-content]=\"justifyContent\"\r\n  [style.flex-direction]=\"direction\"\r\n  [style.align-items]=\"alignItems\"\r\n  [style.flex-wrap]=\"wrap\"\r\n>\r\n  <ng-content></ng-content>\r\n</div>\r\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "WebfullstackDesignSystemModule",
+            "id": "module-WebfullstackDesignSystemModule-fb3474a85884350fc88cde9f2b1f4f465d520287323d69faeeb9e64fe50a92e32c7790cbfcfea6ce088a46916a3e68c2478b7b01a05a06cface485d5e6109db7",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ChartComponent } from './chart/chart.component';\r\nimport { DividerComponent } from './divider/divider.component';\r\nimport { FlexDivComponent } from './flex-div/flex-div.component';\r\nimport { ButtonComponent } from \"./button/button.component\";\r\nimport { DatatableComponent } from \"./datatable/datatable.component\";\r\nimport {BrowserModule} from \"@angular/platform-browser\";\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  ButtonComponent,\r\n  DatatableComponent\r\n];\r\n\r\n@NgModule({\r\n  declarations: [...COMPONENTS],\r\n  imports: [BrowserModule],\r\n  exports: [...COMPONENTS],\r\n})\r\nexport class WebfullstackDesignSystemModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "ChartComponent"
+                        },
+                        {
+                            "name": "DatatableComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
+                        },
+                        {
+                            "name": "FlexDivComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        },
+                        {
+                            "name": "CardComponent"
+                        },
+                        {
+                            "name": "ChartComponent"
+                        },
+                        {
+                            "name": "DatatableComponent"
+                        },
+                        {
+                            "name": "DividerComponent"
+                        },
+                        {
+                            "name": "FlexDivComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "COMPONENTS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  ButtonComponent,\r\n  DatatableComponent\r\n]"
+            },
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts": [
+                {
+                    "name": "COMPONENTS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  ButtonComponent,\r\n  DatatableComponent\r\n]"
+                }
+            ],
+            "projects/webfullstack-design-system/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "stories/Button.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 33,
+                "coverageCount": "3/9",
+                "status": "medium"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ChartComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/34",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataChart",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataChartCoordonate",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DatatableComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DatatableHeader",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DatatableRowProperty",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/divider/divider.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DividerComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FlexDivComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COMPONENTS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
