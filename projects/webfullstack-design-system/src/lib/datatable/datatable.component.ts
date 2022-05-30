@@ -13,19 +13,19 @@ export class DatatableComponent implements OnInit {
 
   _data: DatatableRowProperty[][] = [];
 
-  get headers():  any[] {
+  get headers():  DatatableHeader[] {
     return this._headers.sort( (x,y)=>{
       if(x.order > y.order) return 1;
       else if(x.order < y.order) return -1;
       else return 0;
     });
   }
-  @Input() set headers(value:  any[]) {
+  @Input() set headers(value:  DatatableHeader[]) {
       this._headers = value;
   }
 
-  get data():  any[] {
-    const data :any[]= [];
+  get data():  DatatableRowProperty[][]  {
+    const data :DatatableRowProperty[][] = [];
     this._data.forEach((row)=>{
       const rowData :DatatableRowProperty[]= []
       this.headers.forEach((header)=>{
@@ -42,7 +42,7 @@ export class DatatableComponent implements OnInit {
     return data;
   }
 
-  @Input() set data(value:  any[]) {
+  @Input() set data(value:  DatatableRowProperty[][] ) {
     this._data = value;
   }
 

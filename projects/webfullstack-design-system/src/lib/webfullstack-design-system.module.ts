@@ -1,22 +1,19 @@
 import { NgModule } from '@angular/core';
-import { WebfullstackDesignSystemComponent } from './webfullstack-design-system.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { CardComponent } from './card/card.component';
 import { ChartComponent } from './chart/chart.component';
-import { DatatableComponent } from './datatable/datatable.component';
 import { DividerComponent } from './divider/divider.component';
 import { FlexDivComponent } from './flex-div/flex-div.component';
-import { InputComponent } from "./input/input.component";
-
+import { ButtonComponent } from "./button/button.component";
+import { DatatableComponent } from "./datatable/datatable.component";
+import {BrowserModule} from "@angular/platform-browser";
 
 const COMPONENTS = [
-  WebfullstackDesignSystemComponent,
   CardComponent,
   ChartComponent,
   FlexDivComponent,
   DividerComponent,
-  DatatableComponent,
-  InputComponent
+  ButtonComponent,
+  DatatableComponent
 ];
 
 @NgModule({
