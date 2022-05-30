@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs/internal/Subject';
-import DataChart from './chart.interface';
+import DataChart , {CreateChart, DataChartCoordonate, DataDrawInterLine, DataDrawXAxis, DataDrawYAxis, DataGetLongestValueWidth} from './chart.interface';
 
 @Component({
   selector: 'lib-chart',
@@ -22,13 +22,13 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
 
   private context!: CanvasRenderingContext2D;
 
-  scaleX = 0;
-  scaleY = 0;
-  pointRadius = 5;
-  x= 0;
-  y = 0;
+  scaleX :number = 0;
+  scaleY :number = 0;
+  pointRadius :number = 5;
+  x :number = 0;
+  y :number = 0;
   height = 0;
-  axisColor = "#A9A9A9";
+  axisColor :string= "#A9A9A9";
   onChanges = new Subject<SimpleChanges>();
 
   constructor() { }
@@ -46,7 +46,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     this.onChanges.complete();
   }
 
-  private LineChart(con :any) {
+  private LineChart(con :CreateChart) {
     // user defined properties
     const minX = con.minX;
     const minY = con.minY;
@@ -77,13 +77,13 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     this.scaleY = this.height / rangeY;
 
     // draw x y axis and tick marks
-    this.drawXAxis( {    width , numXTicks , tickSize, font , maxX , padding});
+    this.drawXAxis({    width , numXTicks , tickSize, font , maxX , padding});
     this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});
     this.drawInterLine({numYTicks , numXTicks , width });
 
 }
 
-  private getLongestValueWidth( data :any) {
+  private getLongestValueWidth( data :DataGetLongestValueWidth) {
     this.context.font = data.font;
       let longestValueWidth = 0;
       for (let n = 0; n <= data.numYTicks; n++) {
@@ -93,7 +93,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       return longestValueWidth;
   };
 
-  private drawXAxis( data :any ) {
+  private drawXAxis( data :DataDrawXAxis ) {
       const height = this.height ? this.height : 0;
       this.context.save();
       this.context.beginPath();
@@ -119,7 +119,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.restore();
   };
 
-  private drawYAxis ( data :any ) {
+  private drawYAxis ( data :DataDrawYAxis ) {
       const height = this.height ? this.height : 0;
       this.context.save();
       this.context.beginPath();
@@ -146,7 +146,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
       this.context.restore();
   };
 
-  private drawInterLine( data :any ) {
+  private drawInterLine( data :DataDrawInterLine ) {
     const height = this.height ? this.height : 0;
     for (let n = 0; n < data.numYTicks; n++) {
       this.context.beginPath();
@@ -165,7 +165,7 @@ export class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {
     }
   }
 
-  private drawLine(data : any , color : string ) {
+  private drawLine(data :DataChartCoordonate[], color : string ) {
       this.context.save();
       this.transformContext();
       this.context.lineWidth = 1;
