@@ -1,1 +1,1 @@
-<button class="btn" [class]="{'btn-primary' : color === 'primary', 'btn-secondary' : color === 'secondary', 'btn-tertiary' : color === 'tertiary', 'btn-success' : color === 'success', 'btn-info' : color === 'info', 'btn-danger' : color === 'danger', 'btn-warning' : color === 'warning'}" ><ng-content></ng-content></button>
+<button class="btn" [class]="getCssClasses()" [disabled]="disabled" (click)="handleClickEvent()"><ng-content></ng-content></button>

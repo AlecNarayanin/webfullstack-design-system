@@ -5,11 +5,13 @@
   border: none;
   border-radius: 5px;
   transition: 400ms;
-  &:hover{
+  :hover:enabled{
     cursor: pointer;
-    transform: scale(1.2);
   }
-
+  :hover:disabled{
+    cursor: not-allowed;
+    background-color: $disabled-color;
+  }
   &-primary{
     color: $light-color;
     background-color : $primary-color;
@@ -64,9 +66,26 @@
     &:hover{
       background-color: lighten($warning-color, 20%);
     }
+
   }
 
+  &-sm{
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  &-md{
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+
+  &-lg{
+    font-size: 16px;
+    padding: 12px 24px;
+  }
 }
+
+
 
 @mixin lighten($color, $amount){
 mixin-name($color, $amount){
