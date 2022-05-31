@@ -442,7 +442,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-1624fdb7950c95958cfa193e349bbf742d57a2ec681aa35012cd47f5ab5801ffaecdd3c7e21e751dc9becf8b29d42d89b4ae4085f6f1a3ae08a638f4e6336410",
+            "id": "component-ButtonComponent-c0ea6f991d5ce956f1027b4fb72a322306ccbeae94308fd2d9eae129e2d3b4a465b99fa4d50c6ff08745ca376734cac584f8be5756d3a7c9f26f931cb1effebd",
             "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -474,7 +474,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
-                    "type": "string",
+                    "type": "\"sm\" | \"md\" | \"lg\"",
                     "decorators": []
                 },
                 {
@@ -483,7 +483,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "string",
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\"",
                     "decorators": []
                 }
             ],
@@ -541,7 +541,7 @@
             "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
             "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type = 'primary';\r\n\r\n  @Input() size = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -565,7 +565,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-1c0a89c92f24adb6e85d3fe31b64a41a24887c8cbb9eacef971ad93b78eee4382ea8fecbdb630098389658b55751373657005ae8cddf23495578cd79b8b65db4",
+            "id": "component-CardComponent-0045a679b00dabb7f6e005f3e3682625efedf08bace77a54051a24ed278ed9ddf65aaf2418fe701b3881ce76959f2f6a158379a066d054a56e65a8d27e329cc0",
             "file": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -574,7 +574,7 @@
             "providers": [],
             "selector": "lib-card",
             "styleUrls": [
-                "./card.component.css"
+                "./card.component.scss"
             ],
             "styles": [],
             "templateUrl": [
@@ -603,12 +603,12 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./card.component.css"
+                    "data": ".card{\r\n  width: 60%;\r\n  padding: 12px;\r\n  border: 2px solid #e6e6e6;\r\n  border-radius: 4px;\r\n  background-color: #fff;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\r\n  transition: all 0.3s cubic-bezier(.25,.8,.25,1);\r\n  &:hover{\r\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n  }\r\n\r\n  &__title{\r\n    font-size: 1.2rem;\r\n    font-weight: bold;\r\n    margin-bottom: 12px;\r\n    font-family: 'Roboto', sans-serif;\r\n  }\r\n\r\n  &__content{\r\n    font-size: 1rem;\r\n    line-height: 1.5;\r\n    margin-bottom: 12px;\r\n  }\r\n\r\n  &__btn{\r\n    display: flex;\r\n  }\r\n}\r\n\r\nbutton {\r\n  margin-left: 10px;\r\n}\r\n",
+                    "styleUrl": "./card.component.scss"
                 }
             ],
             "stylesData": "",
@@ -623,7 +623,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>card works!</p>\n"
+            "templateData": "<div class=\"card\">\r\n  <div class=\"card__title\">\r\n    <ng-content select=\"[title]\"></ng-content>\r\n  </div>\r\n  <div class=\"card__content\">\r\n    <ng-content select=\"[content]\"></ng-content>\r\n  </div>\r\n  <div class=\"card__btn\">\r\n    <ng-content select=\"[actions]\"></ng-content>\r\n  </div>\r\n</div>\r\n"
         },
         {
             "name": "ChartComponent",
