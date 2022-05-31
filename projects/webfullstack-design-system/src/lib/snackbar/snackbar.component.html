@@ -1,0 +1,17 @@
+<div
+  class="snackbar"
+  [style.color]="textColor"
+  [style.background]="backgroundColor"
+  [style.display]="open ? 'flex' : 'none'"
+>
+  <div>
+    {{ message }}
+  </div>
+
+  <svg height="14px" width="14px" class="close-icon" (click)="handleClose()">
+    <path
+      d="M8.664,7l4.992-4.992A1.177,1.177,0,0,0,11.992.344L7,5.336,2.009.344A1.177,1.177,0,0,0,.345,2.008L5.336,7,.345,11.991a1.177,1.177,0,1,0,1.664,1.664L7,8.663l4.992,4.992a1.177,1.177,0,0,0,1.664-1.664Z"
+      [style.fill]="textColor"
+    />
+  </svg>
+</div>
