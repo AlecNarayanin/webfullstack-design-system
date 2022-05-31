@@ -2,13 +2,81 @@
     "pipes": [],
     "interfaces": [
         {
-            "name": "DataChart",
-            "id": "interface-DataChart-20bc84571d5e8cca7efd5629e5ac54e550947905204b9fa32ff143ff4b4b486539e09dfb7d28303cf225eec480873558c0bf0d1e554ea754fd28f8be38f2d24f",
+            "name": "CreateChart",
+            "id": "interface-CreateChart-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "maxX",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "maxY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "minX",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "minY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "unitsPerTickX",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "unitsPerTickY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataChart",
+            "id": "interface-DataChart-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
             "properties": [
                 {
                     "name": "color",
@@ -35,12 +103,12 @@
         },
         {
             "name": "DataChartCoordonate",
-            "id": "interface-DataChartCoordonate-20bc84571d5e8cca7efd5629e5ac54e550947905204b9fa32ff143ff4b4b486539e09dfb7d28303cf225eec480873558c0bf0d1e554ea754fd28f8be38f2d24f",
+            "id": "interface-DataChartCoordonate-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
             "properties": [
                 {
                     "name": "x",
@@ -59,6 +127,224 @@
                     "optional": false,
                     "description": "",
                     "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataDrawInterLine",
+            "id": "interface-DataDrawInterLine-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "numXTicks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "numYTicks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "width",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataDrawXAxis",
+            "id": "interface-DataDrawXAxis-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "font",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "maxX",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "numXTicks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "padding",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "tickSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "width",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataDrawYAxis",
+            "id": "interface-DataDrawYAxis-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "font",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                },
+                {
+                    "name": "maxY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "numYTicks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "padding",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "tickSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 31
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "DataGetLongestValueWidth",
+            "id": "interface-DataGetLongestValueWidth-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "font",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 47
+                },
+                {
+                    "name": "maxY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 46
+                },
+                {
+                    "name": "numYTicks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "unitsPerTickY",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
                 }
             ],
             "indexSignatures": [],
@@ -146,18 +432,6 @@
             "indexSignatures": [],
             "kind": 165,
             "methods": []
-        },
-        {
-            "name": "User",
-            "id": "interface-User-9c7e5f1bbbab702cb032307d130876cb68969b0cd4eedef32a0c8cad8081a54e5f8f577ed6ad4539c1b99a1d246cb34031d198c2ea8eba440e64e91b14f01fdc",
-            "file": "stories/User.ts",
-            "deprecated": false,
-            "deprecationMessage": "",
-            "type": "interface",
-            "sourceCode": "export interface User {}\n",
-            "properties": [],
-            "indexSignatures": [],
-            "methods": []
         }
     ],
     "injectables": [],
@@ -168,7 +442,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-1624fdb7950c95958cfa193e349bbf742d57a2ec681aa35012cd47f5ab5801ffaecdd3c7e21e751dc9becf8b29d42d89b4ae4085f6f1a3ae08a638f4e6336410",
+            "id": "component-ButtonComponent-c0ea6f991d5ce956f1027b4fb72a322306ccbeae94308fd2d9eae129e2d3b4a465b99fa4d50c6ff08745ca376734cac584f8be5756d3a7c9f26f931cb1effebd",
             "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -200,7 +474,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
-                    "type": "string",
+                    "type": "\"sm\" | \"md\" | \"lg\"",
                     "decorators": []
                 },
                 {
@@ -209,7 +483,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "string",
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\"",
                     "decorators": []
                 }
             ],
@@ -267,7 +541,7 @@
             "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
             "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type = 'primary';\r\n\r\n  @Input() size = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -291,7 +565,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-1c0a89c92f24adb6e85d3fe31b64a41a24887c8cbb9eacef971ad93b78eee4382ea8fecbdb630098389658b55751373657005ae8cddf23495578cd79b8b65db4",
+            "id": "component-CardComponent-0045a679b00dabb7f6e005f3e3682625efedf08bace77a54051a24ed278ed9ddf65aaf2418fe701b3881ce76959f2f6a158379a066d054a56e65a8d27e329cc0",
             "file": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -300,7 +574,7 @@
             "providers": [],
             "selector": "lib-card",
             "styleUrls": [
-                "./card.component.css"
+                "./card.component.scss"
             ],
             "styles": [],
             "templateUrl": [
@@ -329,12 +603,12 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.css']\n})\nexport class CardComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
-                    "styleUrl": "./card.component.css"
+                    "data": ".card{\r\n  width: 60%;\r\n  padding: 12px;\r\n  border: 2px solid #e6e6e6;\r\n  border-radius: 4px;\r\n  background-color: #fff;\r\n  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);\r\n  transition: all 0.3s cubic-bezier(.25,.8,.25,1);\r\n  &:hover{\r\n    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);\r\n  }\r\n\r\n  &__title{\r\n    font-size: 1.2rem;\r\n    font-weight: bold;\r\n    margin-bottom: 12px;\r\n    font-family: 'Roboto', sans-serif;\r\n  }\r\n\r\n  &__content{\r\n    font-size: 1rem;\r\n    line-height: 1.5;\r\n    margin-bottom: 12px;\r\n  }\r\n\r\n  &__btn{\r\n    display: flex;\r\n  }\r\n}\r\n\r\nbutton {\r\n  margin-left: 10px;\r\n}\r\n",
+                    "styleUrl": "./card.component.scss"
                 }
             ],
             "stylesData": "",
@@ -349,11 +623,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>card works!</p>\n"
+            "templateData": "<div class=\"card\">\r\n  <div class=\"card__title\">\r\n    <ng-content select=\"[title]\"></ng-content>\r\n  </div>\r\n  <div class=\"card__content\">\r\n    <ng-content select=\"[content]\"></ng-content>\r\n  </div>\r\n  <div class=\"card__btn\">\r\n    <ng-content select=\"[actions]\"></ng-content>\r\n  </div>\r\n</div>\r\n"
         },
         {
             "name": "ChartComponent",
-            "id": "component-ChartComponent-4e01faf3f1ca37523ffb46015b3674e8aec26ca7f14e4f511c6e23699358ea1ae612ded8792030651a28e2b672b238e72f683184d5bee4d378c15a7728b37ca1",
+            "id": "component-ChartComponent-8e605a3a0cb78350f9e9b785065392f54c0a045a1a4e0c745815150342ef73007d6b72a66952b493c0a0ec0c29b0db509e1fac5d1547c0a15fac3f430424f478",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -588,7 +862,7 @@
                     "args": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawInterLine",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -605,7 +879,7 @@
                     "jsdoctags": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawInterLine",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -619,7 +893,7 @@
                     "args": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataChartCoordonate[]",
                             "deprecated": false,
                             "deprecationMessage": ""
                         },
@@ -642,7 +916,7 @@
                     "jsdoctags": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataChartCoordonate[]",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -665,7 +939,7 @@
                     "args": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawXAxis",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -682,7 +956,7 @@
                     "jsdoctags": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawXAxis",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -696,7 +970,7 @@
                     "args": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawYAxis",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -713,7 +987,7 @@
                     "jsdoctags": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataDrawYAxis",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -727,7 +1001,7 @@
                     "args": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataGetLongestValueWidth",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -744,7 +1018,7 @@
                     "jsdoctags": [
                         {
                             "name": "data",
-                            "type": "any",
+                            "type": "DataGetLongestValueWidth",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -758,7 +1032,7 @@
                     "args": [
                         {
                             "name": "con",
-                            "type": "any",
+                            "type": "CreateChart",
                             "deprecated": false,
                             "deprecationMessage": ""
                         }
@@ -775,7 +1049,7 @@
                     "jsdoctags": [
                         {
                             "name": "con",
-                            "type": "any",
+                            "type": "CreateChart",
                             "deprecated": false,
                             "deprecationMessage": "",
                             "tagName": {
@@ -860,7 +1134,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';\r\nimport { Subject } from 'rxjs/internal/Subject';\r\nimport DataChart from './chart.interface';\r\n\r\n@Component({\r\n  selector: 'lib-chart',\r\n  templateUrl: './chart.component.html',\r\n  styleUrls: ['./chart.component.css']\r\n})\r\nexport class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {\r\n\r\n  @ViewChild('myCanvas', {static: false}) canvas: ElementRef | undefined;\r\n  @Input() minX: number = 0;\r\n  @Input() minY: number = 0;\r\n  @Input() maxX: number = 140;\r\n  @Input() maxY: number = 100;\r\n  @Input() unitsPerTickX: number = 10;\r\n  @Input() unitsPerTickY: number =10;\r\n  @Input() data : DataChart[] =[];\r\n  @Input() canvasHeigth : number = 450;\r\n  @Input() canvasWidth : number = 550;\r\n\r\n  private context!: CanvasRenderingContext2D;\r\n\r\n  scaleX = 0;\r\n  scaleY = 0;\r\n  pointRadius = 5;\r\n  x= 0;\r\n  y = 0;\r\n  height = 0;\r\n  axisColor = \"#A9A9A9\";\r\n  onChanges = new Subject<SimpleChanges>();\r\n\r\n  constructor() { }\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    this.onChanges.next(changes);\r\n  }\r\n\r\n  ngAfterViewInit(): void {\r\n    this.create();\r\n    this.onChanges.subscribe((data:SimpleChanges)=>{\r\n        this.update();\r\n    });\r\n  }\r\n  ngOnDestroy(){\r\n    this.onChanges.complete();\r\n  }\r\n\r\n  private LineChart(con :any) {\r\n    // user defined properties\r\n    const minX = con.minX;\r\n    const minY = con.minY;\r\n    const maxX = con.maxX;\r\n    const maxY = con.maxY;\r\n    const unitsPerTickX = con.unitsPerTickX;\r\n    const unitsPerTickY = con.unitsPerTickY;\r\n\r\n    // constants\r\n    const padding = 10;\r\n    const tickSize = 10;\r\n    const font = \"bold 11pt Arial\";\r\n\r\n    const fontHeight = 12;\r\n\r\n    // relationships\r\n    this.context = this.canvas?.nativeElement.getContext(\"2d\");\r\n    const canvas = this.canvas as ElementRef;\r\n    const rangeX = maxX - minY;\r\n    const rangeY = maxY - minY;\r\n    const numXTicks = Math.round(rangeX / unitsPerTickX);\r\n    const numYTicks = Math.round(rangeY / unitsPerTickY);\r\n    this.x = this.getLongestValueWidth({numYTicks, unitsPerTickY , maxY , font}) + padding * 2;\r\n    this.y = padding * 2;\r\n    const width = canvas.nativeElement.width - this.x - padding * 2;\r\n    this.height = canvas.nativeElement.height - this.y - padding - fontHeight;\r\n    this.scaleX = width / rangeX;\r\n    this.scaleY = this.height / rangeY;\r\n\r\n    // draw x y axis and tick marks\r\n    this.drawXAxis( {    width , numXTicks , tickSize, font , maxX , padding});\r\n    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});\r\n    this.drawInterLine({numYTicks , numXTicks , width });\r\n\r\n}\r\n\r\n  private getLongestValueWidth( data :any) {\r\n    this.context.font = data.font;\r\n      let longestValueWidth = 0;\r\n      for (let n = 0; n <= data.numYTicks; n++) {\r\n          const value = data.maxY - (n * data.unitsPerTickY);\r\n          longestValueWidth = Math.max(longestValueWidth, this.context.measureText(value.toString()).width);\r\n      }\r\n      return longestValueWidth;\r\n  };\r\n\r\n  private drawXAxis( data :any ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y + height);\r\n      this.context.lineTo(this.x + data.width, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n\r\n\r\n      // draw labels\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"center\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numXTicks; n++) {\r\n          const label = Math.round((n + 1) * data.maxX / data.numXTicks);\r\n          this.context.save();\r\n          this.context.translate((n + 1) * data.width / data.numXTicks + this.x, this.y + height + data.padding);\r\n          this.context.fillText(label.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawYAxis ( data :any ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y);\r\n      this.context.lineTo(this.x, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n      this.context.restore();\r\n\r\n\r\n      // draw values\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"right\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numYTicks; n++) {\r\n          const value = Math.round(data.maxY - n * data.maxY / data.numYTicks);\r\n          this.context.save();\r\n          this.context.translate(this.x - data.padding, n * height / data.numYTicks + this.y);\r\n          this.context.fillText(value.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawInterLine( data :any ) {\r\n    const height = this.height ? this.height : 0;\r\n    for (let n = 0; n < data.numYTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);\r\n      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n\r\n    for (let n = 0; n < data.numXTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);\r\n      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n  }\r\n\r\n  private drawLine(data : any , color : string ) {\r\n      this.context.save();\r\n      this.transformContext();\r\n      this.context.lineWidth = 1;\r\n      this.context.strokeStyle = color;\r\n      this.context.fillStyle = color;\r\n      this.context.beginPath();\r\n      this.context.moveTo(data[0].x * this.scaleX, data[0].y * this.scaleY);\r\n\r\n      for (let n = 0; n < data.length; n++) {\r\n          const point = data[n];\r\n\r\n          // draw segment\r\n          this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);\r\n          this.context.stroke();\r\n          this.context.closePath();\r\n          this.context.beginPath();\r\n          this.context.arc(point.x * this.scaleX, point.y * this.scaleY, this.pointRadius, 0, 2 * Math.PI, false);\r\n          this.context.fill();\r\n          this.context.closePath();\r\n\r\n          // position for next segment\r\n          this.context.beginPath();\r\n          this.context.moveTo(point.x * this.scaleX, point.y * this.scaleY);\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n\r\n  transformContext() {\r\n    const height = this.height ? this.height : 0;\r\n    this.context.translate(this.x, this.y + height);\r\n    this.context.scale(1, -1);\r\n  };\r\n\r\n  create(){\r\n    this.LineChart({\r\n      minX: this.minX,\r\n      minY: this.minY,\r\n      maxX: this.maxX,\r\n      maxY: this.maxY,\r\n      unitsPerTickX: this.unitsPerTickX,\r\n      unitsPerTickY: this.unitsPerTickY\r\n   });\r\n   for(let i = 0; i < this.data.length; i++){\r\n    this.drawLine(this.data[i].data, this.data[i].color);\r\n   }\r\n  }\r\n  clear() {\r\n    this.context.clearRect(0, 0, this.canvas?.nativeElement.width, this.canvas?.nativeElement.height);\r\n  }\r\n\r\n  update(){\r\n    this.clear();\r\n    this.create();\r\n  }\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';\r\nimport { Subject } from 'rxjs/internal/Subject';\r\nimport DataChart , {CreateChart, DataChartCoordonate, DataDrawInterLine, DataDrawXAxis, DataDrawYAxis, DataGetLongestValueWidth} from './chart.interface';\r\n\r\n@Component({\r\n  selector: 'lib-chart',\r\n  templateUrl: './chart.component.html',\r\n  styleUrls: ['./chart.component.css']\r\n})\r\nexport class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {\r\n\r\n  @ViewChild('myCanvas', {static: false}) canvas: ElementRef | undefined;\r\n  @Input() minX: number = 0;\r\n  @Input() minY: number = 0;\r\n  @Input() maxX: number = 140;\r\n  @Input() maxY: number = 100;\r\n  @Input() unitsPerTickX: number = 10;\r\n  @Input() unitsPerTickY: number =10;\r\n  @Input() data : DataChart[] =[];\r\n  @Input() canvasHeigth : number = 450;\r\n  @Input() canvasWidth : number = 550;\r\n\r\n  private context!: CanvasRenderingContext2D;\r\n\r\n  scaleX :number = 0;\r\n  scaleY :number = 0;\r\n  pointRadius :number = 5;\r\n  x :number = 0;\r\n  y :number = 0;\r\n  height :number = 0;\r\n  axisColor :string= \"#A9A9A9\";\r\n  onChanges = new Subject<SimpleChanges>();\r\n\r\n  constructor() { }\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    this.onChanges.next(changes);\r\n  }\r\n\r\n  ngAfterViewInit(): void {\r\n    this.create();\r\n    this.onChanges.subscribe((data:SimpleChanges)=>{\r\n        this.update();\r\n    });\r\n  }\r\n  ngOnDestroy(){\r\n    this.onChanges.complete();\r\n  }\r\n\r\n  private LineChart(con :CreateChart) {\r\n    // user defined properties\r\n    const minX = con.minX;\r\n    const minY = con.minY;\r\n    const maxX = con.maxX;\r\n    const maxY = con.maxY;\r\n    const unitsPerTickX = con.unitsPerTickX;\r\n    const unitsPerTickY = con.unitsPerTickY;\r\n\r\n    // constants\r\n    const padding = 10;\r\n    const tickSize = 10;\r\n    const font = \"bold 11pt Arial\";\r\n\r\n    const fontHeight = 12;\r\n\r\n    // relationships\r\n    this.context = this.canvas?.nativeElement.getContext(\"2d\");\r\n    const canvas = this.canvas as ElementRef;\r\n    const rangeX = maxX - minY;\r\n    const rangeY = maxY - minY;\r\n    const numXTicks = Math.round(rangeX / unitsPerTickX);\r\n    const numYTicks = Math.round(rangeY / unitsPerTickY);\r\n    this.x = this.getLongestValueWidth({numYTicks, unitsPerTickY , maxY , font}) + padding * 2;\r\n    this.y = padding * 2;\r\n    const width = canvas.nativeElement.width - this.x - padding * 2;\r\n    this.height = canvas.nativeElement.height - this.y - padding - fontHeight;\r\n    this.scaleX = width / rangeX;\r\n    this.scaleY = this.height / rangeY;\r\n\r\n    // draw x y axis and tick marks\r\n    this.drawXAxis({    width , numXTicks , tickSize, font , maxX , padding});\r\n    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});\r\n    this.drawInterLine({numYTicks , numXTicks , width });\r\n\r\n}\r\n\r\n  private getLongestValueWidth( data :DataGetLongestValueWidth) {\r\n    this.context.font = data.font;\r\n      let longestValueWidth = 0;\r\n      for (let n = 0; n <= data.numYTicks; n++) {\r\n          const value = data.maxY - (n * data.unitsPerTickY);\r\n          longestValueWidth = Math.max(longestValueWidth, this.context.measureText(value.toString()).width);\r\n      }\r\n      return longestValueWidth;\r\n  };\r\n\r\n  private drawXAxis( data :DataDrawXAxis ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y + height);\r\n      this.context.lineTo(this.x + data.width, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n\r\n\r\n      // draw labels\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"center\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numXTicks; n++) {\r\n          const label = Math.round((n + 1) * data.maxX / data.numXTicks);\r\n          this.context.save();\r\n          this.context.translate((n + 1) * data.width / data.numXTicks + this.x, this.y + height + data.padding);\r\n          this.context.fillText(label.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawYAxis ( data :DataDrawYAxis ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y);\r\n      this.context.lineTo(this.x, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n      this.context.restore();\r\n\r\n\r\n      // draw values\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"right\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numYTicks; n++) {\r\n          const value = Math.round(data.maxY - n * data.maxY / data.numYTicks);\r\n          this.context.save();\r\n          this.context.translate(this.x - data.padding, n * height / data.numYTicks + this.y);\r\n          this.context.fillText(value.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawInterLine( data :DataDrawInterLine ) {\r\n    const height = this.height ? this.height : 0;\r\n    for (let n = 0; n < data.numYTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);\r\n      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n\r\n    for (let n = 0; n < data.numXTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);\r\n      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n  }\r\n\r\n  private drawLine(data :DataChartCoordonate[], color : string ) {\r\n      this.context.save();\r\n      this.transformContext();\r\n      this.context.lineWidth = 1;\r\n      this.context.strokeStyle = color;\r\n      this.context.fillStyle = color;\r\n      this.context.beginPath();\r\n      this.context.moveTo(data[0].x * this.scaleX, data[0].y * this.scaleY);\r\n\r\n      for (let n = 0; n < data.length; n++) {\r\n          const point = data[n];\r\n\r\n          // draw segment\r\n          this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);\r\n          this.context.stroke();\r\n          this.context.closePath();\r\n          this.context.beginPath();\r\n          this.context.arc(point.x * this.scaleX, point.y * this.scaleY, this.pointRadius, 0, 2 * Math.PI, false);\r\n          this.context.fill();\r\n          this.context.closePath();\r\n\r\n          // position for next segment\r\n          this.context.beginPath();\r\n          this.context.moveTo(point.x * this.scaleX, point.y * this.scaleY);\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n\r\n  transformContext() {\r\n    const height = this.height ? this.height : 0;\r\n    this.context.translate(this.x, this.y + height);\r\n    this.context.scale(1, -1);\r\n  };\r\n\r\n  create(){\r\n    this.LineChart({\r\n      minX: this.minX,\r\n      minY: this.minY,\r\n      maxX: this.maxX,\r\n      maxY: this.maxY,\r\n      unitsPerTickX: this.unitsPerTickX,\r\n      unitsPerTickY: this.unitsPerTickY\r\n   });\r\n   for(let i = 0; i < this.data.length; i++){\r\n    this.drawLine(this.data[i].data, this.data[i].color);\r\n   }\r\n  }\r\n  clear() {\r\n    this.context.clearRect(0, 0, this.canvas?.nativeElement.width, this.canvas?.nativeElement.height);\r\n  }\r\n\r\n  update(){\r\n    this.clear();\r\n    this.create();\r\n  }\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -886,7 +1160,7 @@
         },
         {
             "name": "DatatableComponent",
-            "id": "component-DatatableComponent-f4b1a30543a04eb43f2d3e23ee0029ed2359b104448363ab7e7d5a2269232effb1022cb84f6b4e7d641eeca25f3fe70bd86a3b3be28f6b146c25b5b4438522e1",
+            "id": "component-DatatableComponent-381a13f25071ed162a7cbc898739aabdc5c8b89a7d26c14e75679287985b2029959d2227f9ae5f3a5beb4f75f89a8854517b44f8f2bdc5c7b0b3102ee1cc644c",
             "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -917,7 +1191,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 45,
-                    "type": "any[]",
+                    "type": "[][]",
                     "decorators": []
                 },
                 {
@@ -925,7 +1199,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 23,
-                    "type": "any[]",
+                    "type": "DatatableHeader[]",
                     "decorators": []
                 }
             ],
@@ -1008,7 +1282,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Output, EventEmitter } from '@angular/core';\r\nimport { DatatableHeader, DatatableRowProperty } from './datatable.interface';\r\n\r\n@Component({\r\n  selector: 'lib-datatable',\r\n  templateUrl: './datatable.component.html',\r\n  styleUrls: ['./datatable.component.scss']\r\n})\r\nexport class DatatableComponent implements OnInit {\r\n\r\n  _headers: DatatableHeader[] = []\r\n\r\n  _data: DatatableRowProperty[][] = [];\r\n\r\n  get headers():  any[] {\r\n    return this._headers.sort( (x,y)=>{\r\n      if(x.order > y.order) return 1;\r\n      else if(x.order < y.order) return -1;\r\n      else return 0;\r\n    });\r\n  }\r\n  @Input() set headers(value:  any[]) {\r\n      this._headers = value;\r\n  }\r\n\r\n  get data():  any[] {\r\n    const data :any[]= [];\r\n    this._data.forEach((row)=>{\r\n      const rowData :DatatableRowProperty[]= []\r\n      this.headers.forEach((header)=>{\r\n        const currentRow = row.filter((x :any ) => x.headerName == header.name);\r\n        if(currentRow.length > 0){\r\n          currentRow[0].headerLabel = header.label;\r\n          rowData.push(currentRow[0]);\r\n        }else{\r\n          rowData.push({headerName: header.name, value: \"\", headerLabel: header.label});\r\n        }\r\n      });\r\n      data.push(rowData);\r\n    });\r\n    return data;\r\n  }\r\n\r\n  @Input() set data(value:  any[]) {\r\n    this._data = value;\r\n  }\r\n\r\n  @Input() color :string = \"primary\";\r\n\r\n  @Output() clickLineEvent = new EventEmitter<any>();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  onClickLine(line:any){\r\n    this.clickLineEvent.emit(line);\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Output, EventEmitter } from '@angular/core';\r\nimport { DatatableHeader, DatatableRowProperty } from './datatable.interface';\r\n\r\n@Component({\r\n  selector: 'lib-datatable',\r\n  templateUrl: './datatable.component.html',\r\n  styleUrls: ['./datatable.component.scss']\r\n})\r\nexport class DatatableComponent implements OnInit {\r\n\r\n  _headers: DatatableHeader[] = []\r\n\r\n  _data: DatatableRowProperty[][] = [];\r\n\r\n  get headers():  DatatableHeader[] {\r\n    return this._headers.sort( (x,y)=>{\r\n      if(x.order > y.order) return 1;\r\n      else if(x.order < y.order) return -1;\r\n      else return 0;\r\n    });\r\n  }\r\n  @Input() set headers(value:  DatatableHeader[]) {\r\n      this._headers = value;\r\n  }\r\n\r\n  get data():  DatatableRowProperty[][]  {\r\n    const data :DatatableRowProperty[][] = [];\r\n    this._data.forEach((row)=>{\r\n      const rowData :DatatableRowProperty[]= []\r\n      this.headers.forEach((header)=>{\r\n        const currentRow = row.filter((x :any ) => x.headerName == header.name);\r\n        if(currentRow.length > 0){\r\n          currentRow[0].headerLabel = header.label;\r\n          rowData.push(currentRow[0]);\r\n        }else{\r\n          rowData.push({headerName: header.name, value: \"\", headerLabel: header.label});\r\n        }\r\n      });\r\n      data.push(rowData);\r\n    });\r\n    return data;\r\n  }\r\n\r\n  @Input() set data(value:  DatatableRowProperty[][] ) {\r\n    this._data = value;\r\n  }\r\n\r\n  @Input() color :string = \"primary\";\r\n\r\n  @Output() clickLineEvent = new EventEmitter<any>();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  onClickLine(line:any){\r\n    this.clickLineEvent.emit(line);\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1039,7 +1313,7 @@
                         "args": [
                             {
                                 "name": "value",
-                                "type": "any[]",
+                                "type": "DatatableHeader[]",
                                 "deprecated": false,
                                 "deprecationMessage": ""
                             }
@@ -1049,7 +1323,7 @@
                         "jsdoctags": [
                             {
                                 "name": "value",
-                                "type": "any[]",
+                                "type": "DatatableHeader[]",
                                 "deprecated": false,
                                 "deprecationMessage": "",
                                 "tagName": {
@@ -1061,7 +1335,7 @@
                     "getSignature": {
                         "name": "headers",
                         "type": "[]",
-                        "returnType": "any[]",
+                        "returnType": "DatatableHeader[]",
                         "line": 16
                     }
                 },
@@ -1075,7 +1349,7 @@
                         "args": [
                             {
                                 "name": "value",
-                                "type": "any[]",
+                                "type": "DatatableRowProperty[][]",
                                 "deprecated": false,
                                 "deprecationMessage": ""
                             }
@@ -1085,7 +1359,7 @@
                         "jsdoctags": [
                             {
                                 "name": "value",
-                                "type": "any[]",
+                                "type": "DatatableRowProperty[][]",
                                 "deprecated": false,
                                 "deprecationMessage": "",
                                 "tagName": {
@@ -1097,7 +1371,7 @@
                     "getSignature": {
                         "name": "data",
                         "type": "[]",
-                        "returnType": "any[]",
+                        "returnType": "[][]",
                         "line": 27
                     }
                 }
@@ -1419,7 +1693,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  template:\r\n  `<lib-button [size]=\"size\" [type]=\"type\">\r\n        Label\r\n    </lib-button>`\r\n})"
             }
         ],
         "functions": [],
@@ -1478,7 +1752,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  template:\r\n  `<lib-button [size]=\"size\" [type]=\"type\">\r\n        Label\r\n    </lib-button>`\r\n})"
                 }
             ]
         },
@@ -1488,7 +1762,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 2,
+        "count": 1,
         "status": "low",
         "files": [
             {
@@ -1522,6 +1796,15 @@
                 "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
                 "type": "interface",
                 "linktype": "interface",
+                "name": "CreateChart",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
                 "name": "DataChart",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
@@ -1534,6 +1817,42 @@
                 "name": "DataChartCoordonate",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataDrawInterLine",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataDrawXAxis",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataDrawYAxis",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "DataGetLongestValueWidth",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -1627,15 +1946,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/User.ts",
-                "type": "interface",
-                "linktype": "interface",
-                "name": "User",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
