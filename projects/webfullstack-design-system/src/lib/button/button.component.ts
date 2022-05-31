@@ -16,7 +16,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' = 'primary';
+  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';
 
   @Input() size : 'sm' | 'md' | 'lg' = 'sm';
 
@@ -42,16 +42,16 @@ export class ButtonComponent implements OnInit {
   getCssClasses() {
     return {
       'btn': true,
-      'btn-primary': this.type === 'primary',
-      'btn-secondary': this.type === 'secondary',
-      'btn-tertiary': this.type === 'tertiary',
-      'btn-success': this.type === 'success',
-      'btn-danger': this.type === 'danger',
-      'btn-warning': this.type === 'warning',
-      'btn-info': this.type === 'info',
-      'btn-sm': this.size === 'sm',
-      'btn-md': this.size === 'md',
-      'btn-lg': this.size === 'lg',
+      'btn--primary': this.type === 'primary',
+      'btn--secondary': this.type === 'secondary',
+      'btn--tertiary': this.type === 'tertiary',
+      'btn--success': this.type === 'success',
+      'btn--danger': this.type === 'danger',
+      'btn--warning': this.type === 'warning',
+      'btn--info': this.type === 'info',
+      'btn--sm': this.size === 'sm',
+      'btn--md': this.size === 'md',
+      'btn--lg': this.size === 'lg',
     };
   }
 }
