@@ -12,7 +12,7 @@
     cursor: not-allowed;
     background-color: $disabled-color;
   }
-  &-primary{
+  &--primary{
     color: $light-color;
     background-color : $primary-color;
     &:hover{
@@ -20,7 +20,7 @@
     }
   }
 
-  &-secondary{
+  &--secondary{
     color: $light-color;
     background-color: $secondary-color;
     &:hover{
@@ -28,7 +28,7 @@
     }
   }
 
-  &-tertiary{
+  &--tertiary{
     color: $dark-color;
     background-color: $tertiary-color;
     &:hover{
@@ -36,7 +36,7 @@
     }
   }
 
-  &-success{
+  &--success{
     color: $light-color;
     background-color: $success-color;
     &:hover{
@@ -44,7 +44,7 @@
     }
   }
 
-  &-info{
+  &--info{
     color: $light-color;
     background-color: $info-color;
     &:hover{
@@ -52,7 +52,7 @@
     }
   }
 
-  &-danger{
+  &--danger{
     color: $light-color;
     background-color: $danger-color;
     &:hover{
@@ -60,7 +60,7 @@
     }
   }
 
-  &-warning{
+  &--warning{
     color: $dark-color;
     background-color: $warning-color;
     &:hover{
@@ -69,17 +69,17 @@
 
   }
 
-  &-sm{
+  &--sm{
     font-size: 12px;
     padding: 10px 16px;
   }
 
-  &-md{
+  &--md{
     font-size: 14px;
     padding: 11px 20px;
   }
 
-  &-lg{
+  &--lg{
     font-size: 16px;
     padding: 12px 24px;
   }
