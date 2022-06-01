@@ -14,19 +14,23 @@ export class DatatableComponent implements OnInit {
   _data: DatatableRowProperty[][] = [];
 
   get headers():  DatatableHeader[] {
-    return this._headers.sort( (x,y)=>{
+    return this._headers;
+  }
+  @Input() set headers(value:  DatatableHeader[]) {
+      this._headers = value.sort( (x,y)=>{
       if(x.order > y.order) return 1;
       else if(x.order < y.order) return -1;
       else return 0;
-    });
-  }
-  @Input() set headers(value:  DatatableHeader[]) {
-      this._headers = value;
+      });
   }
 
   get data():  DatatableRowProperty[][]  {
+    return this._data;
+  }
+
+  @Input() set data(value:  DatatableRowProperty[][] ) {
     const data :DatatableRowProperty[][] = [];
-    this._data.forEach((row)=>{
+    value.forEach((row)=>{
       const rowData :DatatableRowProperty[]= []
       this.headers.forEach((header)=>{
         const currentRow = row.filter((x :any ) => x.headerName == header.name);
@@ -39,11 +43,7 @@ export class DatatableComponent implements OnInit {
       });
       data.push(rowData);
     });
-    return data;
-  }
-
-  @Input() set data(value:  DatatableRowProperty[][] ) {
-    this._data = value;
+    this._data = data;
   }
 
   @Input() color :string = "primary";
