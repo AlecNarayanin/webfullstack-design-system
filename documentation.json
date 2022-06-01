@@ -442,7 +442,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-1624fdb7950c95958cfa193e349bbf742d57a2ec681aa35012cd47f5ab5801ffaecdd3c7e21e751dc9becf8b29d42d89b4ae4085f6f1a3ae08a638f4e6336410",
+            "id": "component-ButtonComponent-c0ea6f991d5ce956f1027b4fb72a322306ccbeae94308fd2d9eae129e2d3b4a465b99fa4d50c6ff08745ca376734cac584f8be5756d3a7c9f26f931cb1effebd",
             "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -474,7 +474,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 21,
-                    "type": "string",
+                    "type": "\"sm\" | \"md\" | \"lg\"",
                     "decorators": []
                 },
                 {
@@ -483,7 +483,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "string",
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\"",
                     "decorators": []
                 }
             ],
@@ -541,7 +541,7 @@
             "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
             "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type = 'primary';\r\n\r\n  @Input() size = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -574,7 +574,7 @@
             "providers": [],
             "selector": "lib-card",
             "styleUrls": [
-                "./card.component.css"
+                "./card.component.scss"
             ],
             "styles": [],
             "templateUrl": [

@@ -1,0 +1,19 @@
+@import '../scss/main.scss';
+
+.input{
+  width: 100%;
+  padding: 7px;
+  margin: 0;
+  border: none;
+  background: gray;
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $dark-color;
+  outline: none;
+  appearance: none;
+  box-sizing: border-box;
+  ::placeholder {
+    color: $dark-color;
+  }
+
+}

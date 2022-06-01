@@ -7,6 +7,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { ButtonComponent } from './button/button.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { InputComponent } from "./input/input.component";
 
 const COMPONENTS = [
   CardComponent,
@@ -16,6 +17,7 @@ const COMPONENTS = [
   DatatableComponent,
   SnackbarComponent,
   ButtonComponent,
+  InputComponent
 ];
 
 @NgModule({
