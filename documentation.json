@@ -442,7 +442,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-c0ea6f991d5ce956f1027b4fb72a322306ccbeae94308fd2d9eae129e2d3b4a465b99fa4d50c6ff08745ca376734cac584f8be5756d3a7c9f26f931cb1effebd",
+            "id": "component-ButtonComponent-5ba2b42f158857e5be48033cd2361eeb28b71753c514b8acc181d6b9bc45af5df6f5a8f871657714b86a91bff7c54aaab8ef9fe5df798a05aa39aeb8f5d5d855",
             "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -483,7 +483,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\" | \"light\" | \"dark\"",
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\"",
                     "decorators": []
                 }
             ],
@@ -503,7 +503,7 @@
                     "name": "getCssClasses",
                     "args": [],
                     "optional": false,
-                    "returnType": "{ btn: boolean; 'btn-primary': boolean; 'btn-secondary': boolean; 'btn-tertiary': boolean; 'btn-success': boolean; 'btn-danger': boolean; 'btn-warning': boolean; 'btn-info': boolean; 'btn-sm': boolean; 'btn-md': boolean; 'btn-lg': boolean; }",
+                    "returnType": "{ btn: boolean; 'btn--primary': boolean; 'btn--secondary': boolean; 'btn--tertiary': boolean; 'btn--success': boolean; 'btn--danger': boolean; 'btn--warning': boolean; 'btn--info': boolean; 'btn--sm': boolean; 'btn--md': boolean; 'btn--lg': boolean; }",
                     "typeParameters": [],
                     "line": 42,
                     "deprecated": false,
@@ -541,11 +541,11 @@
             "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
             "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn-primary': this.type === 'primary',\r\n      'btn-secondary': this.type === 'secondary',\r\n      'btn-tertiary': this.type === 'tertiary',\r\n      'btn-success': this.type === 'success',\r\n      'btn-danger': this.type === 'danger',\r\n      'btn-warning': this.type === 'warning',\r\n      'btn-info': this.type === 'info',\r\n      'btn-sm': this.size === 'sm',\r\n      'btn-md': this.size === 'md',\r\n      'btn-lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn--primary': this.type === 'primary',\r\n      'btn--secondary': this.type === 'secondary',\r\n      'btn--tertiary': this.type === 'tertiary',\r\n      'btn--success': this.type === 'success',\r\n      'btn--danger': this.type === 'danger',\r\n      'btn--warning': this.type === 'warning',\r\n      'btn--info': this.type === 'info',\r\n      'btn--sm': this.size === 'sm',\r\n      'btn--md': this.size === 'md',\r\n      'btn--lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../scss/main\";\r\n\r\n.btn{\r\n  padding: 10px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  transition: 400ms;\r\n  :hover:enabled{\r\n    cursor: pointer;\r\n  }\r\n  :hover:disabled{\r\n    cursor: not-allowed;\r\n    background-color: $disabled-color;\r\n  }\r\n  &-primary{\r\n    color: $light-color;\r\n    background-color : $primary-color;\r\n    &:hover{\r\n      background-color: lighten($primary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-secondary{\r\n    color: $light-color;\r\n    background-color: $secondary-color;\r\n    &:hover{\r\n      background: lighten($secondary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-tertiary{\r\n    color: $dark-color;\r\n    background-color: $tertiary-color;\r\n    &:hover{\r\n      background-color: lighten($tertiary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-success{\r\n    color: $light-color;\r\n    background-color: $success-color;\r\n    &:hover{\r\n      background-color: lighten($success-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-info{\r\n    color: $light-color;\r\n    background-color: $info-color;\r\n    &:hover{\r\n      background-color: lighten($info-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-danger{\r\n    color: $light-color;\r\n    background-color: $danger-color;\r\n    &:hover{\r\n      background-color: lighten($danger-color, 20%);\r\n    }\r\n  }\r\n\r\n  &-warning{\r\n    color: $dark-color;\r\n    background-color: $warning-color;\r\n    &:hover{\r\n      background-color: lighten($warning-color, 20%);\r\n    }\r\n\r\n  }\r\n\r\n  &-sm{\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n  }\r\n\r\n  &-md{\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n  }\r\n\r\n  &-lg{\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@mixin lighten($color, $amount){\r\nmixin-name($color, $amount){\r\n  color: lighten($color, $amount);\r\n}\r\n}\r\n",
+                    "data": "@import \"../scss/main\";\r\n\r\n.btn{\r\n  padding: 10px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  transition: 400ms;\r\n  :hover:enabled{\r\n    cursor: pointer;\r\n  }\r\n  :hover:disabled{\r\n    cursor: not-allowed;\r\n    background-color: $disabled-color;\r\n  }\r\n  &--primary{\r\n    color: $light-color;\r\n    background-color : $primary-color;\r\n    &:hover{\r\n      background-color: lighten($primary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--secondary{\r\n    color: $light-color;\r\n    background-color: $secondary-color;\r\n    &:hover{\r\n      background: lighten($secondary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--tertiary{\r\n    color: $dark-color;\r\n    background-color: $tertiary-color;\r\n    &:hover{\r\n      background-color: lighten($tertiary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--success{\r\n    color: $light-color;\r\n    background-color: $success-color;\r\n    &:hover{\r\n      background-color: lighten($success-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--info{\r\n    color: $light-color;\r\n    background-color: $info-color;\r\n    &:hover{\r\n      background-color: lighten($info-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--danger{\r\n    color: $light-color;\r\n    background-color: $danger-color;\r\n    &:hover{\r\n      background-color: lighten($danger-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--warning{\r\n    color: $dark-color;\r\n    background-color: $warning-color;\r\n    &:hover{\r\n      background-color: lighten($warning-color, 20%);\r\n    }\r\n\r\n  }\r\n\r\n  &--sm{\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n  }\r\n\r\n  &--md{\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n  }\r\n\r\n  &--lg{\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@mixin lighten($color, $amount){\r\nmixin-name($color, $amount){\r\n  color: lighten($color, $amount);\r\n}\r\n}\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -565,7 +565,7 @@
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-33512daf9a6f186d70be4c682b8b1a7f07363c0408f8273f44e4e4bc20acd9e947015f8022ddba7606df6e78e44d02b9ce1a285be86d889fdea217bdf2790d4b",
+            "id": "component-CardComponent-d0645cbb1fb34f828dfd51923ad04453ce87e709b8ccd7299adb2aa8d16a46a5775d2385cec33da4528acf879dec930d6baaa0b10a4cb7c4054059ceffcd43bb",
             "file": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -574,7 +574,7 @@
             "providers": [],
             "selector": "lib-card",
             "styleUrls": [
-                "./card.component.scss"
+                "./card.component.css"
             ],
             "styles": [],
             "templateUrl": [
@@ -768,7 +768,16 @@
                     "decorators": []
                 }
             ],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "handleClick",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [],
             "methodsClass": [
                 {
@@ -777,7 +786,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 112,
+                    "line": 115,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -787,7 +796,7 @@
                     "optional": false,
                     "returnType": "\"linear-gradient(145deg, #ddb863, #ffda76)\" | \"linear-gradient(145deg, #22201f, #292524)\" | \"linear-gradient(145deg, #d4d4cd, #fdfbf4)\" | \"linear-gradient(145deg, #e19442, #ffaf4e)\"",
                     "typeParameters": [],
-                    "line": 32,
+                    "line": 35,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -797,7 +806,7 @@
                     "optional": false,
                     "returnType": "\"black\" | \"white\"",
                     "typeParameters": [],
-                    "line": 47,
+                    "line": 50,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -807,7 +816,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 62,
+                    "line": 65,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -817,7 +826,7 @@
                     "optional": false,
                     "returnType": "\"0\" | \"0.5em 1em\" | \"1em 2em\" | \"1.5em 3em\" | \"2em 4em\"",
                     "typeParameters": [],
-                    "line": 95,
+                    "line": 98,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -827,7 +836,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 119,
+                    "line": 122,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -839,11 +848,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1: any;//Button\r\n  @Input() button2: any; //Button\r\n  @Input() buttonItem: any; //Button\r\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify: 'left' | 'right' | 'center' = 'left';\r\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';\r\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() items: any;\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n      case 'md':\r\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\r\n      case 'lg':\r\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\r\n      case 'xl':\r\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\r\n      default:\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  clickEvent(){\r\n    alert('test');\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1: any;//Button\r\n  @Input() button2: any; //Button\r\n  @Input() buttonItem: any; //Button\r\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify: 'left' | 'right' | 'center' = 'left';\r\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';\r\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() items: any;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n      case 'md':\r\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\r\n      case 'lg':\r\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\r\n      case 'xl':\r\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\r\n      default:\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  clickEvent(){\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".card {\r\n  font-family: system-ui;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-image {\r\n  margin-right: 1em;\r\n  height: 4em;\r\n  box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
+                    "data": ".card {\r\n  font-family: system-ui;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-image {\r\n  margin-right: 1em;\r\n  height: 4em;\r\n  box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
                     "styleUrl": "./card.component.css"
                 }
             ],
@@ -854,12 +863,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 114
+                "line": 117
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.text-align]=\"textAlign\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\r\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\">\r\n      <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=false  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n      <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=false  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='image'\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='item'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=false size=\"md\" (handleClick)=\"button1.ev()\"\r\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n    <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=false  size=\"md\" (handleClick)=\"button1.ev()\"\r\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n  </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.text-align]=\"textAlign\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\r\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" [style.justify-content]=\"justify\">\r\n      <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n      <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='image'\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='item'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled size=\"md\" (handleClick)=\"clickEvent()\"\r\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n    <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n  </div>\r\n</div>\r\n"
         },
         {
             "name": "ChartComponent",
@@ -1804,6 +1813,105 @@
             "templateData": "<div\r\n  class=\"flex-div\"\r\n  [style.justify-content]=\"justifyContent\"\r\n  [style.flex-direction]=\"direction\"\r\n  [style.align-items]=\"alignItems\"\r\n  [style.flex-wrap]=\"wrap\"\r\n>\r\n  <ng-content></ng-content>\r\n</div>\r\n"
         },
         {
+            "name": "InputComponent",
+            "id": "component-InputComponent-06f9106a390023e160c94758b6781748d65803657cf71be1d1db3d27d7760443ff0c11f2c47ca94f8b8929214de6625b216af945c12d0d469752d85151be4531",
+            "file": "projects/webfullstack-design-system/src/lib/input/input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-input",
+            "styleUrls": [
+                "./input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./input.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "placeholder",
+                    "defaultValue": "'Veuillez saisir une valeur'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "\"text\" | \"password\" | \"email\" | \"tel\" | \"search\" | \"number\"",
+                    "decorators": []
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n@Component({\r\n  selector: 'lib-input',\r\n  templateUrl: './input.component.html',\r\n  styleUrls: ['./input.component.scss']\r\n})\r\nexport class InputComponent implements OnInit {\r\n\r\n  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';\r\n\r\n  @Input() placeholder = 'Veuillez saisir une valeur';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Input() value = '';\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n\r\n  }\r\n\r\n  // onChange(event) {\r\n  //   console.log(event);\r\n  // }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import '../scss/main.scss';\r\n\r\n.input{\r\n  width: 100%;\r\n  padding: 7px;\r\n  margin: 0;\r\n  border: none;\r\n  background: gray;\r\n  font-size: 1.2rem;\r\n  font-family: 'Source Sans Pro', sans-serif;\r\n  color: $dark-color;\r\n  outline: none;\r\n  appearance: none;\r\n  box-sizing: border-box;\r\n  ::placeholder {\r\n    color: $dark-color;\r\n  }\r\n\r\n}\r\n",
+                    "styleUrl": "./input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 15
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"/>\r\n"
+        },
+        {
             "name": "SnackbarComponent",
             "id": "component-SnackbarComponent-6517c94d0a16ba00f022070f787075e19e1d118400893c867242deafc4eea75d590721411c5b240f4d92b8103068649aad21c6860535c58e039703cf90e6c3d5",
             "file": "projects/webfullstack-design-system/src/lib/snackbar/snackbar.component.ts",
@@ -1933,13 +2041,13 @@
     "modules": [
         {
             "name": "WebfullstackDesignSystemModule",
-            "id": "module-WebfullstackDesignSystemModule-b36c59bd9c0e8a18d76e39a8fdb6abe8e73e24582a5fa40b5bcbd028e27ad2a3452de3216284fc24c7c2bb8d8e251310916997d8540897c29f2b5c1c417173fe",
+            "id": "module-WebfullstackDesignSystemModule-90cc331bf5f9a57d2e732d7ccb412d58cf5608d4d96665541dedee3aae7d9ec9e42856bd60447ed09f89292d724e460c2ffb518c50c82790deaf47aac4f86eab",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ChartComponent } from './chart/chart.component';\r\nimport { DividerComponent } from './divider/divider.component';\r\nimport { FlexDivComponent } from './flex-div/flex-div.component';\r\nimport { SnackbarComponent } from './snackbar/snackbar.component';\r\nimport { ButtonComponent } from './button/button.component';\r\nimport { DatatableComponent } from './datatable/datatable.component';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n];\r\n\r\n@NgModule({\r\n  declarations: [...COMPONENTS],\r\n  imports: [BrowserModule],\r\n  exports: [...COMPONENTS],\r\n})\r\nexport class WebfullstackDesignSystemModule {}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ChartComponent } from './chart/chart.component';\r\nimport { DividerComponent } from './divider/divider.component';\r\nimport { FlexDivComponent } from './flex-div/flex-div.component';\r\nimport { SnackbarComponent } from './snackbar/snackbar.component';\r\nimport { ButtonComponent } from './button/button.component';\r\nimport { DatatableComponent } from './datatable/datatable.component';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { InputComponent } from \"./input/input.component\";\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n];\r\n\r\n@NgModule({\r\n  declarations: [...COMPONENTS],\r\n  imports: [BrowserModule],\r\n  exports: [...COMPONENTS],\r\n})\r\nexport class WebfullstackDesignSystemModule {}\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1965,6 +2073,9 @@
                         },
                         {
                             "name": "FlexDivComponent"
+                        },
+                        {
+                            "name": "InputComponent"
                         },
                         {
                             "name": "SnackbarComponent"
@@ -1997,6 +2108,9 @@
                             "name": "FlexDivComponent"
                         },
                         {
+                            "name": "InputComponent"
+                        },
+                        {
                             "name": "SnackbarComponent"
                         }
                     ]
@@ -2018,17 +2132,37 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "button1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  disabled: false,\r\n  ev: test\r\n}"
+            },
+            {
+                "name": "button2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  disabled: false,\r\n  ev: test\r\n}"
+            },
+            {
                 "name": "ColImage",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2042,7 +2176,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n]"
+                "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n]"
             },
             {
                 "name": "context",
@@ -2068,7 +2202,7 @@
                 "name": "Image",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2078,17 +2212,17 @@
                 "name": "img",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "string",
-                "defaultValue": "\"https://e-cdn-images.dzcdn.net/images/cover/eee94e7dbcafc6e36f22a077a1009eac/264x264-000000-80-0-0.jpg\""
+                "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
             },
             {
                 "name": "Item",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2098,7 +2232,7 @@
                 "name": "items",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
@@ -2117,7 +2251,7 @@
                 "name": "RowImage",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2137,7 +2271,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CardComponent>",
@@ -2147,7 +2281,7 @@
         "functions": [
             {
                 "name": "test",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "stories/card.stories.ts",
                 "ctype": "miscellaneous",
                 "subtype": "function",
                 "deprecated": false,
@@ -2159,22 +2293,42 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "projects/webfullstack-design-system/src/lib/card/card.stories.ts": [
+            "stories/card.stories.ts": [
                 {
                     "name": "Base",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
+                    "name": "button1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                },
+                {
+                    "name": "button2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                },
+                {
                     "name": "ColImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2184,7 +2338,7 @@
                     "name": "Image",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2194,17 +2348,17 @@
                     "name": "img",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
-                    "defaultValue": "\"https://e-cdn-images.dzcdn.net/images/cover/eee94e7dbcafc6e36f22a077a1009eac/264x264-000000-80-0-0.jpg\""
+                    "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
                 },
                 {
                     "name": "Item",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2214,7 +2368,7 @@
                     "name": "items",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
@@ -2224,7 +2378,7 @@
                     "name": "RowImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2234,7 +2388,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
@@ -2250,7 +2404,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n]"
+                    "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n]"
                 }
             ],
             "projects/webfullstack-design-system/src/test.ts": [
@@ -2298,10 +2452,10 @@
             ]
         },
         "groupedFunctions": {
-            "projects/webfullstack-design-system/src/lib/card/card.stories.ts": [
+            "stories/card.stories.ts": [
                 {
                     "name": "test",
-                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                    "file": "stories/card.stories.ts",
                     "ctype": "miscellaneous",
                     "subtype": "function",
                     "deprecated": false,
@@ -2334,97 +2488,7 @@
                 "linktype": "component",
                 "name": "CardComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/29",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "function",
-                "linktype": "miscellaneous",
-                "linksubtype": "function",
-                "name": "test",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Base",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ColImage",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Image",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "img",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Item",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "items",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "RowImage",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/30",
                 "status": "low"
             },
             {
@@ -2545,6 +2609,15 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/webfullstack-design-system/src/lib/input/input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/webfullstack-design-system/src/lib/snackbar/snackbar.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2595,6 +2668,116 @@
             },
             {
                 "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "test",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ColImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "img",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Item",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "items",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RowImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/card.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
