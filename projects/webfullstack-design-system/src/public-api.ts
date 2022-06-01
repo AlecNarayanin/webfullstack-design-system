@@ -19,3 +19,5 @@ export * from './lib/datatable/datatable.component';
 export * from './lib/datatable/datatable.interface';
 
 export * from './lib/snackbar/snackbar.component';
+
+export * from './lib/input/input.component';
