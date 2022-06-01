@@ -10,7 +10,7 @@
      [style.padding]="getPadding()"
      [style.width]="width">
 
-  <div class="image-header" *ngIf="headerImage" [style.margin-bottom]="sense == 'column'? '1em':0"
+  <div class="card__image-header" *ngIf="headerImage" [style.margin-bottom]="sense == 'column'? '1em':0"
        [style.margin-right]="sense == 'row'? '1em':0">
     <img [src]="headerImage"
          [style.border-radius]="borderRadius+'px'"
@@ -18,13 +18,13 @@
          style="box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;"
          alt="image">
   </div>
-  <div class="content"
+  <div class="card__content"
        [style.justify-content]="justify"
        [style.align-items]="align">
-    <div class="title" *ngIf="title">{{title}}</div>
-    <div class="subtitle" *ngIf="subtitle">{{subtitle}}</div>
-    <div class="description" *ngIf="description">{{description}}</div>
-    <div class="items" *ngIf="items">
+    <div class="card__title" *ngIf="title">{{title}}</div>
+    <div class="card__subtitle" *ngIf="subtitle">{{subtitle}}</div>
+    <div class="card__description" *ngIf="description">{{description}}</div>
+    <div class="card__items" *ngIf="items">
       <div *ngFor="let item of items" style="display: flex;flex-direction: column">
         <hr>
         <p style="margin: 0.3em 0">{{item}}</p>
@@ -42,7 +42,7 @@
 <div class="card" *ngIf="display=='image'"
      [style.width]="width">
   <img [src]="imgSrc"
-       alt="image" class="image">
+       alt="image" class="card__image">
 </div>
 
 <div class="card" *ngIf="display=='item'"
@@ -56,10 +56,10 @@
      [style.padding]="getPadding()"
      [style.width]="width">
   <img [src]="itemImage" [style.border-radius]="borderRadius+'px'"
-       alt="image" class="item-image">
-  <div class="item-content" *ngIf="title || subtitle">
-    <div class="title" *ngIf="title">{{title}}</div>
-    <div class="subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
+       alt="image" class="card__item-image">
+  <div class="card__item-content" *ngIf="title || subtitle">
+    <div class="card__title" *ngIf="title">{{title}}</div>
+    <div class="card__subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
   </div>
   <div *ngIf="buttonItem" style="position: absolute;right: 1em">
     <lib-button *ngIf="button1" type="secondary" [disabled]=button1.disabled size="md" (handleClick)="clickEvent()"
