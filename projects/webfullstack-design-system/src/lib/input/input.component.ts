@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-enum enumType { text, password , email, number, tel, url, search, color, date, datetime, datetimeLocal, month, range, time, week }
 @Component({
   selector: 'lib-input',
   templateUrl: './input.component.html',
@@ -7,11 +6,22 @@ enum enumType { text, password , email, number, tel, url, search, color, date, d
 })
 export class InputComponent implements OnInit {
 
-  @Input() type = enumType;
+  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';
+
   @Input() placeholder = 'Veuillez saisir une valeur';
+
+  @Input() disabled = false;
+
+  @Input() value = '';
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+  // onChange(event) {
+  //   console.log(event);
+  // }
 
 }
