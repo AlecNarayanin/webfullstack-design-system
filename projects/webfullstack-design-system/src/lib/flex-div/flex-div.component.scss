@@ -1,3 +1,6 @@
 .flex-div {
   display: flex;
+  &--full-width {
+    width: 100%;
+  }
 }

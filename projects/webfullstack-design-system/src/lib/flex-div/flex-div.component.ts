@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./flex-div.component.scss'],
 })
 export class FlexDivComponent implements OnInit {
+  @Input() fullWidth = false;
   @Input() justifyContent: string = 'start';
   @Input() direction: string = 'row';
   @Input() alignItems: string = 'start';
