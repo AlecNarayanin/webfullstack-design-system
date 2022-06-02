@@ -1,1 +1,5 @@
-<input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"/>
+<label>{{placeholder}}</label>
+<input class="input" [type]="type"
+       [value]="value" [minLength]="minLength" [maxLength]="maxLength"
+        />
+<span>{{control.touched && !control.invalid?"This field is required": ""}}</span>
