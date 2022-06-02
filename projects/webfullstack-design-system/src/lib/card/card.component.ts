@@ -10,6 +10,7 @@ export class CardComponent implements OnInit {
   @Input() title = '';
   @Input() subtitle = '';
   @Input() description = '';
+  @Input() fullWidth = false;
   @Input() button1: any;//Button
   @Input() button2: any; //Button
   @Input() buttonItem: any; //Button
