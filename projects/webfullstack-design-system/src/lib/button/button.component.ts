@@ -16,11 +16,13 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';
+  @Input() buttonType : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';
 
   @Input() size : 'sm' | 'md' | 'lg' = 'sm';
 
   @Input() disabled = false;
+
+  @Input() label = '';
 
   @Output() handleClick = new EventEmitter();
 
@@ -42,13 +44,13 @@ export class ButtonComponent implements OnInit {
   getCssClasses() {
     return {
       'btn': true,
-      'btn--primary': this.type === 'primary',
-      'btn--secondary': this.type === 'secondary',
-      'btn--tertiary': this.type === 'tertiary',
-      'btn--success': this.type === 'success',
-      'btn--danger': this.type === 'danger',
-      'btn--warning': this.type === 'warning',
-      'btn--info': this.type === 'info',
+      'btn--primary': this.buttonType === 'primary',
+      'btn--secondary': this.buttonType === 'secondary',
+      'btn--tertiary': this.buttonType === 'tertiary',
+      'btn--success': this.buttonType === 'success',
+      'btn--danger': this.buttonType === 'danger',
+      'btn--warning': this.buttonType === 'warning',
+      'btn--info': this.buttonType === 'info',
       'btn--sm': this.size === 'sm',
       'btn--md': this.size === 'md',
       'btn--lg': this.size === 'lg',
