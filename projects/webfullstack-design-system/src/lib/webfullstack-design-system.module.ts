@@ -8,6 +8,7 @@ import { ButtonComponent } from './button/button.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { InputComponent } from "./input/input.component";
 import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule } from "@angular/forms";
 
 const COMPONENTS = [
   CardComponent,
@@ -22,7 +23,7 @@ const COMPONENTS = [
 
 @NgModule({
   declarations: [...COMPONENTS],
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   exports: [...COMPONENTS],
 })
 export class WebfullstackDesignSystemModule {}
