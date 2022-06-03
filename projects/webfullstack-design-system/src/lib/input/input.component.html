@@ -1,1 +1,7 @@
-<input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"/>
+<div *ngIf="formGroup && formControlName ; else elseBlock"  [formGroup]="formGroup">
+  <input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"  [formControlName]="formControlName"/>
+</div>
+
+<ng-template #elseBlock>
+  <input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"/>
+</ng-template>
