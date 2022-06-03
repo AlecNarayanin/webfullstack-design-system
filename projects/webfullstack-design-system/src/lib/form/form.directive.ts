@@ -38,5 +38,12 @@ export class FormDirective implements OnInit {
       this.componentRef.instance.label = this.field.label;
       this.componentRef.instance.type = 'submit';
     }
+
+    if(this.field.collections){
+      this.field.collections.forEach(x=>{
+        this.componentRef.instance[x.key] = x.value;
+      });
+    }
+
   }
 }

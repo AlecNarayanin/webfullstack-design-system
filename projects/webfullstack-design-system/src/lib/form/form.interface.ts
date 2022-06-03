@@ -9,8 +9,14 @@ export interface FieldConfig {
   placeholder?: string;
   inputType?: string;
   options?: string[];
-  collections?: any;
+  collections?: Collection[];
   type: string;
   value?: any;
   validations?: Validator[];
+}
+
+
+export interface Collection {
+  key: string;
+  value: any;
 }
