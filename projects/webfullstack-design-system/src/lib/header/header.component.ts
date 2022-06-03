@@ -19,6 +19,8 @@ export class HeaderComponent implements OnInit {
     {path:'/users' , label: 'Users', active: false},
   ]
   activeMobileHeader = false;
+
+
   ngOnInit(): void {
     const currentPath = this.location.path();
     this.headerLinks.forEach(x=>{
