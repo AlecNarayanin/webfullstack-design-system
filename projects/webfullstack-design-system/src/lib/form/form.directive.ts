@@ -34,6 +34,7 @@ export class FormDirective implements OnInit {
     if(this.field.type === 'input'){
       this.componentRef.instance.formGroup = this.group;
       this.componentRef.instance.formControlName = this.field.name;
+      this.componentRef.instance.type = this.field.inputType;
     }else if(this.field.type === 'button'){
       this.componentRef.instance.label = this.field.label;
       this.componentRef.instance.type = 'submit';
