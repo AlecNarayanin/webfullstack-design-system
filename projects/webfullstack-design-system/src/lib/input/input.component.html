@@ -1,3 +1,7 @@
-<label>{{label}}</label>
-<input class="input" [type]="type" [value]="value" [minLength]="minLength" [maxLength]="maxLength"/>
-<!--<span>{{control.touched && !control.invalid?"This field is required": ""}}</span>-->
+<div *ngIf="formGroup && formControlName ; else elseBlock"  [formGroup]="formGroup">
+  <input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"  [formControlName]="formControlName"/>
+</div>
+
+<ng-template #elseBlock>
+  <input class="input" [type]="type" [placeholder]="placeholder" [disabled]="disabled"/>
+</ng-template>
