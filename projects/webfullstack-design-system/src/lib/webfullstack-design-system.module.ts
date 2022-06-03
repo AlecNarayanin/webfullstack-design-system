@@ -8,6 +8,7 @@ import { ButtonComponent } from './button/button.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { InputComponent } from "./input/input.component";
 import {CommonModule} from "@angular/common";
+import { CustomTextComponent } from './custom-text/custom-text.component';
 
 const COMPONENTS = [
   CardComponent,
@@ -21,7 +22,7 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, CustomTextComponent],
   imports: [CommonModule],
   exports: [...COMPONENTS],
 })

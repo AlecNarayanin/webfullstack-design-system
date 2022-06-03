@@ -1431,6 +1431,116 @@
             "templateData": "<canvas #myCanvas [width]=\"canvasWidth\" [height]=\"canvasHeigth\"></canvas>\n"
         },
         {
+            "name": "CustomTextComponent",
+            "id": "component-CustomTextComponent-9cfcf532003a4c459c291fb36e9eb9bdf4d477fab8bf11d6f38408db08b2b4b2c3fbe1db6bc13cca1b3e9f71f56777aadfd63ec91a9095c5647fb8f733c5ee8c",
+            "file": "projects/webfullstack-design-system/src/lib/custom-text/custom-text.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "custom-text",
+            "styleUrls": [
+                "./custom-text.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./custom-text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "variant",
+                    "defaultValue": "BODY_VARIANT",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "\"body\" | \"h1\" | \"h2\" | \"h3\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\nimport { BODY_VARIANT, H1_VARIANT, H2_VARIANT, H3_VARIANT } from './constants';\n\n@Component({\n  selector: 'custom-text',\n  templateUrl: './custom-text.component.html',\n  styleUrls: ['./custom-text.component.css'],\n})\nexport class CustomTextComponent implements OnInit {\n  @Input() variant: 'body' | 'h1' | 'h2' | 'h3' = BODY_VARIANT;\n\n  get isBody(): boolean {\n    return this.variant === BODY_VARIANT;\n  }\n\n  get isH1(): boolean {\n    return this.variant === H1_VARIANT;\n  }\n\n  get isH2(): boolean {\n    return this.variant === H2_VARIANT;\n  }\n\n  get isH3(): boolean {\n    return this.variant === H3_VARIANT;\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./custom-text.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 27
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "accessors": {
+                "isBody": {
+                    "name": "isBody",
+                    "getSignature": {
+                        "name": "isBody",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 13
+                    }
+                },
+                "isH1": {
+                    "name": "isH1",
+                    "getSignature": {
+                        "name": "isH1",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 17
+                    }
+                },
+                "isH2": {
+                    "name": "isH2",
+                    "getSignature": {
+                        "name": "isH2",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 21
+                    }
+                },
+                "isH3": {
+                    "name": "isH3",
+                    "getSignature": {
+                        "name": "isH3",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 25
+                    }
+                }
+            },
+            "templateData": "<p *ngIf=\"isBody\"><ng-content></ng-content></p>\n<h1 *ngIf=\"isH1\"><ng-content></ng-content></h1>\n<h2 *ngIf=\"isH2\"><ng-content></ng-content></h2>\n<h3 *ngIf=\"isH3\"><ng-content></ng-content></h3>\n"
+        },
+        {
             "name": "DatatableComponent",
             "id": "component-DatatableComponent-33cdf3f3e183cff961568787679989adf738180ff1dce37fe981c7205500aec7516658daf7e92f321e6dee02e2a83290be85205e748a7f53a47107a803ec85c0",
             "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
@@ -1742,7 +1852,7 @@
         },
         {
             "name": "FlexDivComponent",
-            "id": "component-FlexDivComponent-e9f060f262c284a01e03d82296c014ebfa6cd78476cadbc14a72e34188da4f24e5d8af43bb8932e6d2689e130e2247263dbb7f23bc7c82bb8ff2127eb7ceccb1",
+            "id": "component-FlexDivComponent-c12bb681eab388e8dcaa7dd8c39134790f45ae407c00dbbe1a337459b23468f66b3ac0efe3511e6285d218b70db7e073ce0f951612613a439325d542737bb591",
             "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1826,7 +1936,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'flex-div',\n  templateUrl: './flex-div.component.html',\n  styleUrls: ['./flex-div.component.scss'],\n})\nexport class FlexDivComponent implements OnInit {\n  @Input() fullWidth = false;\n  @Input() justifyContent: string = 'start';\n  @Input() direction: string = 'row';\n  @Input() alignItems: string = 'start';\n  @Input() wrap: string = 'nowrap';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'flex-div',\n  templateUrl: './flex-div.component.html',\n  styleUrls: ['./flex-div.component.scss'],\n})\nexport class FlexDivComponent implements OnInit {\n  @Input() fullWidth: boolean = false;\n  @Input() justifyContent: string = 'start';\n  @Input() direction: string = 'row';\n  @Input() alignItems: string = 'start';\n  @Input() wrap: string = 'nowrap';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -2077,13 +2187,13 @@
     "modules": [
         {
             "name": "WebfullstackDesignSystemModule",
-            "id": "module-WebfullstackDesignSystemModule-08032ee882b1978a2c8d3246046650bda0f6ad02cb0c3d76cdbb5283c9d56feaface66d7dda817560e1d03a9e1dab519dd1ba531b727d51b3bedeb20f42aef75",
+            "id": "module-WebfullstackDesignSystemModule-a2bbd21dd21551f37dee51a567f6fd5ad710e4d42e11fcc7d98dff914d659cee079beb54cced6e304f37687597e541a29e62c24afb655022c3d6e47473965465",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './card/card.component';\nimport { ChartComponent } from './chart/chart.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { FlexDivComponent } from './flex-div/flex-div.component';\nimport { SnackbarComponent } from './snackbar/snackbar.component';\nimport { ButtonComponent } from './button/button.component';\nimport { DatatableComponent } from './datatable/datatable.component';\nimport { InputComponent } from \"./input/input.component\";\nimport {CommonModule} from \"@angular/common\";\n\nconst COMPONENTS = [\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n];\n\n@NgModule({\n  declarations: [...COMPONENTS],\n  imports: [CommonModule],\n  exports: [...COMPONENTS],\n})\nexport class WebfullstackDesignSystemModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './card/card.component';\nimport { ChartComponent } from './chart/chart.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { FlexDivComponent } from './flex-div/flex-div.component';\nimport { SnackbarComponent } from './snackbar/snackbar.component';\nimport { ButtonComponent } from './button/button.component';\nimport { DatatableComponent } from './datatable/datatable.component';\nimport { InputComponent } from \"./input/input.component\";\nimport {CommonModule} from \"@angular/common\";\nimport { CustomTextComponent } from './custom-text/custom-text.component';\n\nconst COMPONENTS = [\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n];\n\n@NgModule({\n  declarations: [...COMPONENTS, CustomTextComponent],\n  imports: [CommonModule],\n  exports: [...COMPONENTS],\n})\nexport class WebfullstackDesignSystemModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -2100,6 +2210,9 @@
                         },
                         {
                             "name": "ChartComponent"
+                        },
+                        {
+                            "name": "CustomTextComponent"
                         },
                         {
                             "name": "DatatableComponent"
@@ -2175,6 +2288,36 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "BODY_VARIANT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'body'"
+            },
+            {
                 "name": "button1",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2233,6 +2376,36 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "H1_VARIANT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'h1'"
+            },
+            {
+                "name": "H2_VARIANT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'h2'"
+            },
+            {
+                "name": "H3_VARIANT",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'h3'"
             },
             {
                 "name": "Image",
@@ -2297,6 +2470,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CardComponent>",
+                "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -2307,11 +2490,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<CardComponent>",
-                "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
+                "type": "Story<FlexDivComponent>",
+                "defaultValue": "(args: FlexDivComponent) => ({\n  props: args,\n  template: `\n  <flex-div [justifyContent]=\"justifyContent\" [alignItems]=\"alignItems\" [direction]=\"direction\" [wrap]=\"wrap\">\n  <div [style.background]=\"'blue'\">Item 1</div>\n  <div [style.background]=\"'yellow'\">Item 2</div>\n  <div [style.background]=\"'red'\">Item 3</div>\n  <div [style.background]=\"'green'\">Item 4</div>\n  <div [style.background]=\"'brown'\">Item 5</div>\n  <div [style.background]=\"'pink'\">Item 6</div>\n  </flex-div>`,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<CustomTextComponent>",
+                "defaultValue": "(args: CustomTextComponent) => ({\n  props: args,\n  template: `\n  <custom-text [variant]=\"variant\">\n  ceci est du texte\n  </custom-text>`,\n})"
             }
         ],
         "functions": [
@@ -2429,6 +2622,92 @@
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
                     "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
+                }
+            ],
+            "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FlexDivComponent>",
+                    "defaultValue": "(args: FlexDivComponent) => ({\n  props: args,\n  template: `\n  <flex-div [justifyContent]=\"justifyContent\" [alignItems]=\"alignItems\" [direction]=\"direction\" [wrap]=\"wrap\">\n  <div [style.background]=\"'blue'\">Item 1</div>\n  <div [style.background]=\"'yellow'\">Item 2</div>\n  <div [style.background]=\"'red'\">Item 3</div>\n  <div [style.background]=\"'green'\">Item 4</div>\n  <div [style.background]=\"'brown'\">Item 5</div>\n  <div [style.background]=\"'pink'\">Item 6</div>\n  </flex-div>`,\n})"
+                }
+            ],
+            "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<CustomTextComponent>",
+                    "defaultValue": "(args: CustomTextComponent) => ({\n  props: args,\n  template: `\n  <custom-text [variant]=\"variant\">\n  ceci est du texte\n  </custom-text>`,\n})"
+                }
+            ],
+            "projects/webfullstack-design-system/src/lib/custom-text/constants.ts": [
+                {
+                    "name": "BODY_VARIANT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'body'"
+                },
+                {
+                    "name": "H1_VARIANT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'h1'"
+                },
+                {
+                    "name": "H2_VARIANT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'h2'"
+                },
+                {
+                    "name": "H3_VARIANT",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'h3'"
                 }
             ],
             "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts": [
@@ -2730,6 +3009,75 @@
                 "status": "low"
             },
             {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/CustomText.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BODY_VARIANT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "H1_VARIANT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "H2_VARIANT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "H3_VARIANT",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/custom-text/custom-text.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CustomTextComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
                 "filePath": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -2772,6 +3120,26 @@
                 "name": "FlexDivComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
