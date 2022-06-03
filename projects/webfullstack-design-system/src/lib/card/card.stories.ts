@@ -1,7 +1,7 @@
-import {CommonModule} from '@angular/common';
-import {moduleMetadata} from '@storybook/angular';
-import {Story} from '@storybook/angular/types-6-0';
-import {CardComponent} from "../projects/webfullstack-design-system/src/lib/card/card.component";
+import { CommonModule } from '@angular/common';
+import { moduleMetadata } from '@storybook/angular';
+import { Story } from '@storybook/angular/types-6-0';
+import { CardComponent } from './card.component';
 
 export default {
   title: 'UI/Card',
@@ -20,17 +20,18 @@ const Template: Story<CardComponent> = (args: CardComponent) => ({
 });
 
 const items = ['Item 1', 'Item 2'];
-const img = "https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg";
+const img =
+  'https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg';
 const button1 = {
   label: 'Bouton 1',
   disabled: false,
-  ev: test
+  ev: test,
 };
 const button2 = {
   label: 'Bouton 2',
   disabled: false,
-  ev: test
-}
+  ev: test,
+};
 
 function test() {
   alert('test');
@@ -40,7 +41,8 @@ export const Base = Template.bind({});
 Base.args = {
   title: 'Titre',
   subtitle: 'Sous-Titre',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
+  description:
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
   color: 'alabaster',
   borderRadius: '10',
   elevation: 'lg',
@@ -51,14 +53,15 @@ Base.args = {
   textAlign: 'start',
   items: items,
   button1: button1,
-  button2: button2
-}
+  button2: button2,
+};
 
 export const RowImage = Template.bind({});
 RowImage.args = {
   title: 'Titre',
   subtitle: 'Sous-Titre',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
+  description:
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
   color: 'alabaster',
   borderRadius: '10',
   elevation: 'md',
@@ -70,7 +73,7 @@ RowImage.args = {
   headerImage: img,
   imgHeight: '8em',
   button1: button1,
-  button2: button2
+  button2: button2,
 };
 
 export const Item = Template.bind({});
@@ -78,7 +81,8 @@ Item.args = {
   display: 'item',
   title: 'Titre',
   subtitle: 'Sous-Titre',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
+  description:
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
   color: 'alabaster',
   borderRadius: '10',
   elevation: 'md',
@@ -91,16 +95,17 @@ Item.args = {
     label: '+',
     active: true,
     size: 'sm',
-    ev: test
-  }
+    ev: test,
+  },
 };
 
 export const ColImage = Template.bind({});
 ColImage.args = {
-  display:'buttons',
+  display: 'buttons',
   title: 'Titre',
   subtitle: 'Sous-Titre',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
+  description:
+    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.',
   color: 'alabaster',
   borderRadius: '10',
   elevation: 'sm',
@@ -108,7 +113,7 @@ ColImage.args = {
   width: '15em',
   align: 'center',
   headerImage: img,
-  imgHeight: '13em'
+  imgHeight: '13em',
 };
 
 export const Image = Template.bind({});

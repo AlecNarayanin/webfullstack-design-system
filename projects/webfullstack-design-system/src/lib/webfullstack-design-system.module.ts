@@ -7,8 +7,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { ButtonComponent } from './button/button.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { InputComponent } from "./input/input.component";
-import {CommonModule} from "@angular/common";
-import { HeaderComponent } from './header/header.component';
+import { CommonModule } from "@angular/common";
 
 const COMPONENTS = [
   CardComponent,
@@ -22,7 +21,7 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS, HeaderComponent],
+  declarations: [...COMPONENTS],
   imports: [CommonModule],
   exports: [...COMPONENTS],
 })

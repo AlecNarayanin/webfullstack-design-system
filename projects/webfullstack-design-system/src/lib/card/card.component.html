@@ -35,9 +35,9 @@
       </div>
     </div>
     <div class="buttons" *ngIf="button1 || button2" [style.justify-content]="justify">
-      <lib-button *ngIf="button1" type="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
+      <lib-button *ngIf="button1" buttonType="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
                   style="margin-right: 1em">{{button1.label}}</lib-button>
-      <lib-button *ngIf="button2" type="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
+      <lib-button *ngIf="button2" buttonType="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
                   style="margin-right: 1em">{{button2.label}}</lib-button>
     </div>
   </div>
@@ -66,9 +66,9 @@
     <div class="card__subtitle" *ngIf="subtitle" style="margin-bottom: 0">{{subtitle}}</div>
   </div>
   <div *ngIf="buttonItem" style="position: absolute;right: 1em">
-    <lib-button *ngIf="button1" type="secondary" [disabled]=button1.disabled size="md" (handleClick)="clickEvent()"
+    <lib-button *ngIf="button1" buttonType="secondary" [disabled]=button1.disabled size="md" (handleClick)="clickEvent()"
                 style="margin-right: 1em">{{button1.label}}</lib-button>
-    <lib-button *ngIf="button2" type="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
+    <lib-button *ngIf="button2" buttonType="secondary" [disabled]=button1.disabled  size="md" (handleClick)="clickEvent()"
                 style="margin-right: 1em">{{button2.label}}</lib-button>
   </div>
 </div>
