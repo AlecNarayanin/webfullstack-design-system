@@ -5,7 +5,7 @@ import { FieldConfig, Validator } from './form.interface';
 @Component({
   selector: 'lib-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css' , '../input/input.component.scss']
+  styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
 
