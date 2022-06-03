@@ -1,0 +1,17 @@
+<header>
+  <ul class="desktop">
+    <li *ngFor="let link of headerLinks">
+      <a class="link-desktop"[routerLink]="link.path" (click)="onClickLink(link.label)" [class]="link.active?  'active' : '' ">{{link.label}}</a>
+    </li>
+  </ul>
+  <div class="mobile" (click)="activeMobileHeader = !activeMobileHeader">
+    <button mat-icon-button aria-label="Example icon-button with a menu">
+      <mat-icon class="icon-display">{{activeMobileHeader ? 'close' : 'menu'}}</mat-icon>
+    </button>
+    <div  [class]="activeMobileHeader ? 'showheader menuMobile' : 'hideheader menuMobile'" >
+      <div class="links-mobile">
+        <a *ngFor="let link of headerLinks"  [routerLink]="link.path" (click)="onClickLink(link.label)">{{link.label}}</a>
+      </div>
+    </div>
+  </div>
+</header>
