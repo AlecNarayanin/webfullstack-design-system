@@ -9,9 +9,10 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { ButtonComponent } from './button/button.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { InputComponent } from "./input/input.component";
-import {CommonModule} from "@angular/common";
+import { CommonModule } from "@angular/common";
 import { FormComponent } from './form/form.component';
-import {FormDirective} from "./form/form.directive";
+import { FormDirective } from "./form/form.directive";
+import { MuiIconsModule } from "./mui-icons.module";
 
 const COMPONENTS = [
   CardComponent,
@@ -28,7 +29,7 @@ const COMPONENTS = [
 
 @NgModule({
   declarations: [...COMPONENTS , ],
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, MuiIconsModule],
   exports: [...COMPONENTS],
 })
 export class WebfullstackDesignSystemModule {}
