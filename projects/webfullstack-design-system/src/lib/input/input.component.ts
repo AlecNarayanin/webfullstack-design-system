@@ -1,22 +1,24 @@
-import {Component, EventEmitter, forwardRef, Input, OnInit, Output, SimpleChanges} from '@angular/core';
-import {AbstractControl, ControlContainer, ControlValueAccessor, NG_VALUE_ACCESSOR} from "@angular/forms";
+import {Component, EventEmitter, Input, OnInit, Output, SimpleChanges} from '@angular/core';
+import {AbstractControl} from "@angular/forms";
 @Component({
   selector: 'lib-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
-  providers: [
-    {
-      provide: NG_VALUE_ACCESSOR,
-      useExisting: forwardRef(() => InputComponent),
-      multi: true
-    }
-  ],
+  // providers: [
+  //   {
+  //     provide: NG_VALUE_ACCESSOR,
+  //     useExisting: forwardRef(() => InputComponent),
+  //     multi: true
+  //   }
+  // ],
 })
-export class InputComponent implements ControlValueAccessor,OnInit {
+export class InputComponent implements OnInit {
 
   @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';
 
   @Input() placeholder = 'Veuillez saisir une valeur';
+
+  @Input() label = '';
 
   @Input() disabled = false;
 
@@ -32,13 +34,13 @@ export class InputComponent implements ControlValueAccessor,OnInit {
 
   @Output() valueChange = new EventEmitter<string>();
 
-  constructor(private controlContainer: ControlContainer) { }
+  constructor() { }
 
   ngOnInit() {
 
-    if(this.controlContainer && this.formControlName){
-      // this.control = this.controlContainer.control.get(this.formControlName);
-    }
+    // if(this.controlContainer && this.formControlName){
+      //this.control = this.controlContainer.control.get(this.formControlName);
+    // }
 
   }
 
@@ -47,20 +49,18 @@ export class InputComponent implements ControlValueAccessor,OnInit {
     console.log(changes);
   }
 
+  //Implementing ControlValueAccessor
 
-  writeValue(obj: any) {
-    debugger
-    this.value = obj;
-  }
-
-  registerOnChange(fn: any) {
-    debugger
-    this.valueChange.subscribe(fn);
-  }
-
-  registerOnTouched(fn: any) {
-    debugger
-    // this.valueChange.subscribe(fn);
-  }
+  // writeValue(obj: any) {
+  //   this.value = obj;
+  // }
+  //
+  // registerOnChange(fn: any) {
+  //   this.valueChange.subscribe(fn);
+  // }
+  //
+  // registerOnTouched(fn: any) {
+  //   // this.valueChange.subscribe(fn);
+  // }
 
 }
