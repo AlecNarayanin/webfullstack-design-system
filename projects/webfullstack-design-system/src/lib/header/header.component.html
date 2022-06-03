@@ -1,17 +1,19 @@
-<header>
-  <ul class="desktop">
+<header class="header">
+  <ul *ngIf="!activeMobileHeader; else elseBlock" class="desktop__container">
     <li *ngFor="let link of headerLinks">
-      <a class="link-desktop"[routerLink]="link.path" (click)="onClickLink(link.label)" [class]="link.active?  'active' : '' ">{{link.label}}</a>
+      <a class="desktop__container-link" [routerLink]="link.path" (click)="onClickLink(link.label)" [class]="link.active?  'desktop__container-link--active' : '' ">{{link.label}}</a>
     </li>
   </ul>
-  <div class="mobile" (click)="activeMobileHeader = !activeMobileHeader">
-    <button mat-icon-button aria-label="Example icon-button with a menu">
-      <mat-icon class="icon-display">{{activeMobileHeader ? 'close' : 'menu'}}</mat-icon>
-    </button>
-    <div  [class]="activeMobileHeader ? 'showheader menuMobile' : 'hideheader menuMobile'" >
-      <div class="links-mobile">
-        <a *ngFor="let link of headerLinks"  [routerLink]="link.path" (click)="onClickLink(link.label)">{{link.label}}</a>
+  <ng-template #elseBlock>
+    <div class="mobile" (click)="activeMobileHeader = !activeMobileHeader">
+      <lib-button>
+<!--        <icon>{{activeMobileHeader ? 'close' : 'menu'}}</icon>-->
+      </lib-button>
+      <div class="mobile-menu" [class]="activeMobileHeader ? 'show-header' : 'hide-header'" >
+        <div class="mobile__links">
+          <a *ngFor="let link of headerLinks"  [routerLink]="link.path" (click)="onClickLink(link.label)">{{link.label}}</a>
+        </div>
       </div>
     </div>
-  </div>
+  </ng-template>
 </header>
