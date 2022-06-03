@@ -1,1 +1,6 @@
-<button class="btn" [type]="type" [class]="getCssClasses()" [disabled]="disabled" (click)="handleClickEvent()">{{label}}</button>
+<button class="btn" [type]="type" [class]="getCssClasses()" [disabled]="disabled" (click)="handleClickEvent()">
+  {{label}}
+<!--  <ng-content *ngIf="(label && label.length)> 0" select="[icon]"></ng-content>-->
+<!--  <HomeIcon *ngIf="(label && label.length)> 0" />-->
+</button>
+<HomeIcon color="primary" />
