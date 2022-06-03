@@ -2,6 +2,38 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "Collection",
+            "id": "interface-Collection-3181ea291d4cd87c977be02cc84223999966a3d23ca778b1d500538c8652b946ada034b9f7700540328e59edca4b83d3b4516b20891f90e33f00a517c6329c77",
+            "file": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Validator {\n  name: string;\n  validator: any;\n  message: string;\n}\nexport interface FieldConfig {\n  label?: string;\n  name: string;\n  placeholder?: string;\n  inputType?: string;\n  options?: string[];\n  collections?: Collection[];\n  type: string;\n  value?: any;\n  validations?: Validator[];\n}\n\n\nexport interface Collection {\n  key: string;\n  value: any;\n}\n",
+            "properties": [
+                {
+                    "name": "key",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
             "name": "CreateChart",
             "id": "interface-CreateChart-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
@@ -432,13 +464,251 @@
             "indexSignatures": [],
             "kind": 165,
             "methods": []
+        },
+        {
+            "name": "FieldConfig",
+            "id": "interface-FieldConfig-3181ea291d4cd87c977be02cc84223999966a3d23ca778b1d500538c8652b946ada034b9f7700540328e59edca4b83d3b4516b20891f90e33f00a517c6329c77",
+            "file": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Validator {\n  name: string;\n  validator: any;\n  message: string;\n}\nexport interface FieldConfig {\n  label?: string;\n  name: string;\n  placeholder?: string;\n  inputType?: string;\n  options?: string[];\n  collections?: Collection[];\n  type: string;\n  value?: any;\n  validations?: Validator[];\n}\n\n\nexport interface Collection {\n  key: string;\n  value: any;\n}\n",
+            "properties": [
+                {
+                    "name": "collections",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Collection[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "inputType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "options",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "placeholder",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "validations",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Validator[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": true,
+                    "description": "",
+                    "line": 14
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Validator",
+            "id": "interface-Validator-3181ea291d4cd87c977be02cc84223999966a3d23ca778b1d500538c8652b946ada034b9f7700540328e59edca4b83d3b4516b20891f90e33f00a517c6329c77",
+            "file": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Validator {\n  name: string;\n  validator: any;\n  message: string;\n}\nexport interface FieldConfig {\n  label?: string;\n  name: string;\n  placeholder?: string;\n  inputType?: string;\n  options?: string[];\n  collections?: Collection[];\n  type: string;\n  value?: any;\n  validations?: Validator[];\n}\n\n\nexport interface Collection {\n  key: string;\n  value: any;\n}\n",
+            "properties": [
+                {
+                    "name": "message",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "validator",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
         }
     ],
     "injectables": [],
     "guards": [],
     "interceptors": [],
     "classes": [],
-    "directives": [],
+    "directives": [
+        {
+            "name": "FormDirective",
+            "id": "directive-FormDirective-772286cd0a79b4bef040906ff3bf63141ef89415d6883728a0565979ee9b8d895ffd4b4d3c0e6f530863efcc177b7041e70c7d69b4148b17f676c771461e7cb9",
+            "file": "projects/webfullstack-design-system/src/lib/form/form.directive.ts",
+            "type": "directive",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import {\n  ComponentFactoryResolver,\n  Directive,\n  Input,\n  OnInit,\n  ViewContainerRef\n} from \"@angular/core\";\nimport { FormGroup } from \"@angular/forms\";\nimport { FieldConfig } from \"./form.interface\";\nimport { InputComponent } from \"../input/input.component\";\nimport { ButtonComponent } from \"../button/button.component\";\n\nconst componentMapper :any = {\n  input: InputComponent,\n  button: ButtonComponent,\n};\n\n@Directive({\n  selector: \"[dynamicField]\"\n})\nexport class FormDirective implements OnInit {\n  @Input() field!: FieldConfig;\n  @Input() group!: FormGroup;\n  componentRef: any;\n  constructor(\n    private resolver: ComponentFactoryResolver,\n    private container: ViewContainerRef\n  ) {}\n  ngOnInit() {\n    const factory = this.resolver.resolveComponentFactory(\n      componentMapper[this.field.type]\n    );\n    this.componentRef = this.container.createComponent(factory);\n    if(this.field.type === 'input'){\n      this.componentRef.instance.formGroup = this.group;\n      this.componentRef.instance.formControlName = this.field.name;\n    }else if(this.field.type === 'button'){\n      this.componentRef.instance.label = this.field.label;\n      this.componentRef.instance.type = 'submit';\n    }\n\n    if(this.field.collections){\n      this.field.collections.forEach(x=>{\n        this.componentRef.instance[x.key] = x.value;\n      });\n    }\n\n  }\n}\n",
+            "selector": "[dynamicField]",
+            "providers": [],
+            "inputsClass": [
+                {
+                    "name": "field",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "FieldConfig",
+                    "decorators": []
+                },
+                {
+                    "name": "group",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "FormGroup",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "propertiesClass": [
+                {
+                    "name": "componentRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "implements": [
+                "OnInit"
+            ],
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "resolver",
+                        "type": "ComponentFactoryResolver",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "container",
+                        "type": "ViewContainerRef",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 24,
+                "jsdoctags": [
+                    {
+                        "name": "resolver",
+                        "type": "ComponentFactoryResolver",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "container",
+                        "type": "ViewContainerRef",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
     "components": [
         {
             "name": "ButtonComponent",
@@ -895,7 +1165,7 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.text-align]=\"textAlign\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n\n  <div class=\"card__image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\n    <img [src]=\"headerImage\"\n         [style.border-radius]=\"borderRadius+'px'\"\n         [style.height]=\"imgHeight\"\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\n         alt=\"image\">\n  </div>\n  <div class=\"card__content\"\n       [ngClass]=\"fullWidth ? 'card__content--full-width':''\"\n       [style.justify-content]=\"justify\"\n       [style.align-items]=\"align\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\n    <div class=\"card__description\" *ngIf=\"description; else elseBlock\">{{description}}</div>\n    <ng-template #elseBlock>\n      <ng-content class=\"card__description\"></ng-content>\n    </ng-template>\n    <div class=\"card__items\" *ngIf=\"items\">\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\n        <hr>\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\n      </div>\n    </div>\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" [style.justify-content]=\"justify\">\n      <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n      <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n    </div>\n  </div>\n</div>\n\n<div class=\"card\" *ngIf=\"display=='image'\"\n     [style.width]=\"width\">\n  <img [src]=\"imgSrc\"\n       alt=\"image\" class=\"card__image\">\n</div>\n\n<div class=\"card\" *ngIf=\"display=='item'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\n       alt=\"image\" class=\"card__item-image\">\n  <div class=\"card__item-content\" *ngIf=\"title || subtitle\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\n  </div>\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\n    <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n    <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n  </div>\n</div>\n"
+            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.text-align]=\"textAlign\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n\n  <div class=\"card__image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\n    <img [src]=\"headerImage\"\n         [style.border-radius]=\"borderRadius+'px'\"\n         [style.height]=\"imgHeight\"\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\n         alt=\"image\">\n  </div>\n  <div class=\"card__content\"\n       [ngClass]=\"fullWidth ? 'card__content--full-width':''\"\n       [style.justify-content]=\"justify\"\n       [style.align-items]=\"align\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\n    <div class=\"card__description\" *ngIf=\"description; else elseBlock\">{{description}}</div>\n    <ng-template #elseBlock>\n      <ng-content class=\"card__description\"></ng-content>\n    </ng-template>\n    <div class=\"card__items\" *ngIf=\"items\">\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\n        <hr>\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\n      </div>\n    </div>\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" [style.justify-content]=\"justify\">\n      <lib-button *ngIf=\"button1\" buttonType=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n      <lib-button *ngIf=\"button2\" buttonType=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n    </div>\n  </div>\n</div>\n\n<div class=\"card\" *ngIf=\"display=='image'\"\n     [style.width]=\"width\">\n  <img [src]=\"imgSrc\"\n       alt=\"image\" class=\"card__image\">\n</div>\n\n<div class=\"card\" *ngIf=\"display=='item'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\n       alt=\"image\" class=\"card__item-image\">\n  <div class=\"card__item-content\" *ngIf=\"title || subtitle\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\n  </div>\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\n    <lib-button *ngIf=\"button1\" buttonType=\"secondary\" [disabled]=button1.disabled size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n    <lib-button *ngIf=\"button2\" buttonType=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n  </div>\n</div>\n"
         },
         {
             "name": "ChartComponent",
@@ -1742,7 +2012,7 @@
         },
         {
             "name": "FlexDivComponent",
-            "id": "component-FlexDivComponent-e9f060f262c284a01e03d82296c014ebfa6cd78476cadbc14a72e34188da4f24e5d8af43bb8932e6d2689e130e2247263dbb7f23bc7c82bb8ff2127eb7ceccb1",
+            "id": "component-FlexDivComponent-353a7c6ffc70a91807e45677f34d27edbead9baa67df37f38c8e06f4cf498038c8997218f1d1a3a717806c3c01a5b5ffe2f8200aa0422ee3b5778a7e5c5e7653",
             "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1764,7 +2034,7 @@
                     "defaultValue": "'start'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 13,
                     "type": "string",
                     "decorators": []
                 },
@@ -1773,8 +2043,17 @@
                     "defaultValue": "'row'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 12,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "fullHeight",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 10,
+                    "type": "boolean",
                     "decorators": []
                 },
                 {
@@ -1791,7 +2070,7 @@
                     "defaultValue": "'start'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 10,
+                    "line": 11,
                     "type": "string",
                     "decorators": []
                 },
@@ -1800,7 +2079,7 @@
                     "defaultValue": "'nowrap'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 14,
                     "type": "string",
                     "decorators": []
                 }
@@ -1814,7 +2093,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 18,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1826,11 +2105,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'flex-div',\n  templateUrl: './flex-div.component.html',\n  styleUrls: ['./flex-div.component.scss'],\n})\nexport class FlexDivComponent implements OnInit {\n  @Input() fullWidth = false;\n  @Input() justifyContent: string = 'start';\n  @Input() direction: string = 'row';\n  @Input() alignItems: string = 'start';\n  @Input() wrap: string = 'nowrap';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'flex-div',\n  templateUrl: './flex-div.component.html',\n  styleUrls: ['./flex-div.component.scss'],\n})\nexport class FlexDivComponent implements OnInit {\n  @Input() fullWidth = false;\n  @Input() fullHeight = false;\n  @Input() justifyContent: string = 'start';\n  @Input() direction: string = 'row';\n  @Input() alignItems: string = 'start';\n  @Input() wrap: string = 'nowrap';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".flex-div {\n  display: flex;\n  &--full-width {\n    width: 100%;\n  }\n}\n",
+                    "data": ".flex-div {\n  display: flex;\n  &--full-width {\n    width: 100%;\n  }\n  &--full-height {\n    height: 100%;\n  }\n}\n",
                     "styleUrl": "./flex-div.component.scss"
                 }
             ],
@@ -1841,16 +2120,231 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 13
+                "line": 14
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div\n  class=\"flex-div\"\n  [ngClass]=\"fullWidth ? 'flex-div--full-width' : ''\"\n  [style.justify-content]=\"justifyContent\"\n  [style.flex-direction]=\"direction\"\n  [style.align-items]=\"alignItems\"\n  [style.flex-wrap]=\"wrap\"\n>\n  <ng-content></ng-content>\n</div>\n"
+            "templateData": "<div\n  class=\"flex-div\"\n  [ngClass]=\"fullWidth ? 'flex-div--full-width' : ''\"\n  [ngClass]=\"fullHeight ? 'flex-div--full-height' : ''\"\n  [style.justify-content]=\"justifyContent\"\n  [style.flex-direction]=\"direction\"\n  [style.align-items]=\"alignItems\"\n  [style.flex-wrap]=\"wrap\"\n>\n  <ng-content></ng-content>\n</div>\n"
+        },
+        {
+            "name": "FormComponent",
+            "id": "component-FormComponent-dbd3cfae9e5c58c78d7399c095160e19cbef7e10bbde73de9a5c8d1d1f606d313b40b74a7709c6a6498569239b730eb336e2df7187bf32459ee49915129d2fcd",
+            "file": "projects/webfullstack-design-system/src/lib/form/form.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-form",
+            "styleUrls": [
+                "./form.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./form.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "fields",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "FieldConfig[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "submit",
+                    "defaultValue": "new EventEmitter<any>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "form",
+                    "defaultValue": "this.fb.group({})",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormGroup",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "bindValidations",
+                    "args": [
+                        {
+                            "name": "validations",
+                            "type": "Validator[] | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "validations",
+                            "type": "Validator[] | undefined",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "createControl",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "FormGroup",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onSubmit",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "Event",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "validateAllFormFields",
+                    "args": [
+                        {
+                            "name": "formGroup",
+                            "type": "FormGroup",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 61,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "formGroup",
+                            "type": "FormGroup",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';\nimport { FieldConfig, Validator } from './form.interface';\n\n@Component({\n  selector: 'lib-form',\n  templateUrl: './form.component.html',\n  styleUrls: ['./form.component.scss']\n})\nexport class FormComponent implements OnInit {\n\n  @Input() fields: FieldConfig[] = [];\n\n  @Output() submit: EventEmitter<any> = new EventEmitter<any>();\n\n  form: FormGroup =this.fb.group({});\n\n  get value() {\n    return this.form.value;\n  }\n  constructor(private fb: FormBuilder) {}\n\n  ngOnInit() :void {\n    this.form = this.createControl();\n  }\n\n  onSubmit(event: Event) {\n    event.preventDefault();\n    event.stopPropagation();\n    console.log(this.form.value);\n    if (this.form.valid) {\n      this.submit.emit(this.form.value);\n    } else {\n      this.validateAllFormFields(this.form);\n    }\n  }\n\n  createControl() :FormGroup{\n    const group = this.fb.group({});\n    this.fields.forEach(field => {\n      if (field.type === \"button\") return;\n      const control = this.fb.control(\n        field.value,\n        this.bindValidations(field.validations || [])\n      );\n      group.addControl(field.name as string, control);\n    });\n    return group;\n  }\n  bindValidations(validations: Validator[] | undefined) {\n    if (validations) {\n      const validList :any[]= [];\n      validations.forEach(valid => {\n        validList.push(valid.validator);\n      });\n      return Validators.compose(validList);\n    }\n    return null;\n  }\n\n  validateAllFormFields(formGroup: FormGroup) {\n    Object.keys(formGroup.controls).forEach(field => {\n      const control = formGroup.get(field);\n      if(control) control.markAsTouched({ onlySelf: true });\n    });\n  }\n\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host-context(.form-margin) form {\n  display: flex;\n  flex-direction: column;\n  gap : 10px;\n}\n",
+                    "styleUrl": "./form.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "fb",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 20,
+                "jsdoctags": [
+                    {
+                        "name": "fb",
+                        "type": "FormBuilder",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "accessors": {
+                "value": {
+                    "name": "value",
+                    "getSignature": {
+                        "name": "value",
+                        "type": "",
+                        "returnType": "",
+                        "line": 18
+                    }
+                }
+            },
+            "templateData": "<form [formGroup]=\"form\" (ngSubmit)=\"onSubmit($event)\">\n  <ng-container *ngFor=\"let field of fields;\" dynamicField [field]=\"field\" [group]=\"form\">\n  </ng-container>\n</form>\n"
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-f6cbeba9d79951617ee833c03bc83d01dc77ffb7fc1ae5d41657fcad015e9b3e8ab008c5dd5e104ed180b7598e86251b62f0607b6decff46c333552b1808b7a5",
+            "id": "component-InputComponent-42a987aedb8358720ba2c63cb057916edb4ede4c2399017e436e489b142d36e628ad83155c02261bc07ea70ed04a8b62466cf35e82dc473c5526341bcc8e15bc",
             "file": "projects/webfullstack-design-system/src/lib/input/input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1872,8 +2366,25 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 14,
                     "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "formControlName",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "formGroup",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "FormGroup",
                     "decorators": []
                 },
                 {
@@ -1881,7 +2392,7 @@
                     "defaultValue": "'Veuillez saisir une valeur'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 12,
                     "type": "string",
                     "decorators": []
                 },
@@ -1890,7 +2401,7 @@
                     "defaultValue": "'text'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 9,
+                    "line": 10,
                     "type": "\"text\" | \"password\" | \"email\" | \"tel\" | \"search\" | \"number\"",
                     "decorators": []
                 },
@@ -1899,7 +2410,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 16,
                     "type": "string",
                     "decorators": []
                 }
@@ -1913,7 +2424,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 23,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1925,7 +2436,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\n@Component({\n  selector: 'lib-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';\n\n  @Input() placeholder = 'Veuillez saisir une valeur';\n\n  @Input() disabled = false;\n\n  @Input() value = '';\n\n  constructor() { }\n\n  ngOnInit(): void {\n\n  }\n\n  // onChange(event) {\n  //   console.log(event);\n  // }\n\n}\n",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\nimport { FormGroup } from '@angular/forms';\n@Component({\n  selector: 'lib-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';\n\n  @Input() placeholder = 'Veuillez saisir une valeur';\n\n  @Input() disabled = false;\n\n  @Input() value = '';\n\n  @Input() formControlName? = '';\n  @Input() formGroup? : FormGroup;\n\n  constructor() { }\n\n  ngOnInit(): void {\n\n  }\n\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1940,12 +2451,12 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 15
+                "line": 19
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"/>\n"
+            "templateData": "<div *ngIf=\"formGroup && formControlName ; else elseBlock\"  [formGroup]=\"formGroup\">\n  <input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"  [formControlName]=\"formControlName\"/>\n</div>\n\n<ng-template #elseBlock>\n  <input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"/>\n</ng-template>\n"
         },
         {
             "name": "SnackbarComponent",
@@ -2077,13 +2588,13 @@
     "modules": [
         {
             "name": "WebfullstackDesignSystemModule",
-            "id": "module-WebfullstackDesignSystemModule-08032ee882b1978a2c8d3246046650bda0f6ad02cb0c3d76cdbb5283c9d56feaface66d7dda817560e1d03a9e1dab519dd1ba531b727d51b3bedeb20f42aef75",
+            "id": "module-WebfullstackDesignSystemModule-2c012dc05e97759dbc9a41f67fec632ce673a0ab6b47e5b7d2ecb0bb6b776f88ea535f7d32f7239478e14fb65587cc3168d6366dc9acefd2f32b0229ade7b2e2",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './card/card.component';\nimport { ChartComponent } from './chart/chart.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { FlexDivComponent } from './flex-div/flex-div.component';\nimport { SnackbarComponent } from './snackbar/snackbar.component';\nimport { ButtonComponent } from './button/button.component';\nimport { DatatableComponent } from './datatable/datatable.component';\nimport { InputComponent } from \"./input/input.component\";\nimport {CommonModule} from \"@angular/common\";\n\nconst COMPONENTS = [\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n];\n\n@NgModule({\n  declarations: [...COMPONENTS],\n  imports: [CommonModule],\n  exports: [...COMPONENTS],\n})\nexport class WebfullstackDesignSystemModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { ReactiveFormsModule } from '@angular/forms';\n\nimport { CardComponent } from './card/card.component';\nimport { ChartComponent } from './chart/chart.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { FlexDivComponent } from './flex-div/flex-div.component';\nimport { SnackbarComponent } from './snackbar/snackbar.component';\nimport { ButtonComponent } from './button/button.component';\nimport { DatatableComponent } from './datatable/datatable.component';\nimport { InputComponent } from \"./input/input.component\";\nimport {CommonModule} from \"@angular/common\";\nimport { FormComponent } from './form/form.component';\nimport {FormDirective} from \"./form/form.directive\";\n\nconst COMPONENTS = [\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent,\n  FormComponent,\n  FormDirective\n];\n\n@NgModule({\n  declarations: [...COMPONENTS , ],\n  imports: [CommonModule, ReactiveFormsModule],\n  exports: [...COMPONENTS],\n})\nexport class WebfullstackDesignSystemModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -2109,6 +2620,12 @@
                         },
                         {
                             "name": "FlexDivComponent"
+                        },
+                        {
+                            "name": "FormComponent"
+                        },
+                        {
+                            "name": "FormDirective"
                         },
                         {
                             "name": "InputComponent"
@@ -2144,6 +2661,12 @@
                             "name": "FlexDivComponent"
                         },
                         {
+                            "name": "FormComponent"
+                        },
+                        {
+                            "name": "FormDirective"
+                        },
+                        {
                             "name": "InputComponent"
                         },
                         {
@@ -2169,6 +2692,16 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Base",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2205,6 +2738,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "componentMapper",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/form/form.directive.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "any",
+                "defaultValue": "{\n  input: InputComponent,\n  button: ButtonComponent,\n}"
+            },
+            {
                 "name": "COMPONENTS",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -2212,7 +2755,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n]"
+                "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent,\n  FormComponent,\n  FormDirective\n]"
             },
             {
                 "name": "context",
@@ -2312,6 +2855,16 @@
                 "deprecationMessage": "",
                 "type": "Story<CardComponent>",
                 "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<FlexDivComponent>",
+                "defaultValue": "(args: FlexDivComponent) => ({\n  props: args,\n  template: `\n  <flex-div [justifyContent]=\"justifyContent\" [alignItems]=\"alignItems\" [direction]=\"direction\" [wrap]=\"wrap\" [fullWidth]=\"fullWidth\" [fullHeight]=\"fullHeight\">\n  <div [style.background]=\"'blue'\">Item 1</div>\n  <div [style.background]=\"'yellow'\">Item 2</div>\n  <div [style.background]=\"'red'\">Item 3</div>\n  <div [style.background]=\"'green'\">Item 4</div>\n  <div [style.background]=\"'brown'\">Item 5</div>\n  <div [style.background]=\"'pink'\">Item 6</div>\n  </flex-div>`,\n})"
             }
         ],
         "functions": [
@@ -2431,6 +2984,40 @@
                     "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
                 }
             ],
+            "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts": [
+                {
+                    "name": "Base",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FlexDivComponent>",
+                    "defaultValue": "(args: FlexDivComponent) => ({\n  props: args,\n  template: `\n  <flex-div [justifyContent]=\"justifyContent\" [alignItems]=\"alignItems\" [direction]=\"direction\" [wrap]=\"wrap\" [fullWidth]=\"fullWidth\" [fullHeight]=\"fullHeight\">\n  <div [style.background]=\"'blue'\">Item 1</div>\n  <div [style.background]=\"'yellow'\">Item 2</div>\n  <div [style.background]=\"'red'\">Item 3</div>\n  <div [style.background]=\"'green'\">Item 4</div>\n  <div [style.background]=\"'brown'\">Item 5</div>\n  <div [style.background]=\"'pink'\">Item 6</div>\n  </flex-div>`,\n})"
+                }
+            ],
+            "projects/webfullstack-design-system/src/lib/form/form.directive.ts": [
+                {
+                    "name": "componentMapper",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/webfullstack-design-system/src/lib/form/form.directive.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "defaultValue": "{\n  input: InputComponent,\n  button: ButtonComponent,\n}"
+                }
+            ],
             "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts": [
                 {
                     "name": "COMPONENTS",
@@ -2440,7 +3027,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n]"
+                    "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent,\n  FormComponent,\n  FormDirective\n]"
                 }
             ],
             "projects/webfullstack-design-system/src/test.ts": [
@@ -2771,7 +3358,82 @@
                 "linktype": "component",
                 "name": "FlexDivComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/8",
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "FormComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.directive.ts",
+                "type": "directive",
+                "linktype": "directive",
+                "name": "FormDirective",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.directive.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "componentMapper",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Collection",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "FieldConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/form/form.interface.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Validator",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
@@ -2780,7 +3442,7 @@
                 "linktype": "component",
                 "name": "InputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {

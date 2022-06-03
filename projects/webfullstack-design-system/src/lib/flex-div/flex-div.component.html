@@ -1,6 +1,6 @@
 <div
   class="flex-div"
-  [ngClass]="fullWidth ? 'flex-div--full-width' : ''"
+  [ngClass]="getClass()"
   [style.justify-content]="justifyContent"
   [style.flex-direction]="direction"
   [style.align-items]="alignItems"
