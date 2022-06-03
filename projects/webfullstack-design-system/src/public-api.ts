@@ -21,3 +21,7 @@ export * from './lib/datatable/datatable.interface';
 export * from './lib/snackbar/snackbar.component';
 
 export * from './lib/input/input.component';
+
+export * from './lib/form/form.component';
+export * from './lib/form/form.interface';
+export * from './lib/form/form.directive';

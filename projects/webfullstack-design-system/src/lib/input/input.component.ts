@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'lib-input',
   templateUrl: './input.component.html',
@@ -14,14 +15,14 @@ export class InputComponent implements OnInit {
 
   @Input() value = '';
 
+  @Input() formControlName? = '';
+  @Input() formGroup? : FormGroup;
+
   constructor() { }
 
   ngOnInit(): void {
 
   }
 
-  // onChange(event) {
-  //   console.log(event);
-  // }
 
 }
