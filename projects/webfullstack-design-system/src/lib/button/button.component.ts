@@ -16,6 +16,8 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
+  @Input() type: 'submit' | 'reset' | 'button' = 'button';
+
   @Input() buttonType : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';
 
   @Input() size : 'sm' | 'md' | 'lg' = 'sm';
