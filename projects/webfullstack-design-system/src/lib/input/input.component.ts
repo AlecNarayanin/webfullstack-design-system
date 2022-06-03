@@ -16,6 +16,7 @@ export class InputComponent implements OnInit {
   @Input() value = '';
 
   @Input() formControlName? = '';
+
   @Input() formGroup? : FormGroup;
 
   constructor() { }
