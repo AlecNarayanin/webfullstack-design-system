@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "CreateChart",
-            "id": "interface-CreateChart-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-CreateChart-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "maxX",
@@ -71,12 +71,12 @@
         },
         {
             "name": "DataChart",
-            "id": "interface-DataChart-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataChart-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "color",
@@ -103,12 +103,12 @@
         },
         {
             "name": "DataChartCoordonate",
-            "id": "interface-DataChartCoordonate-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataChartCoordonate-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "x",
@@ -135,12 +135,12 @@
         },
         {
             "name": "DataDrawInterLine",
-            "id": "interface-DataDrawInterLine-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataDrawInterLine-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "numXTicks",
@@ -176,12 +176,12 @@
         },
         {
             "name": "DataDrawXAxis",
-            "id": "interface-DataDrawXAxis-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataDrawXAxis-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "font",
@@ -244,12 +244,12 @@
         },
         {
             "name": "DataDrawYAxis",
-            "id": "interface-DataDrawYAxis-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataDrawYAxis-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "font",
@@ -303,12 +303,12 @@
         },
         {
             "name": "DataGetLongestValueWidth",
-            "id": "interface-DataGetLongestValueWidth-5cabb046218dcc6425191696c3e169e511e7cc7e5989971f813f617f08677172f6e52da4e3473c794436e74dc1ee45e63876cce1889ea818314b72d3e5333fa5",
+            "id": "interface-DataGetLongestValueWidth-a52081b43b380fbfaa5127538a3c9f3f4a69175aba148019d3c4dae42017df1d0c9683d4dacc4835693bd38820058eba109d3a33b2e8c05131402042220e99f0",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export default interface DataChart {\r\n  color: string;\r\n  data : DataChartCoordonate[];\r\n}\r\nexport interface DataChartCoordonate {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport interface CreateChart {\r\n  minX: number;\r\n  minY :number;\r\n  maxX :number;\r\n  maxY :number;\r\n  unitsPerTickX :number;\r\n  unitsPerTickY :number;\r\n}\r\n\r\n\r\nexport interface DataDrawXAxis{\r\n  width :number;\r\n  numXTicks :number;\r\n  tickSize :number;\r\n  font :string;\r\n  maxX:number;\r\n  padding:number;\r\n}\r\n\r\nexport interface DataDrawYAxis{\r\n  numYTicks :number;\r\n  tickSize :number; font :string;\r\n  maxY :number;\r\n  padding:number;\r\n}\r\n\r\n\r\nexport interface DataDrawInterLine{\r\n  numYTicks :number;\r\n  numXTicks :number;\r\n  width  :number;\r\n}\r\n\r\nexport interface DataGetLongestValueWidth{\r\n  numYTicks :number;\r\n  unitsPerTickY :number;\r\n  maxY :number;\r\n font :string;\r\n}\r\n",
+            "sourceCode": "export default interface DataChart {\n  color: string;\n  data : DataChartCoordonate[];\n}\nexport interface DataChartCoordonate {\n  x: number;\n  y: number;\n}\n\nexport interface CreateChart {\n  minX: number;\n  minY :number;\n  maxX :number;\n  maxY :number;\n  unitsPerTickX :number;\n  unitsPerTickY :number;\n}\n\n\nexport interface DataDrawXAxis{\n  width :number;\n  numXTicks :number;\n  tickSize :number;\n  font :string;\n  maxX:number;\n  padding:number;\n}\n\nexport interface DataDrawYAxis{\n  numYTicks :number;\n  tickSize :number; font :string;\n  maxY :number;\n  padding:number;\n}\n\n\nexport interface DataDrawInterLine{\n  numYTicks :number;\n  numXTicks :number;\n  width  :number;\n}\n\nexport interface DataGetLongestValueWidth{\n  numYTicks :number;\n  unitsPerTickY :number;\n  maxY :number;\n font :string;\n}\n",
             "properties": [
                 {
                     "name": "font",
@@ -353,12 +353,12 @@
         },
         {
             "name": "DatatableHeader",
-            "id": "interface-DatatableHeader-b6c7f4479e6e086f871a7bba670542f1410073223e939ebad7cc90b264cd0980fdc6368b384c40b86ab4533d9a99ec9e96bc3b075ed378dd3008c6231d5da7f5",
+            "id": "interface-DatatableHeader-76ef52760ba19a6a0eb47feca24ff5afbe9424272c41171ac38370b991e4e44b9f2630da8b879e61f0fefd24ea1bba0447b1d678beeb6b63196e8c1d718202ea",
             "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface DatatableHeader {\r\n  label :string,\r\n  name :string,\r\n  order : number\r\n}\r\n\r\nexport interface DatatableRowProperty {\r\n  headerName :string,\r\n  value : string,\r\n  headerLabel? :string,\r\n}\r\n",
+            "sourceCode": "export interface DatatableHeader {\n  label :string,\n  name :string,\n  order : number\n}\n\nexport interface DatatableRowProperty {\n  headerName :string,\n  value : string,\n  headerLabel? :string,\n}\n",
             "properties": [
                 {
                     "name": "label",
@@ -394,12 +394,12 @@
         },
         {
             "name": "DatatableRowProperty",
-            "id": "interface-DatatableRowProperty-b6c7f4479e6e086f871a7bba670542f1410073223e939ebad7cc90b264cd0980fdc6368b384c40b86ab4533d9a99ec9e96bc3b075ed378dd3008c6231d5da7f5",
+            "id": "interface-DatatableRowProperty-76ef52760ba19a6a0eb47feca24ff5afbe9424272c41171ac38370b991e4e44b9f2630da8b879e61f0fefd24ea1bba0447b1d678beeb6b63196e8c1d718202ea",
             "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.interface.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface DatatableHeader {\r\n  label :string,\r\n  name :string,\r\n  order : number\r\n}\r\n\r\nexport interface DatatableRowProperty {\r\n  headerName :string,\r\n  value : string,\r\n  headerLabel? :string,\r\n}\r\n",
+            "sourceCode": "export interface DatatableHeader {\n  label :string,\n  name :string,\n  order : number\n}\n\nexport interface DatatableRowProperty {\n  headerName :string,\n  value : string,\n  headerLabel? :string,\n}\n",
             "properties": [
                 {
                     "name": "headerLabel",
@@ -442,7 +442,7 @@
     "components": [
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-5ba2b42f158857e5be48033cd2361eeb28b71753c514b8acc181d6b9bc45af5df6f5a8f871657714b86a91bff7c54aaab8ef9fe5df798a05aa39aeb8f5d5d855",
+            "id": "component-ButtonComponent-b81b13216678565195b9f197f45f3369115b66fdf95a8759aec50114f2df976eba07a84af547e3044fb3126cafc50bff38a8501d7b0a99a07e19bb1f6cd96ec7",
             "file": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -460,12 +460,30 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "buttonType",
+                    "defaultValue": "'primary'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\"",
+                    "decorators": []
+                },
+                {
                     "name": "disabled",
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 25,
                     "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string",
                     "decorators": []
                 },
                 {
@@ -473,17 +491,17 @@
                     "defaultValue": "'sm'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 21,
+                    "line": 23,
                     "type": "\"sm\" | \"md\" | \"lg\"",
                     "decorators": []
                 },
                 {
                     "name": "type",
-                    "defaultValue": "'primary'",
+                    "defaultValue": "'button'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "line": 19,
-                    "type": "\"primary\" | \"secondary\" | \"tertiary\" | \"success\" | \"danger\" | \"warning\" | \"info\"",
+                    "type": "\"submit\" | \"reset\" | \"button\"",
                     "decorators": []
                 }
             ],
@@ -493,7 +511,7 @@
                     "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 29,
                     "type": "EventEmitter"
                 }
             ],
@@ -505,7 +523,7 @@
                     "optional": false,
                     "returnType": "{ btn: boolean; 'btn--primary': boolean; 'btn--secondary': boolean; 'btn--tertiary': boolean; 'btn--success': boolean; 'btn--danger': boolean; 'btn--warning': boolean; 'btn--info': boolean; 'btn--sm': boolean; 'btn--md': boolean; 'btn--lg': boolean; }",
                     "typeParameters": [],
-                    "line": 42,
+                    "line": 46,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "rawdescription": "\n\nFonction permettant de définir les caractéristiques du bouton\n",
@@ -517,7 +535,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 35,
+                    "line": 39,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "rawdescription": "\n\nFonction permettant de déclencher l'événement click\n",
@@ -529,7 +547,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 29,
+                    "line": 33,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -541,11 +559,11 @@
             "description": "<p>Composant permettant de créer des buttons personnalisés</p>\n<h2 id=\"usage\">Usage</h2>\n<div><pre class=\"line-numbers\"><code class=\"language-ts\">&lt;lib-button [type]=&quot;&#39;success&#39;&quot; [size]=&quot;&#39;lg&#39;&quot; [disabled]=&quot;false&quot;&gt;MonButton&lt;/lib-button&gt;</code></pre></div>",
             "rawdescription": "\n\nComposant permettant de créer des buttons personnalisés\n\n## Usage\n\n```ts\n<lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n```\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n/**\r\n * Composant permettant de créer des buttons personnalisés\r\n *\r\n * ## Usage\r\n *\r\n * ```ts\r\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\r\n * ```\r\n */\r\n@Component({\r\n  selector: 'lib-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent implements OnInit {\r\n\r\n  @Input() type : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';\r\n\r\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de déclencher l'événement click\r\n   */\r\n  handleClickEvent() {\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  /**\r\n   * Fonction permettant de définir les caractéristiques du bouton\r\n   */\r\n  getCssClasses() {\r\n    return {\r\n      'btn': true,\r\n      'btn--primary': this.type === 'primary',\r\n      'btn--secondary': this.type === 'secondary',\r\n      'btn--tertiary': this.type === 'tertiary',\r\n      'btn--success': this.type === 'success',\r\n      'btn--danger': this.type === 'danger',\r\n      'btn--warning': this.type === 'warning',\r\n      'btn--info': this.type === 'info',\r\n      'btn--sm': this.size === 'sm',\r\n      'btn--md': this.size === 'md',\r\n      'btn--lg': this.size === 'lg',\r\n    };\r\n  }\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\n\n/**\n * Composant permettant de créer des buttons personnalisés\n *\n * ## Usage\n *\n * ```ts\n * <lib-button [type]=\"'success'\" [size]=\"'lg'\" [disabled]=\"false\">MonButton</lib-button>\n * ```\n */\n@Component({\n  selector: 'lib-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n})\nexport class ButtonComponent implements OnInit {\n\n  @Input() type: 'submit' | 'reset' | 'button' = 'button';\n\n  @Input() buttonType : 'primary' | 'secondary' | 'tertiary' | 'success' | 'danger' | 'warning' | 'info' = 'primary';\n\n  @Input() size : 'sm' | 'md' | 'lg' = 'sm';\n\n  @Input() disabled = false;\n\n  @Input() label = '';\n\n  @Output() handleClick = new EventEmitter();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  /**\n   * Fonction permettant de déclencher l'événement click\n   */\n  handleClickEvent() {\n    this.handleClick.emit();\n  }\n\n  /**\n   * Fonction permettant de définir les caractéristiques du bouton\n   */\n  getCssClasses() {\n    return {\n      'btn': true,\n      'btn--primary': this.buttonType === 'primary',\n      'btn--secondary': this.buttonType === 'secondary',\n      'btn--tertiary': this.buttonType === 'tertiary',\n      'btn--success': this.buttonType === 'success',\n      'btn--danger': this.buttonType === 'danger',\n      'btn--warning': this.buttonType === 'warning',\n      'btn--info': this.buttonType === 'info',\n      'btn--sm': this.size === 'sm',\n      'btn--md': this.size === 'md',\n      'btn--lg': this.size === 'lg',\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../scss/main\";\r\n\r\n.btn{\r\n  padding: 10px;\r\n  border: none;\r\n  border-radius: 5px;\r\n  transition: 400ms;\r\n  :hover:enabled{\r\n    cursor: pointer;\r\n  }\r\n  :hover:disabled{\r\n    cursor: not-allowed;\r\n    background-color: $disabled-color;\r\n  }\r\n  &--primary{\r\n    color: $light-color;\r\n    background-color : $primary-color;\r\n    &:hover{\r\n      background-color: lighten($primary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--secondary{\r\n    color: $light-color;\r\n    background-color: $secondary-color;\r\n    &:hover{\r\n      background: lighten($secondary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--tertiary{\r\n    color: $dark-color;\r\n    background-color: $tertiary-color;\r\n    &:hover{\r\n      background-color: lighten($tertiary-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--success{\r\n    color: $light-color;\r\n    background-color: $success-color;\r\n    &:hover{\r\n      background-color: lighten($success-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--info{\r\n    color: $light-color;\r\n    background-color: $info-color;\r\n    &:hover{\r\n      background-color: lighten($info-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--danger{\r\n    color: $light-color;\r\n    background-color: $danger-color;\r\n    &:hover{\r\n      background-color: lighten($danger-color, 20%);\r\n    }\r\n  }\r\n\r\n  &--warning{\r\n    color: $dark-color;\r\n    background-color: $warning-color;\r\n    &:hover{\r\n      background-color: lighten($warning-color, 20%);\r\n    }\r\n\r\n  }\r\n\r\n  &--sm{\r\n    font-size: 12px;\r\n    padding: 10px 16px;\r\n  }\r\n\r\n  &--md{\r\n    font-size: 14px;\r\n    padding: 11px 20px;\r\n  }\r\n\r\n  &--lg{\r\n    font-size: 16px;\r\n    padding: 12px 24px;\r\n  }\r\n}\r\n\r\n\r\n\r\n@mixin lighten($color, $amount){\r\nmixin-name($color, $amount){\r\n  color: lighten($color, $amount);\r\n}\r\n}\r\n",
+                    "data": "@import \"../scss/main\";\n\n.btn{\n  padding: 10px;\n  border: none;\n  border-radius: 5px;\n  transition: 400ms;\n  :hover:enabled{\n    cursor: pointer;\n  }\n  :hover:disabled{\n    cursor: not-allowed;\n    background-color: $disabled-color;\n  }\n  &--primary{\n    color: $light-color;\n    background-color : $primary-color;\n    &:hover{\n      background-color: lighten($primary-color, 20%);\n    }\n  }\n\n  &--secondary{\n    color: $light-color;\n    background-color: $secondary-color;\n    &:hover{\n      background: lighten($secondary-color, 20%);\n    }\n  }\n\n  &--tertiary{\n    color: $dark-color;\n    background-color: $tertiary-color;\n    &:hover{\n      background-color: lighten($tertiary-color, 20%);\n    }\n  }\n\n  &--success{\n    color: $light-color;\n    background-color: $success-color;\n    &:hover{\n      background-color: lighten($success-color, 20%);\n    }\n  }\n\n  &--info{\n    color: $light-color;\n    background-color: $info-color;\n    &:hover{\n      background-color: lighten($info-color, 20%);\n    }\n  }\n\n  &--danger{\n    color: $light-color;\n    background-color: $danger-color;\n    &:hover{\n      background-color: lighten($danger-color, 20%);\n    }\n  }\n\n  &--warning{\n    color: $dark-color;\n    background-color: $warning-color;\n    &:hover{\n      background-color: lighten($warning-color, 20%);\n    }\n\n  }\n\n  &--sm{\n    font-size: 12px;\n    padding: 10px 16px;\n  }\n\n  &--md{\n    font-size: 14px;\n    padding: 11px 20px;\n  }\n\n  &--lg{\n    font-size: 16px;\n    padding: 12px 24px;\n  }\n}\n\n\n\n@mixin lighten($color, $amount){\nmixin-name($color, $amount){\n  color: lighten($color, $amount);\n}\n}\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -556,16 +574,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 25
+                "line": 29
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<button class=\"btn\" [class]=\"getCssClasses()\" [disabled]=\"disabled\" (click)=\"handleClickEvent()\"><ng-content></ng-content></button>\r\n"
+            "templateData": "<button class=\"btn\" [type]=\"type\" [class]=\"getCssClasses()\" [disabled]=\"disabled\" (click)=\"handleClickEvent()\">{{label}}</button>\n"
         },
         {
             "name": "CardComponent",
-            "id": "component-CardComponent-d0645cbb1fb34f828dfd51923ad04453ce87e709b8ccd7299adb2aa8d16a46a5775d2385cec33da4528acf879dec930d6baaa0b10a4cb7c4054059ceffcd43bb",
+            "id": "component-CardComponent-5e021fe4325df1278edd0842b52660da6c43407e0cd262c1c5251544dfc226252338ee052ad9ef42c5f71048b4d3a3c4d2c7642e989bf7ac2654be7e6db45881",
             "file": "projects/webfullstack-design-system/src/lib/card/card.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -574,7 +592,7 @@
             "providers": [],
             "selector": "lib-card",
             "styleUrls": [
-                "./card.component.css"
+                "./card.component.scss"
             ],
             "styles": [],
             "templateUrl": [
@@ -587,7 +605,7 @@
                     "defaultValue": "'flex-start'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 24,
                     "type": "\"flex-start\" | \"flex-end\" | \"center\"",
                     "decorators": []
                 },
@@ -596,7 +614,7 @@
                     "defaultValue": "'12'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 17,
+                    "line": 18,
                     "type": "string",
                     "decorators": []
                 },
@@ -604,7 +622,7 @@
                     "name": "button1",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 13,
+                    "line": 14,
                     "type": "any",
                     "decorators": []
                 },
@@ -612,7 +630,7 @@
                     "name": "button2",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 14,
+                    "line": 15,
                     "type": "any",
                     "decorators": []
                 },
@@ -620,7 +638,7 @@
                     "name": "buttonItem",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 15,
+                    "line": 16,
                     "type": "any",
                     "decorators": []
                 },
@@ -629,7 +647,7 @@
                     "defaultValue": "'alabaster'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 16,
+                    "line": 17,
                     "type": "\"orangeyellow\" | \"raisin\" | \"alabaster\" | \"rajah\"",
                     "decorators": []
                 },
@@ -647,7 +665,7 @@
                     "defaultValue": "'buttons'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 19,
+                    "line": 20,
                     "type": "\"buttons\" | \"image\" | \"item\"",
                     "decorators": []
                 },
@@ -656,30 +674,21 @@
                     "defaultValue": "'md'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 19,
                     "type": "\"sm\" | \"md\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
                 {
+                    "name": "fullWidth",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
                     "name": "headerImage",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "imgHeight",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 28,
-                    "type": "string",
-                    "decorators": []
-                },
-                {
-                    "name": "imgSrc",
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
@@ -688,11 +697,29 @@
                     "decorators": []
                 },
                 {
+                    "name": "imgHeight",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "imgSrc",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 22,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
                     "name": "itemImage",
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 25,
+                    "line": 26,
                     "type": "string",
                     "decorators": []
                 },
@@ -700,7 +727,7 @@
                     "name": "items",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 30,
+                    "line": 31,
                     "type": "any",
                     "decorators": []
                 },
@@ -709,7 +736,7 @@
                     "defaultValue": "'left'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 22,
+                    "line": 23,
                     "type": "\"left\" | \"right\" | \"center\"",
                     "decorators": []
                 },
@@ -718,7 +745,7 @@
                     "defaultValue": "'sm'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 29,
+                    "line": 30,
                     "type": "\"none\" | \"sm\" | \"md\" | \"lg\" | \"xl\"",
                     "decorators": []
                 },
@@ -727,7 +754,7 @@
                     "defaultValue": "'column'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 27,
+                    "line": 28,
                     "type": "string",
                     "decorators": []
                 },
@@ -745,7 +772,7 @@
                     "defaultValue": "'center'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 24,
+                    "line": 25,
                     "type": "\"center\" | \"start\" | \"end\"",
                     "decorators": []
                 },
@@ -763,7 +790,7 @@
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 26,
+                    "line": 27,
                     "type": "string",
                     "decorators": []
                 }
@@ -774,7 +801,7 @@
                     "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 32,
+                    "line": 33,
                     "type": "EventEmitter"
                 }
             ],
@@ -786,7 +813,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 115,
+                    "line": 116,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -796,7 +823,7 @@
                     "optional": false,
                     "returnType": "\"linear-gradient(145deg, #ddb863, #ffda76)\" | \"linear-gradient(145deg, #22201f, #292524)\" | \"linear-gradient(145deg, #d4d4cd, #fdfbf4)\" | \"linear-gradient(145deg, #e19442, #ffaf4e)\"",
                     "typeParameters": [],
-                    "line": 35,
+                    "line": 36,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -806,7 +833,7 @@
                     "optional": false,
                     "returnType": "\"black\" | \"white\"",
                     "typeParameters": [],
-                    "line": 50,
+                    "line": 51,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -816,7 +843,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 65,
+                    "line": 66,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -826,7 +853,7 @@
                     "optional": false,
                     "returnType": "\"0\" | \"0.5em 1em\" | \"1em 2em\" | \"1.5em 3em\" | \"2em 4em\"",
                     "typeParameters": [],
-                    "line": 98,
+                    "line": 99,
                     "deprecated": false,
                     "deprecationMessage": ""
                 },
@@ -836,7 +863,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 122,
+                    "line": 123,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -848,12 +875,12 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'lib-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.css']\r\n})\r\nexport class CardComponent implements OnInit {\r\n\r\n  @Input() title = '';\r\n  @Input() subtitle = '';\r\n  @Input() description = '';\r\n  @Input() button1: any;//Button\r\n  @Input() button2: any; //Button\r\n  @Input() buttonItem: any; //Button\r\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\r\n  @Input() borderRadius = '12'; //Choisir le border radius\r\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\r\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\r\n  @Input() headerImage = '';\r\n  @Input() imgSrc = '';\r\n  @Input() justify: 'left' | 'right' | 'center' = 'left';\r\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';\r\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\r\n  @Input() itemImage = '';\r\n  @Input() width = '';\r\n  @Input() sense = 'column';\r\n  @Input() imgHeight = '';\r\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\r\n  @Input() items: any;\r\n\r\n  @Output() handleClick = new EventEmitter();\r\n\r\n\r\n  getBackgroundColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\r\n      case 'raisin':\r\n        return 'linear-gradient(145deg, #22201f, #292524)'\r\n      case 'alabaster':\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n      case 'rajah':\r\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\r\n      default:\r\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\r\n    }\r\n  }\r\n\r\n  getColor() {\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        return 'black'\r\n      case 'raisin':\r\n        return 'white'\r\n      case 'alabaster':\r\n        return 'black'\r\n      case 'rajah':\r\n        return 'black'\r\n      default:\r\n        return 'black'\r\n    }\r\n  }\r\n\r\n  getElevation() {\r\n    let col;\r\n    switch (this.color) {\r\n      case 'orangeyellow':\r\n        col = ['#d6b160', '#ffe77c']\r\n        break;\r\n      case 'raisin':\r\n        col = ['#211e1e', '#2b2826']\r\n        break;\r\n      case 'alabaster':\r\n        col = ['#cdccc6', '#ffffff']\r\n        break;\r\n      case 'rajah':\r\n        col = ['#da8f40', '#ffb952']\r\n        break;\r\n      default:\r\n        col = ['#d1d1d1', '#ffffff']\r\n        break;\r\n    }\r\n    switch (this.elevation) {\r\n      case 'sm':\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n      case 'md':\r\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\r\n      case 'lg':\r\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\r\n      case 'xl':\r\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\r\n      default:\r\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\r\n    }\r\n  }\r\n\r\n  getPadding() {\r\n    switch (this.padding) {\r\n      case 'none':\r\n        return '0'\r\n      case 'sm':\r\n        return '0.5em 1em'\r\n      case 'md':\r\n        return '1em 2em'\r\n      case 'lg':\r\n        return '1.5em 3em'\r\n      case 'xl':\r\n        return '2em 4em'\r\n      default:\r\n        return '1em 2em'\r\n    }\r\n  }\r\n\r\n  clickEvent(){\r\n    this.handleClick.emit();\r\n  }\r\n\r\n  constructor() {\r\n  }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';\n\n@Component({\n  selector: 'lib-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n})\nexport class CardComponent implements OnInit {\n\n  @Input() title = '';\n  @Input() subtitle = '';\n  @Input() description = '';\n  @Input() fullWidth = false;\n  @Input() button1: any;//Button\n  @Input() button2: any; //Button\n  @Input() buttonItem: any; //Button\n  @Input() color: 'orangeyellow' | 'raisin' | 'alabaster' | 'rajah' = 'alabaster';\n  @Input() borderRadius = '12'; //Choisir le border radius\n  @Input() elevation: 'sm' | 'md' | 'lg' | 'xl' = 'md';\n  @Input() display: 'buttons' | 'image' | 'item' = 'buttons';\n  @Input() headerImage = '';\n  @Input() imgSrc = '';\n  @Input() justify: 'left' | 'right' | 'center' = 'left';\n  @Input() align: 'flex-start' | 'flex-end' | 'center' = 'flex-start';\n  @Input() textAlign: 'center' | 'start' | 'end' = 'center';\n  @Input() itemImage = '';\n  @Input() width = '';\n  @Input() sense = 'column';\n  @Input() imgHeight = '';\n  @Input() padding: 'none' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';\n  @Input() items: any;\n\n  @Output() handleClick = new EventEmitter();\n\n\n  getBackgroundColor() {\n    switch (this.color) {\n      case 'orangeyellow':\n        return 'linear-gradient(145deg, #ddb863, #ffda76)'\n      case 'raisin':\n        return 'linear-gradient(145deg, #22201f, #292524)'\n      case 'alabaster':\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\n      case 'rajah':\n        return 'linear-gradient(145deg, #e19442, #ffaf4e)'\n      default:\n        return 'linear-gradient(145deg, #d4d4cd, #fdfbf4)'\n    }\n  }\n\n  getColor() {\n    switch (this.color) {\n      case 'orangeyellow':\n        return 'black'\n      case 'raisin':\n        return 'white'\n      case 'alabaster':\n        return 'black'\n      case 'rajah':\n        return 'black'\n      default:\n        return 'black'\n    }\n  }\n\n  getElevation() {\n    let col;\n    switch (this.color) {\n      case 'orangeyellow':\n        col = ['#d6b160', '#ffe77c']\n        break;\n      case 'raisin':\n        col = ['#211e1e', '#2b2826']\n        break;\n      case 'alabaster':\n        col = ['#cdccc6', '#ffffff']\n        break;\n      case 'rajah':\n        col = ['#da8f40', '#ffb952']\n        break;\n      default:\n        col = ['#d1d1d1', '#ffffff']\n        break;\n    }\n    switch (this.elevation) {\n      case 'sm':\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\n      case 'md':\n        return '15px 15px 30px ' + col[0] + ',-15px -15px 30px ' + col[1]\n      case 'lg':\n        return '24px 24px 48px ' + col[0] + ',24px 24px 48px ' + col[1]\n      case 'xl':\n        return '32px 32px 64px ' + col[0] + ',-32px -32px 64px ' + col[1]\n      default:\n        return '10px 10px 20px ' + col[0] + ',-10px -10px 20px ' + col[1]\n    }\n  }\n\n  getPadding() {\n    switch (this.padding) {\n      case 'none':\n        return '0'\n      case 'sm':\n        return '0.5em 1em'\n      case 'md':\n        return '1em 2em'\n      case 'lg':\n        return '1.5em 3em'\n      case 'xl':\n        return '2em 4em'\n      default:\n        return '1em 2em'\n    }\n  }\n\n  clickEvent(){\n    this.handleClick.emit();\n  }\n\n  constructor() {\n  }\n\n  ngOnInit(): void {\n  }\n\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".card {\r\n  font-family: system-ui;\r\n  margin: 1em;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.title {\r\n  align-items: center;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  font-size: 1.25rem;\r\n  font-weight: bold;\r\n  letter-spacing: .0125em;\r\n  line-height: 2rem;\r\n  word-break: break-all;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.subtitle {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n  color: #4a4a4a;\r\n}\r\n\r\n.description {\r\n  font-size: .875rem;\r\n  font-weight: 400;\r\n  line-height: 1.375rem;\r\n  letter-spacing: .0071428571em;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.buttons {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n\r\n.orangeyellow {\r\n  background: #F6CC6E;\r\n}\r\n\r\n.raisin-black {\r\n  background: #262322\r\n}\r\n\r\n.alabaster {\r\n  background: #ECEBE4;\r\n}\r\n\r\n.rajah {\r\n  background: #FAA449;\r\n}\r\n\r\n.image {\r\n  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.image-header {\r\n  display: flex;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.item-content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: flex-start;\r\n}\r\n\r\n.item-image {\r\n  margin-right: 1em;\r\n  height: 4em;\r\n  box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;;\r\n}\r\n\r\nhr {\r\n  display: block;\r\n  height: 1px;\r\n  border: 0;\r\n  border-top: 1px solid #4b4b4b;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: -webkit-fill-available;\r\n  margin-bottom: 1em;\r\n}\r\n\r\n.content {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n",
-                    "styleUrl": "./card.component.css"
+                    "data": ".card {\n  font-family: system-ui;\n  display: flex;\n  flex-direction: column;\n  position: relative;\n\n  &__title {\n    align-items: center;\n    display: flex;\n    flex-wrap: wrap;\n    font-size: 1.25rem;\n    font-weight: bold;\n    letter-spacing: 0.0125em;\n    line-height: 2rem;\n    word-break: break-all;\n    text-transform: uppercase;\n  }\n\n  &__subtitle {\n    font-size: 0.875rem;\n    font-weight: 400;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em;\n    margin-bottom: 1rem;\n    color: #4a4a4a;\n  }\n\n  &__description {\n    font-size: 0.875rem;\n    font-weight: 400;\n    line-height: 1.375rem;\n    letter-spacing: 0.0071428571em;\n    margin-bottom: 1rem;\n  }\n\n  &__buttons {\n    display: flex;\n    width: 100%;\n  }\n\n  &__image {\n    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left\n          bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));\n    display: flex;\n    justify-content: center;\n\n    &-header {\n      display: flex;\n      margin-bottom: 1em;\n    }\n  }\n\n  &__content {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    &--full-width {\n      width: 100%;\n    }\n  }\n\n  &__items {\n    display: flex;\n    flex-direction: column;\n    width: -webkit-fill-available;\n    margin-bottom: 1em;\n\n    &-image {\n      margin-right: 1em;\n      height: 4em;\n      box-shadow: rgb(26 26 26 / 20%) 0px 7px 6px 4px;\n    }\n\n    &-content {\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n    }\n  }\n}\n\n.orangeyellow {\n  background: #f6cc6e;\n}\n\n.raisin-black {\n  background: #262322;\n}\n\n.alabaster {\n  background: #ecebe4;\n}\n\n.rajah {\n  background: #faa449;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #4b4b4b;\n  margin: 0;\n  padding: 0;\n}\n",
+                    "styleUrl": "./card.component.scss"
                 }
             ],
             "stylesData": "",
@@ -863,16 +890,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 117
+                "line": 118
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.text-align]=\"textAlign\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n\r\n  <div class=\"image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\r\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\r\n    <img [src]=\"headerImage\"\r\n         [style.border-radius]=\"borderRadius+'px'\"\r\n         [style.height]=\"imgHeight\"\r\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\r\n         alt=\"image\">\r\n  </div>\r\n  <div class=\"content\"\r\n       [style.justify-content]=\"justify\"\r\n       [style.align-items]=\"align\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\r\n    <div class=\"description\" *ngIf=\"description\">{{description}}</div>\r\n    <div class=\"items\" *ngIf=\"items\">\r\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\r\n        <hr>\r\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\r\n      </div>\r\n    </div>\r\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" [style.justify-content]=\"justify\">\r\n      <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n      <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='image'\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"imgSrc\"\r\n       alt=\"image\" class=\"image\">\r\n</div>\r\n\r\n<div class=\"card\" *ngIf=\"display=='item'\"\r\n     [style.flex-direction]=\"sense\"\r\n     [style.background]=\"getBackgroundColor()\"\r\n     [style.border-radius]=\"borderRadius+'px'\"\r\n     [style.color]=\"getColor()\"\r\n     [style.box-shadow]=\"getElevation()\"\r\n     [style.justify-content]=\"justify\"\r\n     [style.align-items]=\"align\"\r\n     [style.padding]=\"getPadding()\"\r\n     [style.width]=\"width\">\r\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\r\n       alt=\"image\" class=\"item-image\">\r\n  <div class=\"item-content\" *ngIf=\"title || subtitle\">\r\n    <div class=\"title\" *ngIf=\"title\">{{title}}</div>\r\n    <div class=\"subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\r\n  </div>\r\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\r\n    <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled size=\"md\" (handleClick)=\"clickEvent()\"\r\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\r\n    <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\r\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\r\n  </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"card\" *ngIf=\"display=='buttons'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.text-align]=\"textAlign\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n\n  <div class=\"card__image-header\" *ngIf=\"headerImage\" [style.margin-bottom]=\"sense == 'column'? '1em':0\"\n       [style.margin-right]=\"sense == 'row'? '1em':0\">\n    <img [src]=\"headerImage\"\n         [style.border-radius]=\"borderRadius+'px'\"\n         [style.height]=\"imgHeight\"\n         style=\"box-shadow: rgb(26 26 26 / 20%) 0 7px 6px 4px;\"\n         alt=\"image\">\n  </div>\n  <div class=\"card__content\"\n       [ngClass]=\"fullWidth ? 'card__content--full-width':''\"\n       [style.justify-content]=\"justify\"\n       [style.align-items]=\"align\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\">{{subtitle}}</div>\n    <div class=\"card__description\" *ngIf=\"description; else elseBlock\">{{description}}</div>\n    <ng-template #elseBlock>\n      <ng-content class=\"card__description\"></ng-content>\n    </ng-template>\n    <div class=\"card__items\" *ngIf=\"items\">\n      <div *ngFor=\"let item of items\" style=\"display: flex;flex-direction: column\">\n        <hr>\n        <p style=\"margin: 0.3em 0\">{{item}}</p>\n      </div>\n    </div>\n    <div class=\"buttons\" *ngIf=\"button1 || button2\" [style.justify-content]=\"justify\">\n      <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n      <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                  style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n    </div>\n  </div>\n</div>\n\n<div class=\"card\" *ngIf=\"display=='image'\"\n     [style.width]=\"width\">\n  <img [src]=\"imgSrc\"\n       alt=\"image\" class=\"card__image\">\n</div>\n\n<div class=\"card\" *ngIf=\"display=='item'\"\n     [style.flex-direction]=\"sense\"\n     [style.background]=\"getBackgroundColor()\"\n     [style.border-radius]=\"borderRadius+'px'\"\n     [style.color]=\"getColor()\"\n     [style.box-shadow]=\"getElevation()\"\n     [style.justify-content]=\"justify\"\n     [style.align-items]=\"align\"\n     [style.padding]=\"getPadding()\"\n     [style.width]=\"width\">\n  <img [src]=\"itemImage\" [style.border-radius]=\"borderRadius+'px'\"\n       alt=\"image\" class=\"card__item-image\">\n  <div class=\"card__item-content\" *ngIf=\"title || subtitle\">\n    <div class=\"card__title\" *ngIf=\"title\">{{title}}</div>\n    <div class=\"card__subtitle\" *ngIf=\"subtitle\" style=\"margin-bottom: 0\">{{subtitle}}</div>\n  </div>\n  <div *ngIf=\"buttonItem\" style=\"position: absolute;right: 1em\">\n    <lib-button *ngIf=\"button1\" type=\"secondary\" [disabled]=button1.disabled size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button1.label}}</lib-button>\n    <lib-button *ngIf=\"button2\" type=\"secondary\" [disabled]=button1.disabled  size=\"md\" (handleClick)=\"clickEvent()\"\n                style=\"margin-right: 1em\">{{button2.label}}</lib-button>\n  </div>\n</div>\n"
         },
         {
             "name": "ChartComponent",
-            "id": "component-ChartComponent-8e605a3a0cb78350f9e9b785065392f54c0a045a1a4e0c745815150342ef73007d6b72a66952b493c0a0ec0c29b0db509e1fac5d1547c0a15fac3f430424f478",
+            "id": "component-ChartComponent-386bd5eb1adc0bd64de2ea1a5a7e2af991036a33d6fe07d1ec9b93759d04db8c816e27b39d6839f5c3df2384ce01a4106bc8075c2ff8fc4a3d42c4e5b01985a5",
             "file": "projects/webfullstack-design-system/src/lib/chart/chart.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1379,7 +1406,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';\r\nimport { Subject } from 'rxjs/internal/Subject';\r\nimport DataChart , {CreateChart, DataChartCoordonate, DataDrawInterLine, DataDrawXAxis, DataDrawYAxis, DataGetLongestValueWidth} from './chart.interface';\r\n\r\n@Component({\r\n  selector: 'lib-chart',\r\n  templateUrl: './chart.component.html',\r\n  styleUrls: ['./chart.component.css']\r\n})\r\nexport class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {\r\n\r\n  @ViewChild('myCanvas', {static: false}) canvas: ElementRef | undefined;\r\n  @Input() minX: number = 0;\r\n  @Input() minY: number = 0;\r\n  @Input() maxX: number = 140;\r\n  @Input() maxY: number = 100;\r\n  @Input() unitsPerTickX: number = 10;\r\n  @Input() unitsPerTickY: number =10;\r\n  @Input() data : DataChart[] =[];\r\n  @Input() canvasHeigth : number = 450;\r\n  @Input() canvasWidth : number = 550;\r\n\r\n  private context!: CanvasRenderingContext2D;\r\n\r\n  scaleX :number = 0;\r\n  scaleY :number = 0;\r\n  pointRadius :number = 5;\r\n  x :number = 0;\r\n  y :number = 0;\r\n  height :number = 0;\r\n  axisColor :string= \"#A9A9A9\";\r\n  onChanges = new Subject<SimpleChanges>();\r\n\r\n  constructor() { }\r\n  ngOnChanges(changes: SimpleChanges): void {\r\n    this.onChanges.next(changes);\r\n  }\r\n\r\n  ngAfterViewInit(): void {\r\n    this.create();\r\n    this.onChanges.subscribe((data:SimpleChanges)=>{\r\n        this.update();\r\n    });\r\n  }\r\n  ngOnDestroy(){\r\n    this.onChanges.complete();\r\n  }\r\n\r\n  private LineChart(con :CreateChart) {\r\n    // user defined properties\r\n    const minX = con.minX;\r\n    const minY = con.minY;\r\n    const maxX = con.maxX;\r\n    const maxY = con.maxY;\r\n    const unitsPerTickX = con.unitsPerTickX;\r\n    const unitsPerTickY = con.unitsPerTickY;\r\n\r\n    // constants\r\n    const padding = 10;\r\n    const tickSize = 10;\r\n    const font = \"bold 11pt Arial\";\r\n\r\n    const fontHeight = 12;\r\n\r\n    // relationships\r\n    this.context = this.canvas?.nativeElement.getContext(\"2d\");\r\n    const canvas = this.canvas as ElementRef;\r\n    const rangeX = maxX - minY;\r\n    const rangeY = maxY - minY;\r\n    const numXTicks = Math.round(rangeX / unitsPerTickX);\r\n    const numYTicks = Math.round(rangeY / unitsPerTickY);\r\n    this.x = this.getLongestValueWidth({numYTicks, unitsPerTickY , maxY , font}) + padding * 2;\r\n    this.y = padding * 2;\r\n    const width = canvas.nativeElement.width - this.x - padding * 2;\r\n    this.height = canvas.nativeElement.height - this.y - padding - fontHeight;\r\n    this.scaleX = width / rangeX;\r\n    this.scaleY = this.height / rangeY;\r\n\r\n    // draw x y axis and tick marks\r\n    this.drawXAxis({    width , numXTicks , tickSize, font , maxX , padding});\r\n    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});\r\n    this.drawInterLine({numYTicks , numXTicks , width });\r\n\r\n}\r\n\r\n  private getLongestValueWidth( data :DataGetLongestValueWidth) {\r\n    this.context.font = data.font;\r\n      let longestValueWidth = 0;\r\n      for (let n = 0; n <= data.numYTicks; n++) {\r\n          const value = data.maxY - (n * data.unitsPerTickY);\r\n          longestValueWidth = Math.max(longestValueWidth, this.context.measureText(value.toString()).width);\r\n      }\r\n      return longestValueWidth;\r\n  };\r\n\r\n  private drawXAxis( data :DataDrawXAxis ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y + height);\r\n      this.context.lineTo(this.x + data.width, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n\r\n\r\n      // draw labels\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"center\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numXTicks; n++) {\r\n          const label = Math.round((n + 1) * data.maxX / data.numXTicks);\r\n          this.context.save();\r\n          this.context.translate((n + 1) * data.width / data.numXTicks + this.x, this.y + height + data.padding);\r\n          this.context.fillText(label.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawYAxis ( data :DataDrawYAxis ) {\r\n      const height = this.height ? this.height : 0;\r\n      this.context.save();\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, this.y);\r\n      this.context.lineTo(this.x, this.y + height);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n      this.context.restore();\r\n\r\n\r\n      // draw values\r\n      this.context.font = data.font;\r\n      this.context.fillStyle = this.axisColor;\r\n      this.context.textAlign = \"right\";\r\n      this.context.textBaseline = \"middle\";\r\n\r\n      for (let n = 0; n < data.numYTicks; n++) {\r\n          const value = Math.round(data.maxY - n * data.maxY / data.numYTicks);\r\n          this.context.save();\r\n          this.context.translate(this.x - data.padding, n * height / data.numYTicks + this.y);\r\n          this.context.fillText(value.toString(), 0, 0);\r\n          this.context.restore();\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n  private drawInterLine( data :DataDrawInterLine ) {\r\n    const height = this.height ? this.height : 0;\r\n    for (let n = 0; n < data.numYTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);\r\n      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n\r\n    for (let n = 0; n < data.numXTicks; n++) {\r\n      this.context.beginPath();\r\n      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);\r\n      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );\r\n      this.context.strokeStyle = this.axisColor;\r\n      this.context.stroke();\r\n    }\r\n  }\r\n\r\n  private drawLine(data :DataChartCoordonate[], color : string ) {\r\n      this.context.save();\r\n      this.transformContext();\r\n      this.context.lineWidth = 1;\r\n      this.context.strokeStyle = color;\r\n      this.context.fillStyle = color;\r\n      this.context.beginPath();\r\n      this.context.moveTo(data[0].x * this.scaleX, data[0].y * this.scaleY);\r\n\r\n      for (let n = 0; n < data.length; n++) {\r\n          const point = data[n];\r\n\r\n          // draw segment\r\n          this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);\r\n          this.context.stroke();\r\n          this.context.closePath();\r\n          this.context.beginPath();\r\n          this.context.arc(point.x * this.scaleX, point.y * this.scaleY, this.pointRadius, 0, 2 * Math.PI, false);\r\n          this.context.fill();\r\n          this.context.closePath();\r\n\r\n          // position for next segment\r\n          this.context.beginPath();\r\n          this.context.moveTo(point.x * this.scaleX, point.y * this.scaleY);\r\n      }\r\n      this.context.restore();\r\n  };\r\n\r\n\r\n  transformContext() {\r\n    const height = this.height ? this.height : 0;\r\n    this.context.translate(this.x, this.y + height);\r\n    this.context.scale(1, -1);\r\n  };\r\n\r\n  create(){\r\n    this.LineChart({\r\n      minX: this.minX,\r\n      minY: this.minY,\r\n      maxX: this.maxX,\r\n      maxY: this.maxY,\r\n      unitsPerTickX: this.unitsPerTickX,\r\n      unitsPerTickY: this.unitsPerTickY\r\n   });\r\n   for(let i = 0; i < this.data.length; i++){\r\n    this.drawLine(this.data[i].data, this.data[i].color);\r\n   }\r\n  }\r\n  clear() {\r\n    this.context.clearRect(0, 0, this.canvas?.nativeElement.width, this.canvas?.nativeElement.height);\r\n  }\r\n\r\n  update(){\r\n    this.clear();\r\n    this.create();\r\n  }\r\n\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, ElementRef, Input , SimpleChanges, ViewChild , AfterViewInit , OnChanges , OnDestroy } from '@angular/core';\nimport { Subject } from 'rxjs/internal/Subject';\nimport DataChart , {CreateChart, DataChartCoordonate, DataDrawInterLine, DataDrawXAxis, DataDrawYAxis, DataGetLongestValueWidth} from './chart.interface';\n\n@Component({\n  selector: 'lib-chart',\n  templateUrl: './chart.component.html',\n  styleUrls: ['./chart.component.css']\n})\nexport class ChartComponent implements AfterViewInit , OnChanges , OnDestroy {\n\n  @ViewChild('myCanvas', {static: false}) canvas: ElementRef | undefined;\n  @Input() minX: number = 0;\n  @Input() minY: number = 0;\n  @Input() maxX: number = 140;\n  @Input() maxY: number = 100;\n  @Input() unitsPerTickX: number = 10;\n  @Input() unitsPerTickY: number =10;\n  @Input() data : DataChart[] =[];\n  @Input() canvasHeigth : number = 450;\n  @Input() canvasWidth : number = 550;\n\n  private context!: CanvasRenderingContext2D;\n\n  scaleX :number = 0;\n  scaleY :number = 0;\n  pointRadius :number = 5;\n  x :number = 0;\n  y :number = 0;\n  height :number = 0;\n  axisColor :string= \"#A9A9A9\";\n  onChanges = new Subject<SimpleChanges>();\n\n  constructor() { }\n  ngOnChanges(changes: SimpleChanges): void {\n    this.onChanges.next(changes);\n  }\n\n  ngAfterViewInit(): void {\n    this.create();\n    this.onChanges.subscribe((data:SimpleChanges)=>{\n        this.update();\n    });\n  }\n  ngOnDestroy(){\n    this.onChanges.complete();\n  }\n\n  private LineChart(con :CreateChart) {\n    // user defined properties\n    const minX = con.minX;\n    const minY = con.minY;\n    const maxX = con.maxX;\n    const maxY = con.maxY;\n    const unitsPerTickX = con.unitsPerTickX;\n    const unitsPerTickY = con.unitsPerTickY;\n\n    // constants\n    const padding = 10;\n    const tickSize = 10;\n    const font = \"bold 11pt Arial\";\n\n    const fontHeight = 12;\n\n    // relationships\n    this.context = this.canvas?.nativeElement.getContext(\"2d\");\n    const canvas = this.canvas as ElementRef;\n    const rangeX = maxX - minY;\n    const rangeY = maxY - minY;\n    const numXTicks = Math.round(rangeX / unitsPerTickX);\n    const numYTicks = Math.round(rangeY / unitsPerTickY);\n    this.x = this.getLongestValueWidth({numYTicks, unitsPerTickY , maxY , font}) + padding * 2;\n    this.y = padding * 2;\n    const width = canvas.nativeElement.width - this.x - padding * 2;\n    this.height = canvas.nativeElement.height - this.y - padding - fontHeight;\n    this.scaleX = width / rangeX;\n    this.scaleY = this.height / rangeY;\n\n    // draw x y axis and tick marks\n    this.drawXAxis({    width , numXTicks , tickSize, font , maxX , padding});\n    this.drawYAxis( {  numYTicks ,tickSize, font , maxY , padding});\n    this.drawInterLine({numYTicks , numXTicks , width });\n\n}\n\n  private getLongestValueWidth( data :DataGetLongestValueWidth) {\n    this.context.font = data.font;\n      let longestValueWidth = 0;\n      for (let n = 0; n <= data.numYTicks; n++) {\n          const value = data.maxY - (n * data.unitsPerTickY);\n          longestValueWidth = Math.max(longestValueWidth, this.context.measureText(value.toString()).width);\n      }\n      return longestValueWidth;\n  };\n\n  private drawXAxis( data :DataDrawXAxis ) {\n      const height = this.height ? this.height : 0;\n      this.context.save();\n      this.context.beginPath();\n      this.context.moveTo(this.x, this.y + height);\n      this.context.lineTo(this.x + data.width, this.y + height);\n      this.context.strokeStyle = this.axisColor;\n      this.context.stroke();\n\n\n      // draw labels\n      this.context.font = data.font;\n      this.context.fillStyle = this.axisColor;\n      this.context.textAlign = \"center\";\n      this.context.textBaseline = \"middle\";\n\n      for (let n = 0; n < data.numXTicks; n++) {\n          const label = Math.round((n + 1) * data.maxX / data.numXTicks);\n          this.context.save();\n          this.context.translate((n + 1) * data.width / data.numXTicks + this.x, this.y + height + data.padding);\n          this.context.fillText(label.toString(), 0, 0);\n          this.context.restore();\n      }\n      this.context.restore();\n  };\n\n  private drawYAxis ( data :DataDrawYAxis ) {\n      const height = this.height ? this.height : 0;\n      this.context.save();\n      this.context.beginPath();\n      this.context.moveTo(this.x, this.y);\n      this.context.lineTo(this.x, this.y + height);\n      this.context.strokeStyle = this.axisColor;\n      this.context.stroke();\n      this.context.restore();\n\n\n      // draw values\n      this.context.font = data.font;\n      this.context.fillStyle = this.axisColor;\n      this.context.textAlign = \"right\";\n      this.context.textBaseline = \"middle\";\n\n      for (let n = 0; n < data.numYTicks; n++) {\n          const value = Math.round(data.maxY - n * data.maxY / data.numYTicks);\n          this.context.save();\n          this.context.translate(this.x - data.padding, n * height / data.numYTicks + this.y);\n          this.context.fillText(value.toString(), 0, 0);\n          this.context.restore();\n      }\n      this.context.restore();\n  };\n\n  private drawInterLine( data :DataDrawInterLine ) {\n    const height = this.height ? this.height : 0;\n    for (let n = 0; n < data.numYTicks; n++) {\n      this.context.beginPath();\n      this.context.moveTo(this.x, n * height / data.numYTicks + this.y);\n      this.context.lineTo( this.x + data.width , n * height / data.numYTicks + this.y);\n      this.context.strokeStyle = this.axisColor;\n      this.context.stroke();\n    }\n\n    for (let n = 0; n < data.numXTicks; n++) {\n      this.context.beginPath();\n      this.context.moveTo((n + 1) * data.width / data.numXTicks + this.x, this.y +height);\n      this.context.lineTo((n + 1) * data.width / data.numXTicks + this.x, this.y );\n      this.context.strokeStyle = this.axisColor;\n      this.context.stroke();\n    }\n  }\n\n  private drawLine(data :DataChartCoordonate[], color : string ) {\n      this.context.save();\n      this.transformContext();\n      this.context.lineWidth = 1;\n      this.context.strokeStyle = color;\n      this.context.fillStyle = color;\n      this.context.beginPath();\n      this.context.moveTo(data[0].x * this.scaleX, data[0].y * this.scaleY);\n\n      for (let n = 0; n < data.length; n++) {\n          const point = data[n];\n\n          // draw segment\n          this.context.lineTo(point.x * this.scaleX, point.y * this.scaleY);\n          this.context.stroke();\n          this.context.closePath();\n          this.context.beginPath();\n          this.context.arc(point.x * this.scaleX, point.y * this.scaleY, this.pointRadius, 0, 2 * Math.PI, false);\n          this.context.fill();\n          this.context.closePath();\n\n          // position for next segment\n          this.context.beginPath();\n          this.context.moveTo(point.x * this.scaleX, point.y * this.scaleY);\n      }\n      this.context.restore();\n  };\n\n\n  transformContext() {\n    const height = this.height ? this.height : 0;\n    this.context.translate(this.x, this.y + height);\n    this.context.scale(1, -1);\n  };\n\n  create(){\n    this.LineChart({\n      minX: this.minX,\n      minY: this.minY,\n      maxX: this.maxX,\n      maxY: this.maxY,\n      unitsPerTickX: this.unitsPerTickX,\n      unitsPerTickY: this.unitsPerTickY\n   });\n   for(let i = 0; i < this.data.length; i++){\n    this.drawLine(this.data[i].data, this.data[i].color);\n   }\n  }\n  clear() {\n    this.context.clearRect(0, 0, this.canvas?.nativeElement.width, this.canvas?.nativeElement.height);\n  }\n\n  update(){\n    this.clear();\n    this.create();\n  }\n\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1401,11 +1428,11 @@
                 "OnChanges",
                 "OnDestroy"
             ],
-            "templateData": "<canvas #myCanvas [width]=\"canvasWidth\" [height]=\"canvasHeigth\"></canvas>\r\n"
+            "templateData": "<canvas #myCanvas [width]=\"canvasWidth\" [height]=\"canvasHeigth\"></canvas>\n"
         },
         {
             "name": "DatatableComponent",
-            "id": "component-DatatableComponent-381a13f25071ed162a7cbc898739aabdc5c8b89a7d26c14e75679287985b2029959d2227f9ae5f3a5beb4f75f89a8854517b44f8f2bdc5c7b0b3102ee1cc644c",
+            "id": "component-DatatableComponent-33cdf3f3e183cff961568787679989adf738180ff1dce37fe981c7205500aec7516658daf7e92f321e6dee02e2a83290be85205e748a7f53a47107a803ec85c0",
             "file": "projects/webfullstack-design-system/src/lib/datatable/datatable.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1435,7 +1462,7 @@
                     "name": "data",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 45,
+                    "line": 31,
                     "type": "[][]",
                     "decorators": []
                 },
@@ -1443,7 +1470,7 @@
                     "name": "headers",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 23,
+                    "line": 19,
                     "type": "DatatableHeader[]",
                     "decorators": []
                 }
@@ -1527,11 +1554,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Output, EventEmitter } from '@angular/core';\r\nimport { DatatableHeader, DatatableRowProperty } from './datatable.interface';\r\n\r\n@Component({\r\n  selector: 'lib-datatable',\r\n  templateUrl: './datatable.component.html',\r\n  styleUrls: ['./datatable.component.scss']\r\n})\r\nexport class DatatableComponent implements OnInit {\r\n\r\n  _headers: DatatableHeader[] = []\r\n\r\n  _data: DatatableRowProperty[][] = [];\r\n\r\n  get headers():  DatatableHeader[] {\r\n    return this._headers.sort( (x,y)=>{\r\n      if(x.order > y.order) return 1;\r\n      else if(x.order < y.order) return -1;\r\n      else return 0;\r\n    });\r\n  }\r\n  @Input() set headers(value:  DatatableHeader[]) {\r\n      this._headers = value;\r\n  }\r\n\r\n  get data():  DatatableRowProperty[][]  {\r\n    const data :DatatableRowProperty[][] = [];\r\n    this._data.forEach((row)=>{\r\n      const rowData :DatatableRowProperty[]= []\r\n      this.headers.forEach((header)=>{\r\n        const currentRow = row.filter((x :any ) => x.headerName == header.name);\r\n        if(currentRow.length > 0){\r\n          currentRow[0].headerLabel = header.label;\r\n          rowData.push(currentRow[0]);\r\n        }else{\r\n          rowData.push({headerName: header.name, value: \"\", headerLabel: header.label});\r\n        }\r\n      });\r\n      data.push(rowData);\r\n    });\r\n    return data;\r\n  }\r\n\r\n  @Input() set data(value:  DatatableRowProperty[][] ) {\r\n    this._data = value;\r\n  }\r\n\r\n  @Input() color :string = \"primary\";\r\n\r\n  @Output() clickLineEvent = new EventEmitter<any>();\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  onClickLine(line:any){\r\n    this.clickLineEvent.emit(line);\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { Output, EventEmitter } from '@angular/core';\nimport { DatatableHeader, DatatableRowProperty } from './datatable.interface';\n\n@Component({\n  selector: 'lib-datatable',\n  templateUrl: './datatable.component.html',\n  styleUrls: ['./datatable.component.scss']\n})\nexport class DatatableComponent implements OnInit {\n\n  _headers: DatatableHeader[] = []\n\n  _data: DatatableRowProperty[][] = [];\n\n  get headers():  DatatableHeader[] {\n    return this._headers;\n  }\n  @Input() set headers(value:  DatatableHeader[]) {\n      this._headers = value.sort( (x,y)=>{\n      if(x.order > y.order) return 1;\n      else if(x.order < y.order) return -1;\n      else return 0;\n      });\n  }\n\n  get data():  DatatableRowProperty[][]  {\n    return this._data;\n  }\n\n  @Input() set data(value:  DatatableRowProperty[][] ) {\n    const data :DatatableRowProperty[][] = [];\n    value.forEach((row)=>{\n      const rowData :DatatableRowProperty[]= []\n      this.headers.forEach((header)=>{\n        const currentRow = row.filter((x :any ) => x.headerName == header.name);\n        if(currentRow.length > 0){\n          currentRow[0].headerLabel = header.label;\n          rowData.push(currentRow[0]);\n        }else{\n          rowData.push({headerName: header.name, value: \"\", headerLabel: header.label});\n        }\n      });\n      data.push(rowData);\n    });\n    this._data = data;\n  }\n\n  @Input() color :string = \"primary\";\n\n  @Output() clickLineEvent = new EventEmitter<any>();\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n  onClickLine(line:any){\n    this.clickLineEvent.emit(line);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import '../scss/variables.scss';\r\n@import '../scss/main.scss';\r\n\r\n.container {\r\n  max-width: 1000px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  padding-left: 10px;\r\n  padding-right: 10px;\r\n}\r\n\r\n.primary {\r\n  background-color: $primary-color;\r\n  color : white;\r\n}\r\n.secondary{\r\n  background-color: $secondary-color;\r\n  color : white;\r\n\r\n}\r\n.tertiary{\r\n  background-color: $tertiary-color;\r\n  color : black;\r\n}\r\n\r\n\r\n.responsive-table {\r\n  li {\r\n    border-radius: 3px;\r\n    padding: 25px 30px;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    margin-bottom: 25px;\r\n  }\r\n  .table-header {\r\n    border-radius: 10px;\r\n    font-size: 16px;\r\n    font-weight: 600;\r\n    text-transform: uppercase;\r\n    letter-spacing: 0.03em;\r\n  }\r\n  .table-row {\r\n    background-color: #ffffff;\r\n    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);\r\n    transition: all .2s ease-in-out;\r\n  }\r\n  .table-row:hover {\r\n    transform: scale(1.05);\r\n    cursor: pointer;\r\n  }\r\n  .col {\r\n    flex-basis: 25%;\r\n    text-align: center;\r\n  }\r\n\r\n\r\n  @media all and (max-width: 767px) {\r\n    .table-header {\r\n      display: none;\r\n    }\r\n    li {\r\n      display: block;\r\n    }\r\n    .col {\r\n      flex-basis: 100%;\r\n\r\n    }\r\n    .col {\r\n      display: flex;\r\n      padding: 10px 0;\r\n      &:before {\r\n        color: #6C7A89;\r\n        padding-right: 10px;\r\n        content: attr(data-label);\r\n        flex-basis: 50%;\r\n        text-align: right;\r\n      }\r\n    }\r\n  }\r\n}\r\n",
+                    "data": "@import '../scss/variables.scss';\n@import '../scss/main.scss';\n\n.container {\n  max-width: 1000px;\n  margin-left: auto;\n  margin-right: auto;\n  padding-left: 10px;\n  padding-right: 10px;\n}\n\n.primary {\n  background-color: $primary-color;\n  color : white;\n}\n.secondary{\n  background-color: $secondary-color;\n  color : white;\n\n}\n.tertiary{\n  background-color: $tertiary-color;\n  color : black;\n}\n\n\n.responsive-table {\n  li {\n    border-radius: 3px;\n    padding: 25px 30px;\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 25px;\n  }\n  .table-header {\n    border-radius: 10px;\n    font-size: 16px;\n    font-weight: 600;\n    text-transform: uppercase;\n    letter-spacing: 0.03em;\n  }\n  .table-row {\n    background-color: #ffffff;\n    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);\n    transition: all .2s ease-in-out;\n  }\n  .table-row:hover {\n    transform: scale(1.05);\n    cursor: pointer;\n  }\n  .col {\n    flex-basis: 25%;\n    text-align: center;\n  }\n\n\n  @media all and (max-width: 767px) {\n    .table-header {\n      display: none;\n    }\n    li {\n      display: block;\n    }\n    .col {\n      flex-basis: 100%;\n\n    }\n    .col {\n      display: flex;\n      padding: 10px 0;\n      &:before {\n        color: #6C7A89;\n        padding-right: 10px;\n        content: attr(data-label);\n        flex-basis: 50%;\n        text-align: right;\n      }\n    }\n  }\n}\n",
                     "styleUrl": "./datatable.component.scss"
                 }
             ],
@@ -1564,7 +1591,7 @@
                             }
                         ],
                         "returnType": "void",
-                        "line": 23,
+                        "line": 19,
                         "jsdoctags": [
                             {
                                 "name": "value",
@@ -1600,7 +1627,7 @@
                             }
                         ],
                         "returnType": "void",
-                        "line": 45,
+                        "line": 31,
                         "jsdoctags": [
                             {
                                 "name": "value",
@@ -1621,11 +1648,11 @@
                     }
                 }
             },
-            "templateData": "<div class=\"container\">\r\n  <ul class=\"responsive-table\" *ngIf=\"headers.length >0\">\r\n    <li class=\"table-header\" [ngClass]=\"color\">\r\n      <div class=\"col title\" *ngFor=\"let header of headers\">{{header.label}}</div>\r\n    </li>\r\n    <li *ngFor=\"let row of data\"  class=\"table-row\" (click)=\"onClickLine(row)\">\r\n      <div class=\"col text\" *ngFor=\"let currentInfo of row\" [attr.data-label]=\"currentInfo.headerLabel\">{{currentInfo.value}}</div>\r\n    </li>\r\n  </ul>\r\n</div>\r\n"
+            "templateData": "<div class=\"container\">\n  <ul class=\"responsive-table\" *ngIf=\"headers.length >0\">\n    <li class=\"table-header\" [ngClass]=\"color\">\n      <div class=\"col title\" *ngFor=\"let header of headers\">{{header.label}}</div>\n    </li>\n    <li *ngFor=\"let row of data\"  class=\"table-row\" (click)=\"onClickLine(row)\">\n      <div class=\"col text\" *ngFor=\"let currentInfo of row\" [attr.data-label]=\"currentInfo.headerLabel\">{{currentInfo.value}}</div>\n    </li>\n  </ul>\n</div>\n"
         },
         {
             "name": "DividerComponent",
-            "id": "component-DividerComponent-2f6908fa24c23776fb071c549d0d496250b9c79ac3229af31db6fdfc7f1f94ece9317bbf205394608d0437156230f13e9f6c2f46032670f3560c03f975c02637",
+            "id": "component-DividerComponent-7e5a44d2a6e2a1eb37d65f8cbad73eb94f3917fc3cb0d6736b7f976b644edabeb01aaf1b72cc6fd92fae3d0b92b3370f858da35bf972d3cf00a64e1f42183d52",
             "file": "projects/webfullstack-design-system/src/lib/divider/divider.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1691,7 +1718,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'divider',\r\n  templateUrl: './divider.component.html',\r\n  styleUrls: ['./divider.component.scss'],\r\n})\r\nexport class DividerComponent implements OnInit {\r\n  @Input() height: string = '1px';\r\n  @Input() width: string = '256px';\r\n  @Input() color: string = '#696969';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'divider',\n  templateUrl: './divider.component.html',\n  styleUrls: ['./divider.component.scss'],\n})\nexport class DividerComponent implements OnInit {\n  @Input() height: string = '1px';\n  @Input() width: string = '256px';\n  @Input() color: string = '#696969';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1711,11 +1738,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div\r\n  [style.width]=\"width\"\r\n  [style.height]=\"height\"\r\n  [style.background-color]=\"color\"\r\n></div>\r\n"
+            "templateData": "<div\n  [style.width]=\"width\"\n  [style.height]=\"height\"\n  [style.background-color]=\"color\"\n></div>\n"
         },
         {
             "name": "FlexDivComponent",
-            "id": "component-FlexDivComponent-c1ee395dcf3ecce71b3c4ec6ab94837639db9e99ab5b7e6b773b0e663efecf1eb4c2042907d460b03ce1dc1a5a576d738c38b3b52d1acf623f609c5ba83a2b98",
+            "id": "component-FlexDivComponent-e9f060f262c284a01e03d82296c014ebfa6cd78476cadbc14a72e34188da4f24e5d8af43bb8932e6d2689e130e2247263dbb7f23bc7c82bb8ff2127eb7ceccb1",
             "file": "projects/webfullstack-design-system/src/lib/flex-div/flex-div.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1737,7 +1764,7 @@
                     "defaultValue": "'start'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "line": 12,
                     "type": "string",
                     "decorators": []
                 },
@@ -1746,8 +1773,17 @@
                     "defaultValue": "'row'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 10,
+                    "line": 11,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "fullWidth",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "boolean",
                     "decorators": []
                 },
                 {
@@ -1755,7 +1791,7 @@
                     "defaultValue": "'start'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 9,
+                    "line": 10,
                     "type": "string",
                     "decorators": []
                 },
@@ -1764,7 +1800,7 @@
                     "defaultValue": "'nowrap'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "line": 13,
                     "type": "string",
                     "decorators": []
                 }
@@ -1778,7 +1814,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 16,
+                    "line": 17,
                     "deprecated": false,
                     "deprecationMessage": ""
                 }
@@ -1790,11 +1826,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'flex-div',\r\n  templateUrl: './flex-div.component.html',\r\n  styleUrls: ['./flex-div.component.scss'],\r\n})\r\nexport class FlexDivComponent implements OnInit {\r\n  @Input() justifyContent: string = 'start';\r\n  @Input() direction: string = 'row';\r\n  @Input() alignItems: string = 'start';\r\n  @Input() wrap: string = 'nowrap';\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {}\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'flex-div',\n  templateUrl: './flex-div.component.html',\n  styleUrls: ['./flex-div.component.scss'],\n})\nexport class FlexDivComponent implements OnInit {\n  @Input() fullWidth = false;\n  @Input() justifyContent: string = 'start';\n  @Input() direction: string = 'row';\n  @Input() alignItems: string = 'start';\n  @Input() wrap: string = 'nowrap';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".flex-div {\r\n  display: flex;\r\n}\r\n",
+                    "data": ".flex-div {\n  display: flex;\n  &--full-width {\n    width: 100%;\n  }\n}\n",
                     "styleUrl": "./flex-div.component.scss"
                 }
             ],
@@ -1805,16 +1841,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "args": [],
-                "line": 12
+                "line": 13
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div\r\n  class=\"flex-div\"\r\n  [style.justify-content]=\"justifyContent\"\r\n  [style.flex-direction]=\"direction\"\r\n  [style.align-items]=\"alignItems\"\r\n  [style.flex-wrap]=\"wrap\"\r\n>\r\n  <ng-content></ng-content>\r\n</div>\r\n"
+            "templateData": "<div\n  class=\"flex-div\"\n  [ngClass]=\"fullWidth ? 'flex-div--full-width' : ''\"\n  [style.justify-content]=\"justifyContent\"\n  [style.flex-direction]=\"direction\"\n  [style.align-items]=\"alignItems\"\n  [style.flex-wrap]=\"wrap\"\n>\n  <ng-content></ng-content>\n</div>\n"
         },
         {
             "name": "InputComponent",
-            "id": "component-InputComponent-06f9106a390023e160c94758b6781748d65803657cf71be1d1db3d27d7760443ff0c11f2c47ca94f8b8929214de6625b216af945c12d0d469752d85151be4531",
+            "id": "component-InputComponent-f6cbeba9d79951617ee833c03bc83d01dc77ffb7fc1ae5d41657fcad015e9b3e8ab008c5dd5e104ed180b7598e86251b62f0607b6decff46c333552b1808b7a5",
             "file": "projects/webfullstack-design-system/src/lib/input/input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1889,11 +1925,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\r\n@Component({\r\n  selector: 'lib-input',\r\n  templateUrl: './input.component.html',\r\n  styleUrls: ['./input.component.scss']\r\n})\r\nexport class InputComponent implements OnInit {\r\n\r\n  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';\r\n\r\n  @Input() placeholder = 'Veuillez saisir une valeur';\r\n\r\n  @Input() disabled = false;\r\n\r\n  @Input() value = '';\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n\r\n  }\r\n\r\n  // onChange(event) {\r\n  //   console.log(event);\r\n  // }\r\n\r\n}\r\n",
+            "sourceCode": "import {Component, Input, OnInit} from '@angular/core';\n@Component({\n  selector: 'lib-input',\n  templateUrl: './input.component.html',\n  styleUrls: ['./input.component.scss']\n})\nexport class InputComponent implements OnInit {\n\n  @Input() type : 'text' | 'password' | 'email' | 'tel' | 'search' | 'number' = 'text';\n\n  @Input() placeholder = 'Veuillez saisir une valeur';\n\n  @Input() disabled = false;\n\n  @Input() value = '';\n\n  constructor() { }\n\n  ngOnInit(): void {\n\n  }\n\n  // onChange(event) {\n  //   console.log(event);\n  // }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import '../scss/main.scss';\r\n\r\n.input{\r\n  width: 100%;\r\n  padding: 7px;\r\n  margin: 0;\r\n  border: none;\r\n  background: gray;\r\n  font-size: 1.2rem;\r\n  font-family: 'Source Sans Pro', sans-serif;\r\n  color: $dark-color;\r\n  outline: none;\r\n  appearance: none;\r\n  box-sizing: border-box;\r\n  ::placeholder {\r\n    color: $dark-color;\r\n  }\r\n\r\n}\r\n",
+                    "data": "@import '../scss/main.scss';\n\n.input{\n  width: 100%;\n  padding: 7px;\n  margin: 0;\n  border: none;\n  background: gray;\n  font-size: 1.2rem;\n  font-family: 'Source Sans Pro', sans-serif;\n  color: $dark-color;\n  outline: none;\n  appearance: none;\n  box-sizing: border-box;\n  ::placeholder {\n    color: $dark-color;\n  }\n\n}\n",
                     "styleUrl": "./input.component.scss"
                 }
             ],
@@ -1909,11 +1945,11 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"/>\r\n"
+            "templateData": "<input class=\"input\" [type]=\"type\" [placeholder]=\"placeholder\" [disabled]=\"disabled\"/>\n"
         },
         {
             "name": "SnackbarComponent",
-            "id": "component-SnackbarComponent-6517c94d0a16ba00f022070f787075e19e1d118400893c867242deafc4eea75d590721411c5b240f4d92b8103068649aad21c6860535c58e039703cf90e6c3d5",
+            "id": "component-SnackbarComponent-2dbcd363a826ce870d7a5f84c785647ec9b11f7bd9875b8e20dd03391b09419da35a4c4b58f6919ae6be1277e59eeac588fc02076121bee34bdc996e89ac1d24",
             "file": "projects/webfullstack-design-system/src/lib/snackbar/snackbar.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -2015,11 +2051,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'snackbar',\r\n  templateUrl: './snackbar.component.html',\r\n  styleUrls: ['./snackbar.component.scss'],\r\n})\r\nexport class SnackbarComponent implements OnInit {\r\n  @Input() open: boolean = false;\r\n  @Input() onClose: (() => void) | undefined;\r\n  @Input() message: string = '';\r\n  @Input() autoHideDuration: number = 0;\r\n  @Input() textColor: string = 'white';\r\n  @Input() backgroundColor: string = 'black';\r\n\r\n  handleClose() {\r\n    if (this.onClose) {\r\n      this.onClose();\r\n    }\r\n\r\n    this.open = false;\r\n  }\r\n\r\n  constructor() {}\r\n\r\n  ngOnInit(): void {\r\n    if (this.autoHideDuration) {\r\n      setTimeout(() => {\r\n        this.open = false;\r\n      }, this.autoHideDuration);\r\n    }\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'snackbar',\n  templateUrl: './snackbar.component.html',\n  styleUrls: ['./snackbar.component.scss'],\n})\nexport class SnackbarComponent implements OnInit {\n  @Input() open: boolean = false;\n  @Input() onClose: (() => void) | undefined;\n  @Input() message: string = '';\n  @Input() autoHideDuration: number = 0;\n  @Input() textColor: string = 'white';\n  @Input() backgroundColor: string = 'black';\n\n  handleClose() {\n    if (this.onClose) {\n      this.onClose();\n    }\n\n    this.open = false;\n  }\n\n  constructor() {}\n\n  ngOnInit(): void {\n    if (this.autoHideDuration) {\n      setTimeout(() => {\n        this.open = false;\n      }, this.autoHideDuration);\n    }\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".snackbar {\r\n  width: 288px;\r\n  padding: 12px;\r\n  position: absolute;\r\n  bottom: 24px;\r\n  left: 24px;\r\n  border-radius: 10px;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\n.close-icon {\r\n  cursor: pointer;\r\n}\r\n",
+                    "data": ".snackbar {\n  width: 288px;\n  padding: 12px;\n  position: absolute;\n  bottom: 24px;\n  left: 24px;\n  border-radius: 10px;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.close-icon {\n  cursor: pointer;\n}\n",
                     "styleUrl": "./snackbar.component.scss"
                 }
             ],
@@ -2035,19 +2071,19 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div\r\n  class=\"snackbar\"\r\n  [style.color]=\"textColor\"\r\n  [style.background]=\"backgroundColor\"\r\n  [style.display]=\"open ? 'flex' : 'none'\"\r\n>\r\n  <div>\r\n    {{ message }}\r\n  </div>\r\n\r\n  <svg height=\"14px\" width=\"14px\" class=\"close-icon\" (click)=\"handleClose()\">\r\n    <path\r\n      d=\"M8.664,7l4.992-4.992A1.177,1.177,0,0,0,11.992.344L7,5.336,2.009.344A1.177,1.177,0,0,0,.345,2.008L5.336,7,.345,11.991a1.177,1.177,0,1,0,1.664,1.664L7,8.663l4.992,4.992a1.177,1.177,0,0,0,1.664-1.664Z\"\r\n      [style.fill]=\"textColor\"\r\n    />\r\n  </svg>\r\n</div>\r\n"
+            "templateData": "<div\n  class=\"snackbar\"\n  [style.color]=\"textColor\"\n  [style.background]=\"backgroundColor\"\n  [style.display]=\"open ? 'flex' : 'none'\"\n>\n  <div>\n    {{ message }}\n  </div>\n\n  <svg height=\"14px\" width=\"14px\" class=\"close-icon\" (click)=\"handleClose()\">\n    <path\n      d=\"M8.664,7l4.992-4.992A1.177,1.177,0,0,0,11.992.344L7,5.336,2.009.344A1.177,1.177,0,0,0,.345,2.008L5.336,7,.345,11.991a1.177,1.177,0,1,0,1.664,1.664L7,8.663l4.992,4.992a1.177,1.177,0,0,0,1.664-1.664Z\"\n      [style.fill]=\"textColor\"\n    />\n  </svg>\n</div>\n"
         }
     ],
     "modules": [
         {
             "name": "WebfullstackDesignSystemModule",
-            "id": "module-WebfullstackDesignSystemModule-90cc331bf5f9a57d2e732d7ccb412d58cf5608d4d96665541dedee3aae7d9ec9e42856bd60447ed09f89292d724e460c2ffb518c50c82790deaf47aac4f86eab",
+            "id": "module-WebfullstackDesignSystemModule-08032ee882b1978a2c8d3246046650bda0f6ad02cb0c3d76cdbb5283c9d56feaface66d7dda817560e1d03a9e1dab519dd1ba531b727d51b3bedeb20f42aef75",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { CardComponent } from './card/card.component';\r\nimport { ChartComponent } from './chart/chart.component';\r\nimport { DividerComponent } from './divider/divider.component';\r\nimport { FlexDivComponent } from './flex-div/flex-div.component';\r\nimport { SnackbarComponent } from './snackbar/snackbar.component';\r\nimport { ButtonComponent } from './button/button.component';\r\nimport { DatatableComponent } from './datatable/datatable.component';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\nimport { InputComponent } from \"./input/input.component\";\r\n\r\nconst COMPONENTS = [\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n];\r\n\r\n@NgModule({\r\n  declarations: [...COMPONENTS],\r\n  imports: [BrowserModule],\r\n  exports: [...COMPONENTS],\r\n})\r\nexport class WebfullstackDesignSystemModule {}\r\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CardComponent } from './card/card.component';\nimport { ChartComponent } from './chart/chart.component';\nimport { DividerComponent } from './divider/divider.component';\nimport { FlexDivComponent } from './flex-div/flex-div.component';\nimport { SnackbarComponent } from './snackbar/snackbar.component';\nimport { ButtonComponent } from './button/button.component';\nimport { DatatableComponent } from './datatable/datatable.component';\nimport { InputComponent } from \"./input/input.component\";\nimport {CommonModule} from \"@angular/common\";\n\nconst COMPONENTS = [\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n];\n\n@NgModule({\n  declarations: [...COMPONENTS],\n  imports: [CommonModule],\n  exports: [...COMPONENTS],\n})\nexport class WebfullstackDesignSystemModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -2132,7 +2168,7 @@
                 "name": "Base",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2142,27 +2178,27 @@
                 "name": "button1",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                "defaultValue": "{\n  label: 'Bouton 1',\n  disabled: false,\n  ev: test,\n}"
             },
             {
                 "name": "button2",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                "defaultValue": "{\n  label: 'Bouton 2',\n  disabled: false,\n  ev: test,\n}"
             },
             {
                 "name": "ColImage",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2176,7 +2212,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n]"
+                "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n]"
             },
             {
                 "name": "context",
@@ -2192,7 +2228,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Button.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2202,7 +2238,7 @@
                 "name": "Image",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2212,17 +2248,17 @@
                 "name": "img",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "string",
-                "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
+                "defaultValue": "'https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg'"
             },
             {
                 "name": "Item",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2232,7 +2268,7 @@
                 "name": "items",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
@@ -2251,7 +2287,7 @@
                 "name": "RowImage",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -2261,27 +2297,27 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/Button.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  template:\r\n  `<lib-button [size]=\"size\" [type]=\"type\">\r\n        Label\r\n    </lib-button>`\r\n})"
+                "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<CardComponent>",
-                "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n})"
+                "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
             }
         ],
         "functions": [
             {
                 "name": "test",
-                "file": "stories/card.stories.ts",
+                "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                 "ctype": "miscellaneous",
                 "subtype": "function",
                 "deprecated": false,
@@ -2293,12 +2329,12 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "stories/card.stories.ts": [
+            "projects/webfullstack-design-system/src/lib/card/card.stories.ts": [
                 {
                     "name": "Base",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2308,27 +2344,27 @@
                     "name": "button1",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\r\n  label: 'Bouton 1',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                    "defaultValue": "{\n  label: 'Bouton 1',\n  disabled: false,\n  ev: test,\n}"
                 },
                 {
                     "name": "button2",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\r\n  label: 'Bouton 2',\r\n  disabled: false,\r\n  ev: test\r\n}"
+                    "defaultValue": "{\n  label: 'Bouton 2',\n  disabled: false,\n  ev: test,\n}"
                 },
                 {
                     "name": "ColImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2338,7 +2374,7 @@
                     "name": "Image",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2348,17 +2384,17 @@
                     "name": "img",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
-                    "defaultValue": "\"https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg\""
+                    "defaultValue": "'https://static.fnac-static.com/multimedia/Images/FR/NR/94/43/d7/14107540/1507-1/tsp20220322173128/Nostalgia.jpg'"
                 },
                 {
                     "name": "Item",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2368,7 +2404,7 @@
                     "name": "items",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
@@ -2378,7 +2414,7 @@
                     "name": "RowImage",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2388,11 +2424,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<CardComponent>",
-                    "defaultValue": "(args: CardComponent) => ({\r\n  component: CardComponent,\r\n  props: args,\r\n})"
+                    "defaultValue": "(args: CardComponent) => ({\n  component: CardComponent,\n  props: args,\n})"
                 }
             ],
             "projects/webfullstack-design-system/src/lib/webfullstack-design-system.module.ts": [
@@ -2404,7 +2440,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  CardComponent,\r\n  ChartComponent,\r\n  FlexDivComponent,\r\n  DividerComponent,\r\n  DatatableComponent,\r\n  SnackbarComponent,\r\n  ButtonComponent,\r\n  InputComponent\r\n]"
+                    "defaultValue": "[\n  CardComponent,\n  ChartComponent,\n  FlexDivComponent,\n  DividerComponent,\n  DatatableComponent,\n  SnackbarComponent,\n  ButtonComponent,\n  InputComponent\n]"
                 }
             ],
             "projects/webfullstack-design-system/src/test.ts": [
@@ -2428,12 +2464,12 @@
                     "type": "literal type"
                 }
             ],
-            "stories/Button.stories.ts": [
+            "projects/webfullstack-design-system/src/lib/button/Button.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -2443,19 +2479,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/Button.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\r\n  component: ButtonComponent,\r\n  props: args,\r\n  template:\r\n  `<lib-button [size]=\"size\" [type]=\"type\">\r\n        Label\r\n    </lib-button>`\r\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\n  component: ButtonComponent,\n  props: args,\n  template:\n  `<lib-button [size]=\"size\" [type]=\"type\">\n        Label\n    </lib-button>`\n})"
                 }
             ]
         },
         "groupedFunctions": {
-            "stories/card.stories.ts": [
+            "projects/webfullstack-design-system/src/lib/card/card.stories.ts": [
                 {
                     "name": "test",
-                    "file": "stories/card.stories.ts",
+                    "file": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
                     "ctype": "miscellaneous",
                     "subtype": "function",
                     "deprecated": false,
@@ -2470,16 +2506,36 @@
     },
     "routes": [],
     "coverage": {
-        "count": 1,
+        "count": 0,
         "status": "low",
         "files": [
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/button/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
             {
                 "filePath": "projects/webfullstack-design-system/src/lib/button/button.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonComponent",
-                "coveragePercent": 33,
-                "coverageCount": "3/9",
+                "coveragePercent": 27,
+                "coverageCount": "3/11",
                 "status": "medium"
             },
             {
@@ -2488,7 +2544,117 @@
                 "linktype": "component",
                 "name": "CardComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/30",
+                "coverageCount": "0/31",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "function",
+                "linktype": "miscellaneous",
+                "linksubtype": "function",
+                "name": "test",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Base",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "button2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ColImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Image",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "img",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Item",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "items",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RowImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/webfullstack-design-system/src/lib/card/card.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -2605,7 +2771,7 @@
                 "linktype": "component",
                 "name": "FlexDivComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {
@@ -2652,136 +2818,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "require",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "function",
-                "linktype": "miscellaneous",
-                "linksubtype": "function",
-                "name": "test",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Base",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "button1",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "button2",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ColImage",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Image",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "img",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Item",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "items",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "RowImage",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/card.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
