@@ -1,3 +1,4 @@
+import { NullVisitor } from '@angular/compiler/src/render3/r3_ast';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
@@ -13,7 +14,7 @@ export class SnackbarComponent implements OnInit {
   @Input() textColor: string = 'white';
   @Input() backgroundColor: string = 'black';
 
-  @Output() autoHideEvent = new EventEmitter();
+  @Output() autoHideEvent = new EventEmitter<any>();
 
   handleClose() {
     if (this.onClose) {
@@ -29,7 +30,7 @@ export class SnackbarComponent implements OnInit {
     if (this.autoHideDuration) {
       setTimeout(() => {
         this.open = false;
-        this.autoHideEvent.emit();
+        this.autoHideEvent.emit(null);
       }, this.autoHideDuration);
     }
   }
