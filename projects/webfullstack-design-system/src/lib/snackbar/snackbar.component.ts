@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'snackbar',
@@ -12,6 +12,8 @@ export class SnackbarComponent implements OnInit {
   @Input() autoHideDuration: number = 0;
   @Input() textColor: string = 'white';
   @Input() backgroundColor: string = 'black';
+
+  @Output() autoHideEvent = new EventEmitter();
 
   handleClose() {
     if (this.onClose) {
@@ -27,6 +29,7 @@ export class SnackbarComponent implements OnInit {
     if (this.autoHideDuration) {
       setTimeout(() => {
         this.open = false;
+        this.autoHideEvent.emit();
       }, this.autoHideDuration);
     }
   }
