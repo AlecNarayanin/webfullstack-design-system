@@ -14,10 +14,10 @@ export class SnackbarComponent implements OnInit {
   @Input() backgroundColor: string = 'black';
 
   @Input() set open(valeur: boolean) {
-    if(this.autoHideDuration && valeur){
+    if(this.autoHideDuration >0 && valeur && valeur != this._open){
       this.setAutoHideTimeout();
     }
-    this.open =valeur;
+    this._open=valeur;
   }
   get open(): boolean {
     return this._open;
